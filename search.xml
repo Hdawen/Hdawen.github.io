@@ -3,110 +3,167 @@
   
     
     <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/2018/01/23/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+      <title><![CDATA[Markdown基本语法]]></title>
+      <url>/2018/01/23/2_Markdown_grammar/</url>
+      <content type="html"><![CDATA[<h1 id="欢迎使用-iOS-版-MWeb"><a href="#欢迎使用-iOS-版-MWeb" class="headerlink" title="欢迎使用 iOS 版 MWeb"></a>欢迎使用 iOS 版 MWeb</h1><p>MWeb 首先是一个 Markdown 编辑器，所使用的 Markdown 语法为 Github Flavored Markdown，简称 GFM，这是一种最为广泛使用的 Markdown 语法之一。<a id="more"></a>如果你不知道什么是 Markdown，建议看一下附带的 Markdown 语法官方说明（Markdown Syntax.md）文档。GFM 除了支持官方的语法外，还扩展了不少语法，具体情况会在本文后说明。这里先介绍一下 iOS 版 MWeb 的基本使用方法。<br>$f(x)$</p>
+<h2 id="MWeb-for-iOS-基本使用"><a href="#MWeb-for-iOS-基本使用" class="headerlink" title="MWeb for iOS 基本使用"></a>MWeb for iOS 基本使用</h2><p><img src="media/mweb-v232-cn-1.png" alt="mweb-v232-cn-1-w780"></p>
+<p><strong>上图左图为首页，右图为网盘文档，各种标记如下：</strong></p>
+<ol>
+<li>设置页面。</li>
+<li>最近使用的文档。</li>
+<li>收藏的项目，文档，文件夹，文档库分类等等都可以收藏。</li>
+<li>回首页按钮。</li>
+<li>文档库按钮，目前的版本的文档库是需要 MWeb for Mac 配合使用的，不是单独的功能，默认不启用。</li>
+<li>网盘文档按钮，点击后会转到右图的网盘文档，目前支持 iCloud Drive 和 Dropbox。</li>
+<li>本地文档按钮。</li>
+<li>进入网盘文档后，点右下角的按钮可增加 Dropbox 文件夹以同步。</li>
+<li>文件夹设置按钮，网盘文档内的文件夹有 (i) 按钮的都可以设置，主要是设置新建文档的默认扩展名、插入图片保存位置和是否自动上传至图床，这个设置和 Mac 版 MWeb 外部模式中引入的文件夹的设置一样。如下图。</li>
+</ol>
+<p><img src="media/mweb-v232-cn-2.png" alt="mweb-v232-cn-2-w780"></p>
+<p><strong>上图左图为文件夹设置画面，右图为点进文件夹后的画面，各标记说明如下：</strong></p>
+<ol>
+<li>设置此文件夹内的文档的默认排序，新建文档的默认扩展名等。</li>
+<li>插入图片时图片的保存位置，默认保存在文档所在位置的 media 文件夹内，你可以通过填入文件夹名来修改（上图改为 images）。另外<strong>保存路径</strong>这个很重要，默认是“相对位置”，也就是保存在文档所在位置的文件夹内。如果设置为“绝对位置”，比如 folder/sub/sub2/sub3/doc.md 这个位置的文档插入图片，会保存在 fodler/media 下，而“相对位置”，则会保存在 folder/sub/sub2/sub3/media 下。</li>
+<li>插入图片时自动上传至图床：如果启用，则插入图片时，会直接上传至图床。在设置页面可以配置图床信息，目前支持 Google Photos、imgur、七牛和自定义图床。</li>
+<li>回首页按钮。</li>
+<li>收藏按钮。</li>
+<li>排序方式按钮，点击可更改排序方式。</li>
+<li>新增文件夹和文件按钮。</li>
+</ol>
+<p><img src="media/mweb-v232-cn-3.png" alt="mweb-v232-cn-3-w780"></p>
+<p><strong>上图左图为打开文档后点击大纲视图的画面，右图为编辑时，切换到 Markdown 键盘的画面</strong></p>
+<ol>
+<li>文档大纲按钮，点击后可快速导航。</li>
+<li>收藏按钮。</li>
+<li>预览按钮。</li>
+<li>新增文档按钮，会在所打开的文档的文件夹内新增文档。</li>
+<li>分享按钮，可导出为 HTML、图片、PDF；发布至 Wordpress、Wordpress.com、Metaweblog API 、Evernote、Blogger 和 Medium。</li>
+<li>Markdown 常用语法的快速输入键盘。</li>
+<li>编辑器样式和预览样式切换。</li>
+</ol>
+<p><img src="media/mweb-v232-cn-4.png" alt="mweb-v232-cn-4-w780"></p>
+<p><strong>上图左图为点击分享按钮后的画面，右图为切换样式画面</strong></p>
+<ol>
+<li>退出编辑，也可左滑。</li>
+<li>发布服务，要在设置页面新增发布服务，支持 Wordpress、Wordpress.com、Metaweblog API 、Evernote、Blogger 和 Medium。</li>
+<li>切换样式。</li>
+</ol>
+<h2 id="配置-MWeb-for-Mac-文档库"><a href="#配置-MWeb-for-Mac-文档库" class="headerlink" title="配置 MWeb for Mac 文档库"></a>配置 MWeb for Mac 文档库</h2><p>iOS 版的文档库目前不可单独使用，只做为 Mac 版文档库的辅助，目前仅支持查看、编辑和新增文档，删除和归类等等功能目前都不支持。要使用 iOS 版文档库，首先要把 Mac 版的 MWeb 的文档库保存到 iCloud Drive 或者 Dropbox 中，等同步完成后，再在 iOS 版 MWeb 中配置文档库的位置。</p>
+<p><img src="media/14979382840902.jpg" alt="-w470"></p>
+<p>如上图，用另存为按钮，把文档库保存在 Dropbox 或 iCloud Drive 中，如果选择保存在 iCloud Drive，必须保存在 iCloud Drive 中 MWeb 所属的文件夹内。如果在 Mac 的 iCloud Drive 中看不到 MWeb 所属文件夹，可以试试在 iOS 的 系统设置 - iCloud - 关闭 iCloud Drive，然后再重新打开。</p>
+<p>设置好并且文档库完全同步后，在 iOS 版 MWeb 中配置 Mac 版文档库的方法如下图：</p>
+<p><img src="media/mweb-v232-cn-5.png" alt="mweb-v232-cn-5-w780"></p>
+<ol>
+<li>首先是启用 MWeb for Mac 的文档库。</li>
+<li>点击“更改文档库位置”按钮，选择文档库的位置。文档库位置的文件夹内，必然会有一个名为 mainlib.db 的文件和一个 docs 文件夹。</li>
+<li>设置完后，点完成，回到首页，再点首页底部的“文档库”按钮，即可进入文档库，如上图右图。</li>
+</ol>
+<p><strong>使用 iOS 版文档库要注意的地方为：</strong>在 iOS 文档库新增的文档总是在“所有文档”和“未分类文档”中。</p>
+<h2 id="其它参考："><a href="#其它参考：" class="headerlink" title="其它参考："></a>其它参考：</h2><ul>
+<li><a href="http://zh.mweb.im/how_to_use_wordpress_url.html" target="_blank" rel="noopener">iOS 版 MWeb 发布到自建 Wordpress 和 Metaweblog API 使用指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_images_in_mweb.html" target="_blank" rel="noopener">MWeb 图片及图床使用完全指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_qiniu_url.html" target="_blank" rel="noopener">iOS 版 MWeb 图床功能及七牛图床使用指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_custom_image_upload_url.html" target="_blank" rel="noopener">iOS 版 MWeb 图床功能中自定义图床的使用指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_library_in_ios.html" target="_blank" rel="noopener">在 iOS 中如何使用 MWeb for Mac 文档库</a></li>
+</ul>
+<h2 id="GFM-语法简介和-MWeb-所支持的扩展语法"><a href="#GFM-语法简介和-MWeb-所支持的扩展语法" class="headerlink" title="GFM 语法简介和 MWeb 所支持的扩展语法"></a>GFM 语法简介和 MWeb 所支持的扩展语法</h2><h3 id="回车转为换行"><a href="#回车转为换行" class="headerlink" title="回车转为换行"></a>回车转为换行</h3><p>官方的语法规定结尾加 2 个以上空格加换行才会转成换行，也就是 <code>&lt;br /&gt;</code> 标签。MWeb 中有个选项可以直接把换行转成 <code>&lt;br /&gt;</code>，不用加上 2 个以上空格，这个选项默认是开启的。如果要关闭，请在设置页面关闭。</p>
+<h3 id="任务列表（Task-lists）"><a href="#任务列表（Task-lists）" class="headerlink" title="任务列表（Task lists）"></a>任务列表（Task lists）</h3><p>Markdown 语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- [ ] 任务一 未做任务 `- + 空格 + [ ]`</span><br><span class="line">- [x] 任务二 已做任务 `- + 空格 + [x]`</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<ul>
+<li>[ ] 任务一 未做任务 <code>- + 空格 + [ ]</code></li>
+<li>[x] 任务二 已做任务 <code>- + 空格 + [x]</code></li>
+</ul>
+<h3 id="图片大小及对齐"><a href="#图片大小及对齐" class="headerlink" title="图片大小及对齐"></a>图片大小及对齐</h3><p>官方和 GFM 都不支持图片大小控制及对齐设置，MWeb 引入的特别的语法来设置图片宽度和居左、居右、居中。如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 -w450 为设置语法，生成 HTML 时会自动移除。w 表示设置宽度，居左为：-l400，居右为 -r400，居中为 -c400，比如设置一图片宽度为 500 并居中：<code>![-c500](pic.jpg)</code>。 可以看出，MWeb 引入的语法的特点是兼容原来的语法和仅支持设置宽度。</p>
+<h3 id="多行或者一段代码"><a href="#多行或者一段代码" class="headerlink" title="多行或者一段代码"></a>多行或者一段代码</h3><p>Markdown 语法：</p>
+<pre><code><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fancyAlert</span>(<span class="params">arg</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(arg) &#123;</span><br><span class="line">    $.facebox(&#123;<span class="attr">div</span>:<span class="string">'#foo'</span>&#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</code></pre><p>效果如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fancyAlert</span>(<span class="params">arg</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(arg) &#123;</span><br><span class="line">		$.facebox(&#123;<span class="attr">div</span>:<span class="string">'#foo'</span>&#125;)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个语法目前在 MWeb 中使用，必须前后空一行，才会正确解析。我觉得，在写 Markdown 文档过程中，运用空行很有必要，基本上，块级元素（标题、列表、引用、代码块、表格、段落等），都建议前后空一行。</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>Markdown 语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">第一格表头 | 第二格表头</span><br><span class="line">--------- | -------------</span><br><span class="line">内容单元格 第一列第一格 | 内容单元格第二列第一格</span><br><span class="line">内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody>
+</table>
+<h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p>Markdown 语法：</p>
+<pre><code>加删除线像这样用： ~~删除这些~~
+</code></pre><p>效果如下：</p>
+<p>加删除线像这样用： <del>删除这些</del></p>
+<h3 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h3><p>Markdown 语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">块级公式：</span><br><span class="line">$$	x = \dfrac&#123;-b \pm \sqrt&#123;b^2 - 4ac&#125;&#125;&#123;2a&#125; $$</span><br><span class="line"></span><br><span class="line">\\[ \frac&#123;1&#125;&#123;\Bigl(\sqrt&#123;\phi \sqrt&#123;5&#125;&#125;-\phi\Bigr) e^&#123;\frac25 \pi&#125;&#125; =</span><br><span class="line">1+\frac&#123;e^&#123;-2\pi&#125;&#125; &#123;1+\frac&#123;e^&#123;-4\pi&#125;&#125; &#123;1+\frac&#123;e^&#123;-6\pi&#125;&#125;</span><br><span class="line">&#123;1+\frac&#123;e^&#123;-8\pi&#125;&#125; &#123;1+\ldots&#125; &#125; &#125; &#125; \\]</span><br><span class="line"></span><br><span class="line">行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$</span><br></pre></td></tr></table></figure>
+<p>效果如下（在设置页面中启用 LaTeX 才会看到效果，默认为启用）：</p>
+<p>块级公式：<br>$$    x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =<br>1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}<br>{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p>
+<p>行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$</p>
+<h3 id="脚注（Footnote）"><a href="#脚注（Footnote）" class="headerlink" title="脚注（Footnote）"></a>脚注（Footnote）</h3><p>Markdown 语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是一个脚注：[^sample_footnote]</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p>这是一个脚注：<a href="这里是脚注信息">^sample_footnote</a></p>
+<h3 id="注释和阅读更多"><a href="#注释和阅读更多" class="headerlink" title="注释和阅读更多"></a>注释和阅读更多</h3><!-- comment -->
+<!-- more -->
+<p><strong>注</strong> 阅读更多的功能只用在文档库生成静态网站或发布到 Wordpress 博客时，插入时注意要后空一行。</p>
+<h3 id="TOC"><a href="#TOC" class="headerlink" title="TOC"></a>TOC</h3><p>Markdown 语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[TOC]</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p>[TOC]</p>
+<p>本文转自：<a href="http://www.maochunjie.com/life/4640.html" target="_blank" rel="noopener">http://www.maochunjie.com/life/4640.html</a></p>
 ]]></content>
       
         
     </entry>
     
     <entry>
-      <title><![CDATA[我的博客]]></title>
-      <url>/2018/01/22/new/</url>
-      <content type="html"><![CDATA[<h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
-<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
-<blockquote>
+      <title><![CDATA[��Elements of Applied Bifurcation Theory���Ķ��ʼ�]]></title>
+      <url>/2018/01/23/1_Reading_notes_Elements%20of%20Applied%20Bifurcation%20Theory/</url>
+      <content type="html"><![CDATA[<p>����ϵͳ�е�<code>���伯��</code>��invariant set���Ķ��壺���ڶ���ϵͳ${T,X,\varphi ^t}$������һ������$S(\in X)$�е�����Ԫ��$x_0$��������$t\in T$����$\varphi ^t x_0\in S$����ô����$S$��Ϊ����ϵͳ${T,X,\varphi ^t}$�Ĳ��伯�ϡ�  P11<a id="more"></a></p>
+<hr>
+<p>���伯��$S_0$��<code>�ȶ���</code>��������������������:</p>
 <ul>
-<li>整理知识，学习笔记</li>
-<li>发布日记，杂文，所见所想</li>
-<li>撰写发布技术文稿（代码支持）</li>
-<li>撰写发布学术论文（LaTeX 公式支持）</li>
+<li>����$S_0$����������С���ڽ�����$U\supset{S_0}$������һ���ڽ�����$V\supset{S_0}$ʹ�ö����е�$x\in V$�Լ�$t&gt;0$������$\varphi ^tx\in U$</li>
+<li>����һ���ڽ�����$U_0\supset{S_0}$ʹ�ö����е�$x\in U_0$��$t\rightarrow+\infty$����$\varphi^t x\rightarrow S_0$</li>
 </ul>
-</blockquote>
-<a id="more"></a>
-<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
-<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
-<h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
-<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
-</blockquote>
+<p>������һ��������Lyapunov�ȶ��Ķ��壬�ڶ��������ǽ����ȶ��Ķ��壬ֻ��ͬʱ������������������˵���ϸ��ϵ��ȶ���  P16</p>
 <hr>
-<h2 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h2><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
-<h3 id="1-制作一份待办事宜-Todo-列表"><a href="#1-制作一份待办事宜-Todo-列表" class="headerlink" title="1. 制作一份待办事宜 Todo 列表"></a>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表" target="_blank" rel="noopener">Todo 列表</a></h3><ul>
-<li>[ ] 支持以 PDF 格式导出文稿</li>
-<li>[ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
-<li>[x] 新增 Todo 列表功能</li>
-<li>[x] 修复 LaTex 公式渲染问题</li>
-<li>[x] 新增 LaTex 公式编号功能</li>
-</ul>
-<h3 id="2-书写一个质能守恒公式-LaTeX"><a href="#2-书写一个质能守恒公式-LaTeX" class="headerlink" title="2. 书写一个质能守恒公式[^LaTeX]"></a>2. 书写一个质能守恒公式[^LaTeX]</h3><p>$$E=mc^2$$</p>
-<h3 id="3-高亮一段代码-code"><a href="#3-高亮一段代码-code" class="headerlink" title="3. 高亮一段代码[^code]"></a>3. 高亮一段代码[^code]</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># A comment</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></span><br></pre></td></tr></table></figure>
-<h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图" target="_blank" rel="noopener">流程图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">op=&gt;operation: Your Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-<h3 id="5-高效绘制-序列图"><a href="#5-高效绘制-序列图" class="headerlink" title="5. 高效绘制 序列图"></a>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图" target="_blank" rel="noopener">序列图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
-<h3 id="6-绘制表格"><a href="#6-绘制表格" class="headerlink" title="6. 绘制表格"></a>6. 绘制表格</h3><table>
-<thead>
-<tr>
-<th>项目</th>
-<th style="text-align:right">价格</th>
-<th style="text-align:center">数量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>计算机</td>
-<td style="text-align:right">\$1600</td>
-<td style="text-align:center">5</td>
-</tr>
-<tr>
-<td>手机</td>
-<td style="text-align:right">\$12</td>
-<td style="text-align:center">12</td>
-</tr>
-<tr>
-<td>管线</td>
-<td style="text-align:right">\$1</td>
-<td style="text-align:center">234</td>
-</tr>
-</tbody>
-</table>
-<h3 id="7-更详细语法说明"><a href="#7-更详细语法说明" class="headerlink" title="7. 更详细语法说明"></a>7. 更详细语法说明</h3><p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" target="_blank" rel="noopener">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册" target="_blank" rel="noopener">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
-<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+<p>����ϵͳ<code>���˵ȼ�</code>�Ķ��壺��������ϵͳ֮����������һ����������̬ͬӳ�佨��һһ��Ӧ��ϵ������������ϵͳ���˵ȼ�(topologically equivalent)��</p>
+<p> ����������ɢ����ϵͳ$x\mapsto f(x),~x\in R^n$��$y\mapsto g(y),~y\in R^n$������$f$��$g$���⻬���棬�������ڿ�������̬ͬӳ��$h$ʹ�ö������е�$x\in R^n$����$y=h(x)$���Լ�$g(y)=h(f(x))$$\Big($����$g(h(x))=h(f(x))$$\Big)$����ô��������ɢ����ϵͳ�����˵ȼ۵ġ�</p>
+<p>��һ���أ��������˵ȼ۵�������������ϵͳ$\dot{x}=f(x),~x\in R^n$�Լ�$\dot{y}=g(y),~y\in R^n$���������ڿ�������̬ͬӳ��$h$ʹ�ö�����$x\in R^n$����$y=h(x)$����$f(x)=M^{-1}(x)g(h(x))$������$M(x)=\frac{dh(x)}{dx}$����ô��������������ϵͳ��<code>�⻬�ȼ�</code>��(smooth equivalent)���ڹ⻬�ȼ������£�����ϵͳ�ڳ�ֵ�㴦�ı��־���������ֵ��ȫ��ͬ</p>
+<p>�������˵ȼ۵�������������ϵͳ$\dot{x}=f(x),~x\in R^n$�Լ�$\dot{y}=g(y),~y\in R^n$��Ҳ�����ڿ�������̬ͬӳ��$h$ʹ�ö�����$x\in R^n$����$y=h(x)$���������ڹ⻬���ı�������$\mu(x)&gt;0$ʹ��$f(x)=\mu(x)g(x)$����ô�����������Ķ���ϵͳ��<code>�����ȼ�</code>��(orbitally equivalent)</p>
+<p>�⻬�ȼۺ͹����ȼ۵������������˵ȼ�Ҫǿ�������⻬�ȼۻ��߹����ȼ۵Ķ���ϵͳһ�������˵ȼ۵ġ�   P40~42</p>
 <hr>
-<h2 id="什么是-Cmd-Markdown"><a href="#什么是-Cmd-Markdown" class="headerlink" title="什么是 Cmd Markdown"></a>什么是 Cmd Markdown</h2><p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
-<h3 id="1-实时同步预览"><a href="#1-实时同步预览" class="headerlink" title="1. 实时同步预览"></a>1. 实时同步预览</h3><p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
-<h3 id="2-编辑工具栏"><a href="#2-编辑工具栏" class="headerlink" title="2. 编辑工具栏"></a>2. 编辑工具栏</h3><p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
-<p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p>
-<h3 id="3-编辑模式"><a href="#3-编辑模式" class="headerlink" title="3. 编辑模式"></a>3. 编辑模式</h3><p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右测的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
-<h3 id="4-实时的云端文稿"><a href="#4-实时的云端文稿" class="headerlink" title="4. 实时的云端文稿"></a>4. 实时的云端文稿</h3><p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
-<h3 id="5-离线模式"><a href="#5-离线模式" class="headerlink" title="5. 离线模式"></a>5. 离线模式</h3><p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
-<h3 id="6-管理工具栏"><a href="#6-管理工具栏" class="headerlink" title="6. 管理工具栏"></a>6. 管理工具栏</h3><p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
-<p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p>
-<p>通过管理工具栏可以：</p>
-<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br><i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br><i class="icon-trash"></i> 删除：删除当前的文稿<br><i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br><i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br><i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
-<h3 id="7-阅读工具栏"><a href="#7-阅读工具栏" class="headerlink" title="7. 阅读工具栏"></a>7. 阅读工具栏</h3><p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p>
-<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
-<p>工具栏上的五个图标依次为：</p>
-<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br><i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br><i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br><i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br><i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
-<h3 id="8-阅读模式"><a href="#8-阅读模式" class="headerlink" title="8. 阅读模式"></a>8. 阅读模式</h3><p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
-<h3 id="9-标签、分类和搜索"><a href="#9-标签、分类和搜索" class="headerlink" title="9. 标签、分类和搜索"></a>9. 标签、分类和搜索</h3><p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
-<p>标签： 未分类</p>
-<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
-<p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p>
-<h3 id="10-文稿发布和分享"><a href="#10-文稿发布和分享" class="headerlink" title="10. 文稿发布和分享"></a>10. 文稿发布和分享</h3><p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+<p><code>˫��ƽ����</code>������ϵͳ��ĳ��ƽ���㴦�ľ�����������ֵ��ʵ������Ϊ0��Ҳ��ʵ��Ҫô����0ҪôС��0������ƽ��������˫��ƽ���㡣</p>
 <hr>
-<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
-<p>作者 <a href="http://weibo.com/ghosert" target="_blank" rel="noopener">@ghosert</a><br>2015 年 06月 15日    </p>
-<p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a> 参考更多使用方法。</p>
-<p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
+<p>����ϵͳ��<code>�ֲ����˵ȼ�</code>��һ������ϵͳ�е�����˫��ƽ����$x_0$��$y_0$���������ռ���Ϊ�Ǿֲ����˵ȼ۵ģ����ҽ���������ƽ���㴦��������ͬ����Ŀ��ʵ������0�Լ�ʵ��С��0������ֵ�� P48</p>
+<hr>
+<p><strong><code>����</code>�ֲ��ȶ����ζ���</strong>��<strong><code>��ɢ</code>�ֲ��ȶ����ζ���</strong>����������Ϊ��������ϵͳ��������΢����ʽ�ķ���$\dot{x}=f(x)$������ɢ����ϵͳ�������Ǻ�����ʽ�ķ���$x\mapsto g(x)$������ǰ���ȶ��Ե��б���ʽ�ǿ�ƽ����$x<em>0$���ľ���$A=\frac{df(x)}{dx}\Big|</em>{x=x_0}$������ֵʵ���Ƿ���С��0�������ȶ��Ե�������ӳ��$g(x)$��һ��ѹ��ӳ�䣬Ҳ������ƽ����$x<em>0$���ľ���$A=\frac{dg(x)}{dx}\Big|</em>{x=x_0}$������ֵ��ģ�Ƿ���С��1��   P46,P50</p>
+<hr>
+<p><code>�ֲ�</code>������һ��������$\mu$��΢�ֶ���ϵͳ����������$\mu$���������仯������$\mu=\mu_0$ʱ��ϵͳ�����˽ṹ���������仯������ϵͳ��$\mu=\mu_0$�������ֲ档����˵��ϵͳ�����˽ṹ���������仯�ж������Σ�������˵�����¼��ִ�����<br>�����ֲ棺ϵͳ��ƽ���㷢�������仯�������ȶ�ƽ���㵽���㡣<br>�չ��ֲ棺ϵͳ�Ĺ��߷����仯����ϵͳ�ıչ���ʧ���߳��ּ��޻���<br>�Լ�������ͬ�����޷ֲ档</p>
+<hr>
+<p><code>ͬ�޷ֲ�</code>��<code>���޷ֲ�</code>������ϵͳ�����Ĳ��������仯��������ĳ������$\mu=\mu_0$������һ�����ߵ���������͸��������������ͬһ��ƽ���㣬������������Ϊͬ�޹��ߣ��˿�ϵͳ���ֵķֲ���Ϊͬ�޷ֲ�(Homoclinic bifurcation)��������ĳ������$\mu=\mu_0$������һ�����ߵ���������͸�������ֱ�����ϵͳ��������ͬƽ���㣬������������Ϊ���޹��ߣ��˿�ϵͳ���ֵķֲ���Ϊ���޷ֲ�(Heteroclinic bifurcation)<br><img src="http://t1.aixinxi.net/o_1c4hejg9l5h9ul1eaut8q3cia.jpg-w.jpg" alt=""><br>����ͼ����Ϊͬ�޹��ߣ��ұ�Ϊ���޹���</p>
+<hr>
+<p><code>�ֲ��߽�</code>��<code>�ֲ���ά��</code>��ǰ����ָ�γɲ�ͬ���ͷֲ��ķֲ�������������ָ�����ֲ������������Ĳ����ռ���ά����</p>
+<hr>
+<p>�ֲ�������������ʽ������ϵͳ$\dot{x}=f(x,\alpha),~x\in R^n,~\alpha\in R^m$��Ϊ�Ͷ���ϵͳ$\dot{y}=g(y,\beta),~y\in R^n,~\beta\in R^m$���˵ȼ۵ģ�������������������<br>(1)����һ����̬ͬ�����ռ�$p:R^m\rightarrow R^n,~\beta=p(\alpha)$;<br>(2)����һ��������������̬ͬ���ռ�ӳ��$h<em>{\alpha}:R^n\rightarrow R^n,~y=h</em>{\alpha}(x)$����������$\alpha$�Ĺ���$x$ӳ�䵽��������$\beta=p(\alpha)$�Ĺ���$y$�ϡ�<br>��Ӧ���ھֲ��ռ�����������������Ϊ�Ǿֲ����˵ȼۡ�  P64</p>
+<hr>
+<p>����ϵͳ��<code>�ṹ�ȶ���</code>��<br>����ϵͳ$\dot{x}=f(x),~x\in R^n$�Ͷ���ϵͳ$\dot{x}=g(x),~x\in R^n$������$C^1-$close�������㣺<br>$$<br>d<em>1=\sup</em>{x\in U}\left{\left|f(x)-g(x)\right|+\left|\frac{df(x)}{dx}-\frac{dg(x)}{dx}\right|\right}\leq\varepsilon<br>$$<br>����ϵͳ$\dot{x}=f(x),~x\in R^n$������<code>�ϸ��ṹ�ȶ�</code>���������㣺����������$U$����������$C^1-$close�Ķ���ϵͳ$\dot{x}=g(x),~x\in R^n$�������������˵ȼ۵ġ�<br>��Ϊһ��ƽ������$U$�ı߽��ϻ��ߴ���$U$�ı߽��Ķ���ϵͳ���������ϸ��ṹ�ȶ���Ϊ��������һ���йؽṹ�ȶ��Ķ��壺<br><img src="http://t1.aixinxi.net/o_1c4hekrjebtpvs61fck1gbrd6na.jpg-w.jpg" alt=""></p>
+<p><img src="http://t1.aixinxi.net/o_1c4helil7bdc1msd1u5rue88osa.jpg-w.jpg" alt=""><br><img src="http://t1.aixinxi.net/o_1c4hem2k83u3sut16k9qgth6sa.jpg-w.jpg" alt=""></p>
+<hr>
+<p><code>�������ζ���</code>������ϵͳ$\dot{x}=f(x),~x\in R^n$�ڲ����㴦��Jacobi������ΪA��$T^c$��ʾ���������ɾ���A��$n_0$��ʵ��Ϊ0������ֵ����Ӧ�������ռ䣬��������һ���ֲ��⻬��$n<em>0$ά��������$W^c</em>{loc}(0)$��$T^c$��$x=0$�����У����ң���$x<em>0=0$������һ������$U$ʹ�ö���һ��ӳ��$\phi^tx\in U$������$t\geq 0(t\leq 0)$������$\phi^tx\rightarrow W^c</em>{loc}(0)$����$t\rightarrow +\infty(t\rightarrow -\infty)$����������������$W^c_{loc}$����Ϊ�������Ρ�����ͼ��ʾΪһά�������κͶ�ά�������Ρ�<br><img src="http://t1.aixinxi.net/o_1c4hemo832lt14n41qjedf91qk6a.jpg-w.jpg" alt=""></p>
 ]]></content>
       
         
