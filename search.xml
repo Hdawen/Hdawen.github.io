@@ -3,6 +3,48 @@
   
     
     <entry>
+      <title><![CDATA[二元二次方程组的求解——从代数到几何]]></title>
+      <url>/2018/01/26/2_Binary_quadratic_equations/</url>
+      <content type="html"><![CDATA[<p>因为研究中遇到一些问题，需要判断二元二次方程组根的性质，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。<a id="more"></a></p>
+<h3 id="代数方法"><a href="#代数方法" class="headerlink" title="代数方法"></a>代数方法</h3><blockquote>
+<p>考虑如下一元二次方程组：<br>$$<br>\begin{equation}<br>\begin{cases}<br>a_1x^2+b_1xy+c_1y^2+d_1x+e_1y+f_1=0\\<br>a_2x^2+b_2xy+c_2y^2+d_2x+e_2y+f_2=0\\<br>\end{cases}~~~(1)<br>\end{equation}<br>$$</p>
+</blockquote>
+<p>为了判断该方程组根的性态，最直接的方法是先求解出这个方程组的根，然后研究根。这种直接求根的方法就是代数方法，具体求解步骤如下：</p>
+<ul>
+<li>第一个方程乘以 $c_1$ 减去第二个方程乘以 $c_2$ 消去 $y^2$ 得：$Ax^2+Bxy+Dx+Ey+F=0$ ，充分利用该关系可以得到：$y=\frac{-Ax^2-Dx-F}{Bx+E}$</li>
+<li>将上一步骤中得到的 $x$ 和 $y$ 关系 $y=\frac{-Ax^2-Dx-F}{Bx+E}$ 带入原方程组中任意一个可以消去变量 $y$ 而得到一个一元四次方程：$ax^4+bx^3+cx^2+dx+e=0$。</li>
+<li>一元四次方程可以用Lodovico Ferrari求根公式求解（伽罗华证明了五次及五次以上的一元多项式方程不存在求根公式）</li>
+</ul>
+<blockquote>
+<p>Lodovico Ferrari求根公式：一般的一元四次方程 $ax^4+bx^3+cx^2+dx+e=0(a\neq0)$ ，定义$p=\frac{8ac-3b^2}{8a^2}, q=\frac{8a^2d+b^3-4ac}{8a^3}, r=\frac{16ab^2c-64a^2bd-3b^4+256a^3e}{256a^4}$，如果：</p>
+<p>(1) $q\neq0$，则该方程存在4个根可表示为：<br>$$<br>\begin{equation}<br>\begin{cases}<br>x_1=-\frac{b}{4a}+\frac{\sqrt{2z_0}-\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_2=-\frac{b}{4a}+\frac{\sqrt{2z_0}+\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_3=-\frac{b}{4a}+\frac{-\sqrt{2z_0}-\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_4=-\frac{b}{4a}+\frac{-\sqrt{2z_0}+\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>\end{cases}~~~(2)<br>\end{equation}<br>$$<br>其中， $z_0$ 是方程 $z^3+pz^2+\frac{p^2-4r}{4}z-\frac{q^2}{8}=0$ 的正根(利用笛卡尔符号法则， $q\neq0$ 保证了该方程有一个正根)</p>
+<p>(2) $q=0$，则该方程存在4个根可表示为：<br>$$<br>\begin{equation}<br>\begin{cases}<br>x_1=-\frac{b}{4a}+\sqrt{\frac{-p-\sqrt{p^2-4r}}{2}}\\<br>x_2=-\frac{b}{4a}-\sqrt{\frac{-p-\sqrt{p^2-4r}}{2}}\\<br>x_3=-\frac{b}{4a}+\sqrt{\frac{-p+\sqrt{p^2-4r}}{2}}\\<br>x_4=-\frac{b}{4a}-\sqrt{\frac{-p+\sqrt{p^2-4r}}{2}}\\<br>\end{cases}~~~(3)<br>\end{equation}<br>$$</p>
+</blockquote>
+<p>判断一元四次方程根的类型（实根还是复根）可以参考<a href="https://en.wikipedia.org/wiki/Quartic_function#cite_note-12" target="_blank" rel="noopener">维基百科</a>或者文献[1]中的介绍。</p>
+<p>虽然以上代数方法可以给出一元四次方程所有根的表达式 ，但是由于(2)、(3)形式比较复杂，很多性质（实根个数、单调性等）都无法直接判断。总的来说：<code>代数法适合做定量分析，不适合做定性分析</code>。</p>
+<h3 id="几何方法"><a href="#几何方法" class="headerlink" title="几何方法"></a>几何方法</h3><p>[1] Rees E L. Graphical Discussion of the Roots of a Quartic Equation[J]. American Mathematical Monthly, 1922, 29(2):51-55.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Study </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 代数 </tag>
+            
+            <tag> 几何 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Markdown基本语法(转)]]></title>
       <url>/2018/01/23/1_Markdown_grammar/</url>
       <content type="html"><![CDATA[<h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
@@ -90,6 +132,18 @@
 <p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
 ]]></content>
       
+        <categories>
+            
+            <category> Study </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
         
     </entry>
     

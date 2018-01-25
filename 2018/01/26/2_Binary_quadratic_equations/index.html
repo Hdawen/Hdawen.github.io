@@ -15,13 +15,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://hdawen.github.io/about/index.html">
+<meta name="description" content="因为研究中遇到一些问题，需要判断二元二次方程组根的性质，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。">
+<meta name="keywords" content="数学,代数,几何">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二元二次方程组的求解——从代数到几何">
+<meta property="og:url" content="https://hdawen.github.io/2018/01/26/2_Binary_quadratic_equations/index.html">
 <meta property="og:site_name" content="Devin&#39;s Blog">
-<meta property="og:updated_time" content="2018-01-23T08:35:55.555Z">
+<meta property="og:description" content="因为研究中遇到一些问题，需要判断二元二次方程组根的性质，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。">
+<meta property="og:updated_time" content="2018-01-25T17:39:31.626Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="二元二次方程组的求解——从代数到几何">
+<meta name="twitter:description" content="因为研究中遇到一些问题，需要判断二元二次方程组根的性质，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -53,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>about | Devin&#39;s Blog</title>
+<title>二元二次方程组的求解——从代数到几何 | Devin&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -63,7 +67,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -247,11 +251,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-2_Binary_quadratic_equations" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2018-01-23T08:35:55.000Z" itemprop="datePublished">2018-01-23</time>
+      <a href="/2018/01/26/2_Binary_quadratic_equations/" class="article-date">
+      <time datetime="2018-01-25T16:48:38.679Z" itemprop="datePublished">2018-01-26</time>
 </a>
 
 
@@ -266,7 +270,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      二元二次方程组的求解——从代数到几何
     </h1>
   
 
@@ -274,8 +278,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Study/">Study</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代数/">代数</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/几何/">几何</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数学/">数学</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -283,36 +295,84 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>因为研究中遇到一些问题，需要判断二元二次方程组根的性质，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。<a id="more"></a></p>
+<h3 id="代数方法"><a href="#代数方法" class="headerlink" title="代数方法"></a>代数方法</h3><blockquote>
+<p>考虑如下一元二次方程组：<br>$$<br>\begin{equation}<br>\begin{cases}<br>a_1x^2+b_1xy+c_1y^2+d_1x+e_1y+f_1=0\\<br>a_2x^2+b_2xy+c_2y^2+d_2x+e_2y+f_2=0\\<br>\end{cases}~~~(1)<br>\end{equation}<br>$$</p>
+</blockquote>
+<p>为了判断该方程组根的性态，最直接的方法是先求解出这个方程组的根，然后研究根。这种直接求根的方法就是代数方法，具体求解步骤如下：</p>
+<ul>
+<li>第一个方程乘以 $c_1$ 减去第二个方程乘以 $c_2$ 消去 $y^2$ 得：$Ax^2+Bxy+Dx+Ey+F=0$ ，充分利用该关系可以得到：$y=\frac{-Ax^2-Dx-F}{Bx+E}$</li>
+<li>将上一步骤中得到的 $x$ 和 $y$ 关系 $y=\frac{-Ax^2-Dx-F}{Bx+E}$ 带入原方程组中任意一个可以消去变量 $y$ 而得到一个一元四次方程：$ax^4+bx^3+cx^2+dx+e=0$。</li>
+<li>一元四次方程可以用Lodovico Ferrari求根公式求解（伽罗华证明了五次及五次以上的一元多项式方程不存在求根公式）</li>
+</ul>
+<blockquote>
+<p>Lodovico Ferrari求根公式：一般的一元四次方程 $ax^4+bx^3+cx^2+dx+e=0(a\neq0)$ ，定义$p=\frac{8ac-3b^2}{8a^2}, q=\frac{8a^2d+b^3-4ac}{8a^3}, r=\frac{16ab^2c-64a^2bd-3b^4+256a^3e}{256a^4}$，如果：</p>
+<p>(1) $q\neq0$，则该方程存在4个根可表示为：<br>$$<br>\begin{equation}<br>\begin{cases}<br>x_1=-\frac{b}{4a}+\frac{\sqrt{2z_0}-\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_2=-\frac{b}{4a}+\frac{\sqrt{2z_0}+\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_3=-\frac{b}{4a}+\frac{-\sqrt{2z_0}-\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_4=-\frac{b}{4a}+\frac{-\sqrt{2z_0}+\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>\end{cases}~~~(2)<br>\end{equation}<br>$$<br>其中， $z_0$ 是方程 $z^3+pz^2+\frac{p^2-4r}{4}z-\frac{q^2}{8}=0$ 的正根(利用笛卡尔符号法则， $q\neq0$ 保证了该方程有一个正根)</p>
+<p>(2) $q=0$，则该方程存在4个根可表示为：<br>$$<br>\begin{equation}<br>\begin{cases}<br>x_1=-\frac{b}{4a}+\sqrt{\frac{-p-\sqrt{p^2-4r}}{2}}\\<br>x_2=-\frac{b}{4a}-\sqrt{\frac{-p-\sqrt{p^2-4r}}{2}}\\<br>x_3=-\frac{b}{4a}+\sqrt{\frac{-p+\sqrt{p^2-4r}}{2}}\\<br>x_4=-\frac{b}{4a}-\sqrt{\frac{-p+\sqrt{p^2-4r}}{2}}\\<br>\end{cases}~~~(3)<br>\end{equation}<br>$$</p>
+</blockquote>
+<p>判断一元四次方程根的类型（实根还是复根）可以参考<a href="https://en.wikipedia.org/wiki/Quartic_function#cite_note-12" target="_blank" rel="noopener">维基百科</a>或者文献[1]中的介绍。</p>
+<p>虽然以上代数方法可以给出一元四次方程所有根的表达式 ，但是由于(2)、(3)形式比较复杂，很多性质（实根个数、单调性等）都无法直接判断。总的来说：<code>代数法适合做定量分析，不适合做定性分析</code>。</p>
+<h3 id="几何方法"><a href="#几何方法" class="headerlink" title="几何方法"></a>几何方法</h3><p>[1] Rees E L. Graphical Discussion of the Roots of a Quartic Equation[J]. American Mathematical Monthly, 1922, 29(2):51-55.</p>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/01/26/2_Binary_quadratic_equations/">二元二次方程组的求解——从代数到几何</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Devin</a></p>
+        <p><span>发布时间:</span>2018-01-26, 00:48:38</p>
+        <p><span>最后更新:</span>2018-01-26, 01:39:31</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/01/26/2_Binary_quadratic_equations/" title="二元二次方程组的求解——从代数到几何">https://hdawen.github.io/2018/01/26/2_Binary_quadratic_equations/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://hdawen.github.io/2018/01/26/2_Binary_quadratic_equations/　　作者: Devin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/01/23/1_Markdown_grammar/">
+                    Markdown基本语法(转)
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#代数方法"><span class="toc-number">1.</span> <span class="toc-text">代数方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#几何方法"><span class="toc-number">2.</span> <span class="toc-text">几何方法</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
@@ -330,7 +390,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| Devin's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"二元二次方程组的求解——从代数到几何　| Devin's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -345,6 +405,24 @@
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/01/23/1_Markdown_grammar/" title="下一篇: Markdown基本语法(转)">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/01/26/2_Binary_quadratic_equations/">二元二次方程组的求解——从代数到几何</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/23/1_Markdown_grammar/">Markdown基本语法(转)</a></li></ul>
 
 
 
