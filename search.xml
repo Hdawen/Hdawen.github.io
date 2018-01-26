@@ -7,11 +7,11 @@
       <url>/2018/01/26/2_Binary_quadratic_equations/</url>
       <content type="html"><![CDATA[<p>因为研究中遇到一些问题，需要判断二元二次方程组根的性质，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。<a id="more"></a></p>
 <h3 id="代数方法"><a href="#代数方法" class="headerlink" title="代数方法"></a>代数方法</h3><blockquote>
-<p>考虑如下一元二次方程组：<br>$$<br>\begin{equation}<br>\begin{cases}<br>a_1x^2+b_1xy+c_1y^2+d_1x+e_1y+f_1=0\\<br>a_2x^2+b_2xy+c_2y^2+d_2x+e_2y+f_2=0\\<br>\end{cases}~~~(1)<br>\end{equation}<br>$$</p>
+<p>考虑如下二元二次方程组：<br>$$<br>\begin{equation}<br>\begin{cases}<br>a_1x^2+b_1xy+c_1y^2+d_1x+e_1y+f_1=0\\<br>a_2x^2+b_2xy+c_2y^2+d_2x+e_2y+f_2=0\\<br>\end{cases}~~~(1)<br>\end{equation}<br>$$</p>
 </blockquote>
 <p>为了判断该方程组根的性态，最直接的方法是先求解出这个方程组的根，然后研究根。这种直接求根的方法就是代数方法，具体求解步骤如下：</p>
 <ul>
-<li>第一个方程乘以 $c_1$ 减去第二个方程乘以 $c_2$ 消去 $y^2$ 得：$Ax^2+Bxy+Dx+Ey+F=0$ ，充分利用该关系可以得到：$y=\frac{-Ax^2-Dx-F}{Bx+E}$</li>
+<li>第一个方程乘以 $c_2$ 减去第二个方程乘以 $c_1$ 消去 $y^2$ 得：$Ax^2+Bxy+Dx+Ey+F=0$ ，充分利用该关系可以得到：$y=\frac{-Ax^2-Dx-F}{Bx+E}$</li>
 <li>将上一步骤中得到的 $x$ 和 $y$ 关系 $y=\frac{-Ax^2-Dx-F}{Bx+E}$ 带入原方程组中任意一个可以消去变量 $y$ 而得到一个一元四次方程：$ax^4+bx^3+cx^2+dx+e=0$。</li>
 <li>一元四次方程可以用Lodovico Ferrari求根公式求解（伽罗华证明了五次及五次以上的一元多项式方程不存在求根公式）</li>
 </ul>
