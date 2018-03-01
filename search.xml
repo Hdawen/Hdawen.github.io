@@ -67,12 +67,10 @@
 <h4 id="定理1-当-F-1-I-1-P-1-F-2-I-2-P-2-都是双曲线时，原模型只存在一个平衡点。"><a href="#定理1-当-F-1-I-1-P-1-F-2-I-2-P-2-都是双曲线时，原模型只存在一个平衡点。" class="headerlink" title="定理1  当 $F_1(I_1,P_1)$ , $F_2(I_2,P_2)$ 都是双曲线时，原模型只存在一个平衡点。"></a><strong>定理1  当 $F_1(I_1,P_1)$ , $F_2(I_2,P_2)$ 都是双曲线时，原模型只存在一个平衡点。</strong></h4></blockquote>
 <p><strong>证明</strong> ：模型 $\eqref{1}$ 参数满足条件：$\beta_1&gt;\beta_3,\beta_2&gt;\beta_4,\gamma_3&gt;\gamma_1,\gamma_4&gt;\gamma_2$，利用此条件我们知道 $F_1(I_1,P_1)$ 的垂直渐近线 $I_1=-\frac{\beta_1-\beta_3}{\beta_2+\gamma_4-\beta_4}&lt;0$，因为渐近线将双曲线一分为二，所以双曲线 $F_1(I_1,P_1)$ 在垂直渐近线左端分支一定不在第一象限内，也即 $\eqref{1}$ 在第一象限内的解等价于 $F_1(I_1,P_1)$ 的右端分支与 $F_2(I_1,P_1)$ 在第一象限内的交点。下面分两种情况讨论：</p>
 <p>（1）如果 $\gamma_2+\beta_4-\gamma_4&lt;0$，如图1所示</p>
-<div align="center"><img width="500" height="400" src="http://p365zudbu.bkt.clouddn.com/s_1.png" alt="图1"></div>
-
+<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/s_1.png" style="zoom:100%" alt="图1"></div></p>
 <p>此时，双曲线 $F_2(I_2,P_2)$ 的水平渐近线 $P_2=-\frac{\gamma_1-\gamma_3}{\gamma_2+\beta_4-\gamma_4}&lt;0$，也即 $F_2(I_1,P_1)$ 的下分支必定不在第一象限内，根据引理2中渐近线特点可知 $F_1(I_1,P_1)$ 的右分支和 $F_2(I_2,P_2)$ 的上分支在第一象限内只有一个交点。</p>
 <p>（2）如果 $\gamma_2+\beta_4-\gamma_4&gt;0$，如图2所示</p>
-<div align="center"><img width="500" height="400" src="http://p365zudbu.bkt.clouddn.com/s_2.png" alt="图2"></div>
-
+<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/s_2.png" style="zoom:100%" alt="图2"></div></p>
 <p>此时，双曲线 $F_2(I_2,P_2)$ 的水平渐近线 $P_2=-\frac{\gamma_1-\gamma_3}{\gamma_2+\beta_4-\gamma_4}&gt;0$，$F_2(I_2,P_2)$ 的下分支与 $F_1(I_1,P_1)$ 的右分支可能相交，若不相交则 $F_1(I_1,P_1)$ 和 $F_2(I_2,P_2)$ 在第一象限内只有一个交点。若相交，则记交点坐标为 $A(I_A,P_A)$，下面我们将证明A不在第一象限内。</p>
 <p>因为 $F_2(I_2,P_2)$ 存在水平渐近线，且斜渐近线斜率 $k_2=\frac{\gamma_2+\beta_4-\gamma_4}{-\gamma_2}&lt;0$，所以 $F_2(I_2,P_2)$ 的下分支曲线单调递减。不妨考虑直线 $I_2=0$ 与双曲线 $F_2(I_2,P_2)$ 下分支的交点坐标 $B(0,P_B)$，将 $I_2=0$ 带入 $F_2(I_2,P_2)$ 中得：<br>$$<br>-\gamma_2P_2^2-(\gamma_1-\gamma_3)P_2+\frac{\gamma_1\rho}{\omega}=0<br>$$<br>根据韦达定理知： $I_2=0$ 与 $F_2(I_2,P_2)$ 上下两个分支的两个交点纵坐标异号，也即对于下分支交点纵坐标有$P_B&lt;0$。</p>
 <p>若 $A$ 在 $B$ 的左边，也即 $I_A&lt;0$， 此时 $A$ 一定不在第一象限内；</p>
