@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://hdawen.github.io/2018/04/28/5_Control_of_contagion/index.html">
 <meta property="og:site_name" content="Devin&#39;s Blog">
 <meta property="og:description" content="控制问题的引入传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。">
-<meta property="og:updated_time" content="2018-04-28T14:08:05.016Z">
+<meta property="og:updated_time" content="2018-04-28T14:15:33.832Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="传播的控制方法">
 <meta name="twitter:description" content="控制问题的引入传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。">
@@ -143,11 +143,11 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
+                        <li>菜单</li>
+                        <li>标签</li>
                         
                         
-                        <li>About Me</li>
+                        <li>关于我</li>
                         
                     </ul>
                 </div>
@@ -251,7 +251,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap"><article id="post-5_Control_of_contagion" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -305,7 +305,7 @@
 <li>第二类 : 总资源一定，如何实施控制使得控制的效果最好？</li>
 </ul>
 <p>第一类问题要求得到控制的同时花费的成本最小，第二类问题不一定能实现完全控制但要求控制的效果是最好的。举病毒传播的例子来说，第一类问题要求病毒最终完全消失的同时消耗的成本最小，第二类问题要求给定一定的资源如何使病毒含量降至最低。</p>
-<h3 id="传统控制方法"><a href="#传统控制方法" class="headerlink" title="传统控制方法"></a>传统控制方法</h3><h4 id="随机免疫"><a href="#随机免疫" class="headerlink" title="随机免疫"></a>随机免疫</h4><p>传统免疫方法主要是一些统计物理方法，其中代表有： 随机免疫、目标免疫、熟人免疫。随机免疫在上个世纪90年代就被提出来\citep{Anderson1992}；目标免疫[Coh][1]和熟人免疫\citep{Holme2004}是随着网络科学方法的兴起，在本世纪初被提出来。</p>
+<h3 id="传统控制方法"><a href="#传统控制方法" class="headerlink" title="传统控制方法"></a>传统控制方法</h3><h4 id="随机免疫"><a href="#随机免疫" class="headerlink" title="随机免疫"></a>随机免疫</h4><p>传统免疫方法主要是一些统计物理方法，其中代表有： 随机免疫、目标免疫、熟人免疫。随机免疫在上个世纪90年代就被提出来[^1]；目标免疫[Coh][1]和熟人免疫\citep{Holme2004}是随着网络科学方法的兴起，在本世纪初被提出来。</p>
 <p>随机免疫\citep{Anderson1992,Cohen2003}方法是指完全随机地选取网络中的一部分节点进行免疫。定义免疫节点密度为 $g$ ，从平均场的角度看，随机免疫相当于把传播率从 $\lambda$ 缩减为 $\lambda(1-g)$ 。对于均匀网络，随机免疫的免疫密度临界值 $g_c$ 为\citep{Cohen2003}：<br>\begin{equation}<br>g_c=1-\frac{\lambda_c}{\lambda}<br>\end{equation}<br>对于无标度网络，随机免疫的免疫密度临界值 $g_c$ 为：<br>\begin{equation}<br>g_c=1-\frac{\langle k \rangle}{\lambda\langle k^2 \rangle}<br>\end{equation}<br>当 $\langle k^2 \rangle\rightarrow\infty$ 时，免疫密度临界值 $g_c$ 趋于1，这表明对于大规模的无标度网络采取随机免疫策略，需要对网络中几乎所有的节点都实施免疫才能保证最终消灭病毒传染。这种情况下要给所有节点实施免疫比较困难，因此免疫效率是很低的！</p>
 <h4 id="目标免疫"><a href="#目标免疫" class="headerlink" title="目标免疫"></a>目标免疫</h4><p>目标免疫是希望通过有选择地对极少量关键节点进行免疫以获得尽可能好的免疫效果。例如，根据无标度网络的度分布的非均匀特性，可以选取度大的节点进行免疫，一旦这些节点被免疫，传播可能的途径将会大大减少。对于BA无标度网络，目标免疫对应的免疫密度临界值为\citep{Cohen2003}:</p>
 <p>\begin{equation}<br>g_c\sim e^{-\frac{2}{m\lambda}}<br>\end{equation}</p>
@@ -381,13 +381,15 @@
 <p>同样，这里用Lyapunov函数来表示控制的性能，这里不妨给定 $V(x)=(x^TPx)^{\frac{1}{2}}$，对于一个理想的闭环系统如果要求控制条件：<br>\begin{equation}<br>V(x(t))\leq V(x_0)e^{-\lambda_0t}, \quad \forall t\in\mathbb{R}^+, \forall x_0\in\mathbb{R}^{n_x}<br>\end{equation}<br>在实际估计时，我们加强上面的不等式条件：<br>\begin{equation}<br>\label{eq4_2_3}<br>V(x(t))\leq V(x_0)e^{-\lambda\tau}, \quad \forall \tau\in[0,t_{k+1}-t_k], \forall x0\in\mathbb{R}^{n_x}, \lambda\in[0,\lambda_0]<br>\end{equation}<br>如果用$h_c: \mathbb{R}^{n_x}\times\mathbb{R}^+_0\rightarrow\mathbb{R}$表示映射关系：$h_c(x(t_k),t)=V(x)-V(x(t_k))e^{-\lambda\tau}$</p>
 <p>那么\eqref{eq4_2_3}可以表示为 $h_c(x(t_k),t)\leq0$，由于无法知道系统在$\tau\in[t_k.t_{k+1}]$时间里的所有状态信息$x(\tau)$，这里退而求其次采用离散采样的方法获取系统在某些时刻的状态信息，这里采用对 $[t_k.t_{k+1}]$ 时间段进行切片，间隔为 $\Delta\in\mathbb{R}^+$。假设每个分割时间点的状态信息可以获取，对于 $n\in[0,\frac{t_{k+1}-t_k}{\Delta}]$ ，通过判断是否满足：<br>\begin{equation}<br>h_d(x(t_k),n):=h_c(x(t_k),n\Delta)\leq0<br>\end{equation}<br>具体来说我们用 $N_{\rm min}:=[\tau_{\rm min}/\Delta], N_{\rm max}:=[\tau_{\rm max}/\Delta]$ ，这里的 $\tau_{\rm min}$ 和 $\tau_{\rm max}$ 为预设参数，现在我们给出构造 $\Gamma$ 的方法：</p>
 <blockquote>
-<p>定义：映射 $\Gamma_d: \mathbb{R}^n\rightarrow\mathbb{R}^+$ 定义为：<br>\begin{equation<em>}<br>\Gamma_d(x):=\max\{\tau_{\rm min}, n(x)\Delta\}<br>\end{equation</em>}<br>其中<br>\begin{equation<em>}<br>n(x):=\max\limits_{n\in\mathbb{N}}\{n\leq N_{\rm max}|h_d(x,s)\leq0, s=0,\dots,n\}<br>\end{equation</em>}</p>
+<p>定义：映射 $\Gamma_d: \mathbb{R}^n\rightarrow\mathbb{R}^+$ 定义为：<br>\begin{equation}<br>\Gamma_d(x):=\max\{\tau_{\rm min}, n(x)\Delta\}<br>\end{equation}<br>其中<br>\begin{equation}<br>n(x):=\max\limits_{n\in\mathbb{N}}\{n\leq N_{\rm max}|h_d(x,s)\leq0, s=0,\dots,n\}<br>\end{equation}</p>
 </blockquote>
 <p>利用 $\Gamma_d$ 我们可以得到每次具体实施控制的时间。</p>
 <pre><code>和Event-triggered相比，不需要知道系统所有时刻的状态信息，只需要知道某些时间点的状态信息；
 需要主动去估计触发控制的时间；
 每次都要重新计算下次触发控制的时间。
-</code></pre>
+</code></pre><p>###参考文献</p>
+<p>[^1] Anderson R M, May R M. Infectious diseases of human: dynamics and control [M]. Oxford University Press, 1992.<br>[2] Cohen R, Havlin S, Ben-Avraham D. Efficient Immunization Strategies for Computer Networks and Populations [J]. Physical Review Letters,<br>2003, 91 (24): 247901.<br>[3] Holme P. Efficient local strategies for vaccination and network attack [J]. EPL, 2004, 68 (68): 908.<br>[4] Mieghem P V, Omic J, Kooij R. Virus spread in networks [J]. IEEE/ACM Transactions on Networking (TON), 2009, 17 (1): 1–14.<br>[5] Boyd S, Kim S J, Vandenberghe L, et al. A tutorial on geometric programming [J]. Optimization &amp; Engineering, 2007, 8 (1): 67.<br>[6] Preciado V M, Zargham M, Enyioha C, et al. Optimal vaccine allocation to control epidemic outbreaks in arbitrary networks [C]. In Decision and<br>Control, 2013: 7486–7491.<br>[7] Preciado V M, Zargham M, Enyioha C, et al. Optimal Resource Allocation for Network Protection Against Spreading Processes [J]. IEEE<br>Transactions on Control of Network Systems, 2014, 1 (1): 99–108.<br>[8] Altarelli F, Braunstein A, Dall’ Asta L, et al. Containing Epidemic Outbreaks by Message-Passing Techniques [J]. Phys.rev.x, 2014, 4 (2).<br>[9] Chen X, Preciado V M. Optimal coinfection control of competitive epidemics in multi-layer networks [J], 2014, 2015: 6209–6214.<br>[10] Preciado V M, Zargham M, Sun D. A convex framework to control spreading processes in directed networks [C]. In Information Sciences and<br>Systems, 2014: 1–6.<br>[11] Drakopoulos K, Ozdaglar A, Tsitsiklis J. An efficient curing policy for epidemics on graphs [C]. In Decision and Control, 2014: 4447–4454.<br>[12] Hayel Y, Trajanovski S, Altman E, et al. Complete game-theoretic characterization of SIS epidemics protection strategies [C]. In Decision and<br>Control, 2014: 1179–1184.<br>[13] Trajanovski S, Hayel Y, Altman E, et al. Decentralized Protection Strategies Against SIS Epidemics in Networks [J]. IEEE Transactions on Control<br>of Network Systems, 2015, 2 (4): 406–419.<br>[14] Xu Z, Khanafer A, Basar T. Competition over epidemic networks: Nash and stackelberg games [C]. In American Control Conference, 2015:<br>2063–2068.<br>[15] Nowzari C, Ogura M, Preciado V M, et al. Optimal resource allocation for containing epidemics on time-varying networks [C]. In Asilomar<br>Conference on Signals, Systems and Computers, 2015: 1333–1337.<br>[16] Watkins N J, Nowzari C, Preciado V M, et al. Optimal Resource Allocation for Competitive Spreading Processes on Bilayer Networks [J]. IEEE<br>Transactions on Control of Network Systems, 2016, PP (99): 1–1.<br>[17] Ogura M, Preciado V M. Protection of Complex Networks against SIR Spreading Processes [J], 2016.<br>[18] Nowzari C, Preciado V M, Pappas G J. Analysis and Control of Epidemics: A Survey of Spreading Processes on Complex Networks [J]. IEEE<br>Control Systems, 2016, 36 (1): 26–46.<br>[19] Hayel Y, Zhu Q. Epidemic Protection Over Heterogeneous Networks Using Evolutionary Poisson Games [J]. IEEE Transactions on Information<br>Forensics &amp; Security, 2017, 12 (8): 1786–1800.<br>[20] Nowzari C, Preciado V M, Pappas G J. Optimal Resource Allocation for Control of Networked Epidemic Models [J]. IEEE Transactions on<br>Control of Network Systems, 2017, 4 (2): 159–169.<br>[21] Lokhov A Y, Saad D. Optimal deployment of resources for maximizing impact in spreading processes. [J]. Proceedings of the National Academy of<br>Sciences of the United States of America, 2017, 114 (39): E8138.<br>[22] Yang L X, Draief M, Yang X. The optimal dynamic immunization under a controlled heterogeneous node-based SIRS model [J]. Physica A<br>Statistical Mechanics &amp; Its Applications, 2016, 450 (September): 403–415.<br>[23] Zhu Q, Yang X, Yang L X, et al. Optimal control of computer virus under a delayed model [J]. Applied Mathematics &amp; Computation, 2012,<br>218 (23): 11613–11619.<br>[24] Chen L, Sun J. Global stability and optimal control of an SIRS epidemic model on heterogeneous networks [J]. Physica A Statistical Mechanics &amp;<br>Its Applications, 2014, 410 (410): 196–204.<br>[25] Hansen E, Day T. Optimal control of epidemics with limited resources [J]. Journal of Mathematical Biology, 2011, 62 (3): 423–451</p>
+
       
     </div>
     
@@ -395,17 +397,17 @@
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2018/04/28/5_Control_of_contagion/">传播的控制方法</a></p>
-        <p><span>Author:</span><a href="/" title="Back to Homepage">Devin</a></p>
-        <p><span>Created:</span>2018-04-28, 20:28:28</p>
-        <p><span>Updated:</span>2018-04-28, 22:08:05</p>
+        <p><span>本文标题:</span><a href="/2018/04/28/5_Control_of_contagion/">传播的控制方法</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Devin</a></p>
+        <p><span>发布时间:</span>2018-04-28, 20:28:28</p>
+        <p><span>最后更新:</span>2018-04-28, 22:15:33</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2018/04/28/5_Control_of_contagion/" title="传播的控制方法">https://hdawen.github.io/2018/04/28/5_Control_of_contagion/</a>
-            <span class="copy-path" data-clipboard-text="From https://hdawen.github.io/2018/04/28/5_Control_of_contagion/　　By Devin" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/04/28/5_Control_of_contagion/" title="传播的控制方法">https://hdawen.github.io/2018/04/28/5_Control_of_contagion/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://hdawen.github.io/2018/04/28/5_Control_of_contagion/　　作者: Devin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -426,7 +428,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
+        <strong class="toc-title">文章目录</strong>
         
             <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#控制问题的引入"><span class="toc-number">1.</span> <span class="toc-text">控制问题的引入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#传统控制方法"><span class="toc-number">2.</span> <span class="toc-text">传统控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#随机免疫"><span class="toc-number">2.1.</span> <span class="toc-text">随机免疫</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#目标免疫"><span class="toc-number">2.2.</span> <span class="toc-text">目标免疫</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#熟人免疫"><span class="toc-number">2.3.</span> <span class="toc-text">熟人免疫</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#优化控制方法"><span class="toc-number">3.</span> <span class="toc-text">优化控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#传播模型"><span class="toc-number">3.1.</span> <span class="toc-text">传播模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#凸规划方法"><span class="toc-number">3.2.</span> <span class="toc-text">凸规划方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#最优控制"><span class="toc-number">3.3.</span> <span class="toc-text">最优控制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自动控制方法"><span class="toc-number">4.</span> <span class="toc-text">自动控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Event-triggered控制"><span class="toc-number">4.1.</span> <span class="toc-text">Event-triggered控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Self-triggered控制"><span class="toc-number">4.2.</span> <span class="toc-text">Self-triggered控制</span></a></li></ol></li></ol>
         
@@ -442,10 +444,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
     <script>
-        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
     </script>
 
 
@@ -472,13 +474,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/04/03/4_Complex_networks_dataset/" title="Next: 复杂网络常用数据集">
+            <a href="/2018/04/03/4_Complex_networks_dataset/" title="下一篇: 复杂网络常用数据集">
                 <i class="fa fa-angle-right"></i>
             </a>
         
@@ -501,14 +503,14 @@
                 2017-2018 Devin
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -517,7 +519,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -571,9 +573,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
