@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://hdawen.github.io/2018/04/28/5_Control_of_contagion/index.html">
 <meta property="og:site_name" content="Devin&#39;s Blog">
 <meta property="og:description" content="控制问题的引入传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。">
-<meta property="og:updated_time" content="2018-04-28T13:52:10.565Z">
+<meta property="og:updated_time" content="2018-04-28T13:55:31.133Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="传播的控制方法">
 <meta name="twitter:description" content="控制问题的引入传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。">
@@ -143,11 +143,11 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -251,7 +251,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-5_Control_of_contagion" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -319,7 +319,7 @@
 <p>方程$\eqref{1}$写成矩阵形式表示如下：<br>\begin{equation}<br>\frac{dp(t)}{dt}=(BA-D)p(t)-P(t)BAp(t)<br>\tag{2}\label{eq3_0_2}<br>\end{equation}<br>其中 $p(t)=(p_1(t), p_2(t), \cdots, p_n(t))^T$, $A=\{a_{ij}\}$,  $D=diag(\delta_i)$, $P(t)=diag(p_i(t))$。</p>
 <h4 id="凸规划方法"><a href="#凸规划方法" class="headerlink" title="凸规划方法"></a>凸规划方法</h4><p>由于原问题方程为非线性微分方程组，涉及到非凸规划问题，为了求解方便，一般的思想是通过放缩找到原非线性方程的一个线性上界：<br>\begin{equation}<br>\begin{split}<br>\frac{dp_i(t)}{dt}&amp;=\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)-\beta_ip_i(t)\sum^n_{j=1}a_{ij}p_j(t)\\<br>&amp;\leq\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)\\<br>&amp;i=1,2,3,\cdots,n<br>\end{split}<br>\end{equation}<br>得到一个放缩后的线性微分方程组：<br>\begin{equation}<br>\frac{d\widehat{p}_i(t)}{dt}=\beta_i\sum^n_{j=1}a_{ij}\widehat{p}_j(t)-\delta_i\widehat{p}_i(t),~~~i=1,2,3,\cdots,n<br>\label{eq7}<br>\end{equation}<br>矩阵形式表述为：<br>\begin{equation}<br>d{\hat{\rm p}}=(BA-D){\hat{\rm p}}<br>\end{equation}<br>只要上界线性系统能被控制，也即：矩阵 $(BA-D)$ 的所有特征值都小于0，那么原始非线性系统也肯定能得到控制。</p>
 <p>记 $\lambda_1$ 为矩阵 $(BA-D)$ 的最大特征值，所以原问题可以约化为以下规划问题</p>
-<p>\begin{equation}<br>\begin{split}<br>&amp;{\rm minimize}<del>\sum^n_{i=1}\beta_i\\<br>s.t.&amp;\begin{cases}<br>&amp;\lambda_1(BA-D)\leq-\varepsilon\\<br>&amp;\underline{\beta}_i\leq\beta_i\leq\overline{\beta}_i,</del>i=1,\dots,n<br>\end{cases}<br>\end{split}<br>\end{equation}</p>
+<p>\begin{equation}<br>\begin{split}<br>&amp;{\rm minimize}<del>~\beta_i\\<br>s.t.&amp;\begin{cases}<br>&amp;\lambda_1(BA-D)\leq-\varepsilon\\<br>&amp;\underline{\beta}_i\leq\beta_i\leq\overline{\beta}_i,</del>i=1,\dots,n<br>\end{cases}<br>\end{split}<br>\end{equation}</p>
 <p>其中 $\varepsilon$ 为任意小的正数，$\beta_i$为可控制量。</p>
 <p>问题\eqref{eq3_1_1}不能直接来求解，但是利用文献\cite{Boyd2007}中介绍的几何规划方法可以证明\eqref{eq3_1_1}是凸规划问题。</p>
 <p>具体求解思路：根据非负连通矩阵是不可约矩阵，所以特征值中实部最大的那个特征值是实数，并且等于矩阵的谱半径。再利用Perron-Frobenius定理，记矩阵$M$最大特征值为$\lambda=\rho(M)$，那么对任意向量$\textbf{u}$都满足$M\textbf{u}\leq\lambda M$，通过计算问题\eqref{eq3_1_1}最终等价于以下几何规划问题：<br>\begin{equation}<br>\begin{split}<br>&amp;{\rm minimize}~~~\lambda\\<br>s.t.&amp;\begin{cases}<br>&amp;\frac{\sum^n_{j=1} M_{ij}(x)u_j}{\lambda u_i}\leq1,i=1,2,\dots,m,\\<br>&amp;f_i(x)\leq1, i=1,2,\dots,m.<br>\end{cases}<br>\end{split}<br>\label{eq1.3}<br>\end{equation}<br>相关研究可以参考文献\cite{Preciado2013,Preciado201401,Altarelli2014,Chen2014,Preciado201402,Drakopoulos2014,Hayel2014,Trajanovski2015,Xu2015,Nowzari2015,Watkins2016,Ogura2016,Nowzari2016,Hayel2017,Nowzari2017,Lokhov2017}<br>\end{frame}</p>
@@ -395,17 +395,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/04/28/5_Control_of_contagion/">传播的控制方法</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Devin</a></p>
-        <p><span>发布时间:</span>2018-04-28, 20:28:28</p>
-        <p><span>最后更新:</span>2018-04-28, 21:52:10</p>
+        <p><span>Title:</span><a href="/2018/04/28/5_Control_of_contagion/">传播的控制方法</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Devin</a></p>
+        <p><span>Created:</span>2018-04-28, 20:28:28</p>
+        <p><span>Updated:</span>2018-04-28, 21:55:31</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/04/28/5_Control_of_contagion/" title="传播的控制方法">https://hdawen.github.io/2018/04/28/5_Control_of_contagion/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://hdawen.github.io/2018/04/28/5_Control_of_contagion/　　作者: Devin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2018/04/28/5_Control_of_contagion/" title="传播的控制方法">https://hdawen.github.io/2018/04/28/5_Control_of_contagion/</a>
+            <span class="copy-path" data-clipboard-text="From https://hdawen.github.io/2018/04/28/5_Control_of_contagion/　　By Devin" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -426,7 +426,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
+        <strong class="toc-title">Contents</strong>
         
             <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#控制问题的引入"><span class="toc-number">1.</span> <span class="toc-text">控制问题的引入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#传统控制方法"><span class="toc-number">2.</span> <span class="toc-text">传统控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#随机免疫"><span class="toc-number">2.1.</span> <span class="toc-text">随机免疫</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#目标免疫"><span class="toc-number">2.2.</span> <span class="toc-text">目标免疫</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#熟人免疫"><span class="toc-number">2.3.</span> <span class="toc-text">熟人免疫</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#优化控制方法"><span class="toc-number">3.</span> <span class="toc-text">优化控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#传播模型"><span class="toc-number">3.1.</span> <span class="toc-text">传播模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#凸规划方法"><span class="toc-number">3.2.</span> <span class="toc-text">凸规划方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#最优控制"><span class="toc-number">3.3.</span> <span class="toc-text">最优控制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自动控制方法"><span class="toc-number">4.</span> <span class="toc-text">自动控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Event-triggered控制"><span class="toc-number">4.1.</span> <span class="toc-text">Event-triggered控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Self-triggered控制"><span class="toc-number">4.2.</span> <span class="toc-text">Self-triggered控制</span></a></li></ol></li></ol>
         
@@ -442,10 +442,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -472,13 +472,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/04/03/4_Complex_networks_dataset/" title="下一篇: 复杂网络常用数据集">
+            <a href="/2018/04/03/4_Complex_networks_dataset/" title="Next: 复杂网络常用数据集">
                 <i class="fa fa-angle-right"></i>
             </a>
         
@@ -501,14 +501,14 @@
                 2017-2018 Devin
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -517,7 +517,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -571,9 +571,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
