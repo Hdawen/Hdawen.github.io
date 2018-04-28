@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://hdawen.github.io/2018/04/28/5_Control_of_contagion/index.html">
 <meta property="og:site_name" content="Devin&#39;s Blog">
 <meta property="og:description" content="控制问题的引入传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。">
-<meta property="og:updated_time" content="2018-04-28T13:10:28.863Z">
+<meta property="og:updated_time" content="2018-04-28T13:15:43.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="传播的控制方法">
 <meta name="twitter:description" content="控制问题的引入传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。">
@@ -143,11 +143,11 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -251,7 +251,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-5_Control_of_contagion" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -313,10 +313,8 @@
 <h4 id="熟人免疫"><a href="#熟人免疫" class="headerlink" title="熟人免疫"></a>熟人免疫</h4><p>目标免疫需要了解网络的全局信息以找到控制病毒传播的hub节点。然而对于庞大复杂并且不断发展变化的人类社会和Internet来说，这是难以做到的。熟人免疫\citep{Holme2004}的基本思想是：从 N 个节点中随机选出比例为 $p$ 的节点，再从每一个被选出的节点中随机选择一个邻居节点进行免疫。这种策略只需要知道被随机选择出来的节点以及与它们直接相连的邻居节点，从而巧妙回避了目标免疫中需要知道全局信息的问题。</p>
 <p>由于在无标度网络中，度大的节点意味着有许多节点与之相连；若随机选择一个节点，再选择其邻居节点时，度大的节点比度小的节点被选中的概率大很多，因此熟人免疫比随机免疫策略效果好很多。</p>
 <p>一般来说：目标免疫效果&gt;熟人免疫&gt;&gt;随机免疫.</p>
-<pre><code>从随机免疫到目标免疫，再到熟人免疫，传统的免疫方法在免疫效率和效果上不断得到改善，但是这些方法都还只
-是在统计学的基础上去尝试解决这个问题，在解决哪些节点应该被控制以及具体分配多少资源控制的处理上还是太
-粗糙，没有结合传播的动力学特性去分析问题的本质。
-</code></pre><h3 id="优化控制方法"><a href="#优化控制方法" class="headerlink" title="优化控制方法"></a>优化控制方法</h3><h4 id="传播模型"><a href="#传播模型" class="headerlink" title="传播模型"></a>传播模型</h4><p>  在前一节的小结中，我们指出来传统的控制方法存在的局限性。为了解决这些问题，基于优化控制方法做了一些尝试。首先，优化控制方法考虑了传播的动力学特性，将传播的动力学方程纳入分析当中；其次，优化控制方法在每个节点具体应该分配多少资源的处理上更加精细和科学。</p>
+<p>$\colorbox{yellow}{从随机免疫到目标免疫，再到熟人免疫，传统的免疫方法在免疫效率和效果上不断得到改善，但是这些方法都还只是在统计学的基础上去尝试解决这个问题，在解决哪些节点应该被控制以及具体分配多少资源控制的处理上还是太粗糙，没有结合传播的动力学特性去分析问题的本质。}$</p>
+<h3 id="优化控制方法"><a href="#优化控制方法" class="headerlink" title="优化控制方法"></a>优化控制方法</h3><h4 id="传播模型"><a href="#传播模型" class="headerlink" title="传播模型"></a>传播模型</h4><p>  在前一节的小结中，我们指出来传统的控制方法存在的局限性。为了解决这些问题，基于优化控制方法做了一些尝试。首先，优化控制方法考虑了传播的动力学特性，将传播的动力学方程纳入分析当中；其次，优化控制方法在每个节点具体应该分配多少资源的处理上更加精细和科学。</p>
 <p>在介绍优化控制方法之前，先介绍传播模型。<br>Van Mieghem等在文献\cite{Mieghem2009}中首次提出了基于节点级建模的SIS模型，模型如下：<br>\begin{equation}<br>\begin{split}<br>&amp;\frac{dp_i(t)}{dt}=\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)-\beta_ip_i(t)\sum^n_{j=1}a_{ij}p_j(t),\\<br>&amp;i=1,2,3,\cdots,n<br>\end{split}\tag{1}\label{1}<br>\end{equation}<br>其中 $\{a_{ij}\}$ 表示邻接矩阵, $\delta_i$ 表示节点 $i$ 的恢复率, $p_i(t)$ 表示节点 $i$ 在时刻 $t$ 被感染的概率。</p>
 <p>方程$\eqref{1}$写成矩阵形式表示如下：<br>\begin{equation}<br>\frac{dp(t)}{dt}=(BA-D)p(t)-P(t)BAp(t)<br>\tag{2}\label{eq3_0_2}<br>\end{equation}<br>其中 $p(t)=(p_1(t), p_2(t), \cdots, p_n(t))^T$, $A=\{a_{ij}\}$,  $D=diag(\delta_i)$, $P(t)=diag(p_i(t))$。</p>
 <h4 id="凸规划方法"><a href="#凸规划方法" class="headerlink" title="凸规划方法"></a>凸规划方法</h4><p>由于原问题方程为非线性微分方程组，涉及到非凸规划问题，为了求解方便，一般的思想是通过放缩找到原非线性方程的一个线性上界：<br>\begin{equation}<br>\begin{split}<br>\frac{dp_i(t)}{dt}&amp;=\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)-\beta_ip_i(t)\sum^n_{j=1}a_{ij}p_j(t)\\<br>&amp;\leq\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)\\<br>&amp;i=1,2,3,\cdots,n<br>\end{split}<br>\end{equation}<br>得到一个放缩后的线性微分方程组：<br>\begin{equation}<br>\frac{d\widehat{p}_i(t)}{dt}=\beta_i\sum^n_{j=1}a_{ij}\widehat{p}_j(t)-\delta_i\widehat{p}_i(t),~~~i=1,2,3,\cdots,n<br>\label{eq7}<br>\end{equation}<br>矩阵形式表述为：<br>\begin{equation}<br>d{\hat{\rm p}}=(BA-D){\hat{\rm p}}<br>\end{equation}<br>只要上界线性系统能被控制，也即：矩阵 $(BA-D)$ 的所有特征值都小于0，那么原始非线性系统也肯定能得到控制。</p>
@@ -402,17 +400,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/04/28/5_Control_of_contagion/">传播的控制方法</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Devin</a></p>
-        <p><span>发布时间:</span>2018-04-28, 20:28:28</p>
-        <p><span>最后更新:</span>2018-04-28, 21:10:28</p>
+        <p><span>Title:</span><a href="/2018/04/28/5_Control_of_contagion/">传播的控制方法</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Devin</a></p>
+        <p><span>Created:</span>2018-04-28, 20:28:28</p>
+        <p><span>Updated:</span>2018-04-28, 21:15:43</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/04/28/5_Control_of_contagion/" title="传播的控制方法">https://hdawen.github.io/2018/04/28/5_Control_of_contagion/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://hdawen.github.io/2018/04/28/5_Control_of_contagion/　　作者: Devin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2018/04/28/5_Control_of_contagion/" title="传播的控制方法">https://hdawen.github.io/2018/04/28/5_Control_of_contagion/</a>
+            <span class="copy-path" data-clipboard-text="From https://hdawen.github.io/2018/04/28/5_Control_of_contagion/　　By Devin" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -433,7 +431,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
+        <strong class="toc-title">Contents</strong>
         
             <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#控制问题的引入"><span class="toc-number">1.</span> <span class="toc-text">控制问题的引入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#传统控制方法"><span class="toc-number">2.</span> <span class="toc-text">传统控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#随机免疫"><span class="toc-number">2.1.</span> <span class="toc-text">随机免疫</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#目标免疫"><span class="toc-number">2.2.</span> <span class="toc-text">目标免疫</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#熟人免疫"><span class="toc-number">2.3.</span> <span class="toc-text">熟人免疫</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#优化控制方法"><span class="toc-number">3.</span> <span class="toc-text">优化控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#传播模型"><span class="toc-number">3.1.</span> <span class="toc-text">传播模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#凸规划方法"><span class="toc-number">3.2.</span> <span class="toc-text">凸规划方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#最优控制"><span class="toc-number">3.3.</span> <span class="toc-text">最优控制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自动控制方法"><span class="toc-number">4.</span> <span class="toc-text">自动控制方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Event-triggered控制"><span class="toc-number">4.1.</span> <span class="toc-text">Event-triggered控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Self-triggered控制"><span class="toc-number">4.2.</span> <span class="toc-text">Self-triggered控制</span></a></li></ol></li></ol>
         
@@ -449,10 +447,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -479,13 +477,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/04/03/4_Complex_networks_dataset/" title="下一篇: 复杂网络常用数据集">
+            <a href="/2018/04/03/4_Complex_networks_dataset/" title="Next: 复杂网络常用数据集">
                 <i class="fa fa-angle-right"></i>
             </a>
         
@@ -508,14 +506,14 @@
                 2017-2018 Devin
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -524,7 +522,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -578,9 +576,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
