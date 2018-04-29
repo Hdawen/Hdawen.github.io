@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[传播的控制方法]]></title>
       <url>/2018/04/28/5_Control_of_contagion/</url>
-      <content type="html"><![CDATA[<h2 id="控制问题的引入"><a href="#控制问题的引入" class="headerlink" title="控制问题的引入"></a>控制问题的引入</h2><p>传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。<a id="more"></a>现实网络具有“小世界”特性，“六度分隔” 理论更是形象地表示了现实网络节点间距离小的特点，如果在这些网络上的传播行为不加以控制，那么其扩散速度是非常快的，对于有害的传播其危害将是极大的。因此，需要对一些传播行为进行控制。</p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="控制问题的引入"><a href="#控制问题的引入" class="headerlink" title="控制问题的引入"></a>控制问题的引入</h2><p>传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。<a id="more"></a>现实网络具有“小世界”特性，“六度分隔” 理论更是形象地表示了现实网络节点间距离小的特点，如果在这些网络上的传播行为不加以控制，那么其扩散速度是非常快的，对于有害的传播其危害将是极大的。因此，需要对一些传播行为进行控制。</p>
 <p>控制问题有很多种划分方式，如果按照分析方法来划分，大体可以分为<strong>优化控制问题</strong>和<strong>自动控制问题</strong>。目前有关传播控制问题，几乎全部都是采用<strong>优化控制方法</strong>。</p>
 <p>常见的优化控制问题主要分为两类：</p>
 <ul>
@@ -123,7 +123,7 @@
     <entry>
       <title><![CDATA[复杂网络常用数据集]]></title>
       <url>/2018/04/03/4_Complex_networks_dataset/</url>
-      <content type="html"><![CDATA[<p>这篇博文最先写于个人的简书博客：<a href="https://www.jianshu.com/p/9313bc75c94b" target="_blank" rel="noopener">https://www.jianshu.com/p/9313bc75c94b</a></p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这篇博文最先写于个人的简书博客：<a href="https://www.jianshu.com/p/9313bc75c94b" target="_blank" rel="noopener">https://www.jianshu.com/p/9313bc75c94b</a></p>
 <p>复杂网络的研究很多都离不开数据集，下面这些是个人在做科研的过程中在互联网上搜集到的一些数据集网站，列举出来也方便同行们去使用。<a id="more"></a></p>
 <p>1、<a href="https://link.jianshu.com?t=http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:data:urls:index" target="_blank" rel="noopener">http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:data:urls:index</a></p>
 <p>数据集网站集合。这个网站中列出来很多数据集网站，非常全，其中的很多网站数据描述详细，而且数据可以直接下载，大家可以从中选出一些网站收藏起来。</p>
@@ -173,7 +173,7 @@
     <entry>
       <title><![CDATA[传感器网络基础和技术]]></title>
       <url>/2018/02/28/3_Sensor_Network_fundamention/</url>
-      <content type="html"><![CDATA[<p>最近开始关注传感器网络，传感器互联后可以进行信息交换，从而形成一个传感器网络，有关传感器网络的研究问题很多，涉及到很多技术层面的东西。<a id="more"></a></p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近开始关注传感器网络，传感器互联后可以进行信息交换，从而形成一个传感器网络，有关传感器网络的研究问题很多，涉及到很多技术层面的东西。<a id="more"></a></p>
 <p>《Sensor Network Protocols》一书对传感器网络有关的技术作了细致介绍：</p>
 <p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_3_1_Wireless%20Sensor%20Networks.png" style="zoom:100%" alt="图1"></div></p>
 <p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_3_2_New%20technology%20of%20WSNs.png" style="zoom:100%" alt="图2"></div></p>
@@ -200,7 +200,7 @@
     <entry>
       <title><![CDATA[二元二次方程组的求解——从代数到几何]]></title>
       <url>/2018/01/26/2_Binary_quadratic_equations/</url>
-      <content type="html"><![CDATA[<p>因为研究中遇到一些问题，原始问题需要求解一个非线性系统存在的正平衡点数目，需要判断二元二次方程组是否存在正根，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。<a id="more"></a></p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>因为研究中遇到一些问题，原始问题需要求解一个非线性系统存在的正平衡点数目，需要判断二元二次方程组是否存在正根，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。<a id="more"></a></p>
 <p>原始问题求解平衡点个数问题等价于求以下两个二次曲线在第一象限内的交点个数问题：<br>$$<br>\begin{equation}<br>\begin{cases}<br>F_1(I_1,P_1)&amp;=-\beta_2I_1^2-(\beta_2+\gamma_4-\beta_4)I_1P_1-(\beta_1-\beta_3)P_1\\<br>&amp;+\Big(\frac{\beta_2\rho}{\omega}-\beta_1-\delta_1-\gamma_3-\omega\Big)I_1+\frac{\beta_1\rho}{\omega}=0\\<br>F_2(I_2,P_2)&amp;=-\gamma_2P_2^2-(\gamma_2+\beta_4-\gamma_4)I_2P_2-(\gamma_1-\gamma_3)I_2\\<br>&amp;+\Big(\frac{\gamma_2\rho}{\omega}-\gamma_1-\delta_2-\beta_3-\omega\Big)P_2+\frac{\gamma_1\rho}{\omega}=0\\<br>&amp;\beta_1&gt;\beta_3,\beta_2&gt;\beta_4,\gamma_3&gt;\gamma_1,\gamma_4&gt;\gamma_2,I+P\leq\frac{\rho}{\omega}<br>\end{cases}\tag{1}\label{1}<br>\end{equation}<br>$$</p>
 <h2 id="代数方法"><a href="#代数方法" class="headerlink" title="代数方法"></a>代数方法</h2><p>先介绍求解这一问题的一般代数方法。</p>
 <blockquote>
@@ -290,7 +290,7 @@
     <entry>
       <title><![CDATA[Markdown基本语法(转)]]></title>
       <url>/2018/01/23/1_Markdown_grammar/</url>
-      <content type="html"><![CDATA[<h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
 <p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。<a id="more"></a>您可以使用 Cmd Markdown：</p>
 <blockquote>
 <ul>
