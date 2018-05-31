@@ -286,57 +286,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>[TOC]</p>
-<h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。</p>
-<blockquote>
-<p>For researchers in the field of cryptography, security is all about cryptographic algorithms and hash functions. Those who are in  information security focus mainly on privacy, watermarking, and digital rights management systems. For researchers with interest in hardware, security is about tamper-resistant architectures and trusted computing.</p>
-</blockquote>
-<p>网络安全研究的问题有很多，<code>Securing information, controlling access to systems, developing protocols, discovering vulnerabilities, and detecting attacks are among the well-known topics of network security.</code></p>
-<p>应对网络安全问题，网络安全专家当然可以做出比较好的决策，但是专家也有自身的局限性，具体来说包含三个方面：</p>
-<ul>
-<li>The first one is scale<br>面对规模和复杂度很大网络系统，凭借人的智力和精力是很难处理的。</li>
-<li>A second issue is the availability of good experts<br>目前非常缺少网络安全专家，因为与网络安全有关的问题非常多，很多时候缺乏经过长期训练、经验丰富的专家。</li>
-<li>A third problem is the time scale<br>计算机设备处理和运转速度非常快，一些网络安全问题经常需要人在分分秒秒中作出决策，人脑很难在短时间内思考出应对方法。</li>
-</ul>
-<p>目前绝大部分查找网络安全问题的方式是通过分析日志文件等方式，这些方式会遗漏很多死角，而且一旦某些日志文件被管理员删除或者信息丢失，分析的结果也会有很大差别，很容易得出错误结论；在决策方面，处理网络安全问题主要还是启发式方法，这也会带来一些问题。与启发式分析相对应的是通过数学模型来分析，例如可以把安全决策问题变成一个资源优化问题，人力资源等可以量化，系统设备可以评估出安全等级，如何对不同安全等级的电脑合理分配资源？建立的优化问题完全可以用计算机来求解，而且处理规模也比单靠人力大很多。</p>
-<p>本书主要讲述了用博弈论方法来研究网络安全问题，作者指出一个安全博弈中包含四个要素：</p>
-<ul>
-<li>the players<br>（博弈的参与者，包含 <code>attacker</code> 和 <code>defender</code>） </li>
-<li>the set of possible actions for each player<br>（策略集合，对 <code>attacker</code> 来说指的是可以采取的破坏系统的手段和方式，对 <code>defender</code>指的是可以采取的保护系统的措施）</li>
-<li>the outcome of each player interaction (action-reaction)<br>（双方博弈的结果）</li>
-<li>information structures in the game<br>（博弈过程中双方对信息的掌控情况决定了博弈是完全信息博弈还是不完全信息博弈）</li>
-</ul>
-<p>从风险管理的角度看待网络安全问题：</p>
-<ul>
-<li>Today, networked systems have become an integral and indispensable part of daily business 网络系统成为生活必不可少的一部分，需求越来越大</li>
-<li>Early IT and security risk management research has been mostly empirical and qualitative in nature. The situation is rapidly changing as the field is enriched by quantitative models and approaches. （早期的风险管理手段是定性分析，现在越来越多的定量方法在这一问题中得到运用）</li>
-</ul>
-<p>控制安全问题的常用手段：</p>
-<p>range from policies and rules to allocation of security resources or updating system configuration.</p>
-<p>为什么不发展风险感知工具，使得在源头遏制风险的产生？</p>
-<p>Stopping potential risks at their source is clearly a good strategy and one may ask why not take such actions for any perceived risk. The answer lies in the hidden and open costs of each risk control action as well as limited <code>aggregate resources</code>（主要是manpower and time有限）.</p>
-<p>传统传染病模型在网络安全中得到应用：</p>
-<blockquote>
-<p>Classical epidemic models have been successfully applied to model the spread of computer malware epidemics. In these models, differential equations describe the rate of change in the number of infected hosts, which is proportional to the multiplication of currently infected and not yet infected host numbers. Such dynamic epidemic models provide a basis for optimization of patching response strategies to a worm epidemic within a quantitative cost-benefit framework.</p>
-<p>A general optimal and robust control framework based on <em>feedback control</em> methods for dynamic malware removal is presented. <em>Optimal control</em> theory allows to explicitly specify the costs of infected hosts and the effort required to patch them. The resulting quadratic cost function is used in conjunction with the dynamic epidemic model differential equations to derive the optimal malware removal strategies.</p>
-</blockquote>
-<h2 id="网络安全概念"><a href="#网络安全概念" class="headerlink" title="网络安全概念"></a>网络安全概念</h2><p>安全攻击的目的：</p>
-<p>Attacks in the context of network security can be defined as attempts to <strong>compromise the confidentiality, integrity, and availability</strong>, or to <strong>obtain (partial) control of a computer or communication network</strong>.  （攻击目的主要分为两种：（1）破坏目的，破坏系统的保密性、完整性和可用性；（2）控制目的，控制一台电脑或者网络）</p>
-<p>安全攻击的类型：</p>
-<p>一般来说主要分为四类：1. 盗取数据; 2. 篡改数据; 3. 拒绝服务攻击; 4. 控制设备</p>
-<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_6_1.png" style="zoom:50%" alt="图1"></div></p>
-<p>实施攻击的形式：</p>
-<ol>
-<li>Physical and hardware-based methods 对物理硬件如存储设备等发起攻击，盗取或者修改数据。<br><code>encryption of sensitive information</code>,  <code>sensitive hardware</code>,  <code>hardware-based attacks</code>,  <code>exploit physical access to read or patch system memory</code>,  <code>encryption schemes</code>, </li>
-<li>Software-based methods 利用软件漏洞进行攻击<br><code>exploiting vulnerabilities in software</code>, <code>software flaws or bugs</code>, <code>malicious intent</code></li>
-<li>Communication-based methods 利用技术拦截用户之间的交流信息，监听以及篡改这些交流信息<br><code>The man-in-the-middle attack</code>, <code>the attacker intercepts and manipulates the communication between two or more parties without their knowledge</code>, <code>cryptographic measures</code></li>
-<li>Psychological and social engineering methods 利用欺骗手段让使用者”上钩”，如钓鱼网站，欺骗邮件 <code>phishing</code>, <code>social engineering attacks</code>, <code>contain malware attachments</code>, <code>exploit and use fundamental human weaknesses</code>, <code>assessing risks on the Internet</code></li>
-</ol>
-<p>计算机病毒、蠕虫、木马之间的区别：</p>
-<blockquote>
-<p>A computer virus is a malicious software that hides in an existing program on the system and copies itself without permission or knowledge of the owner. Worms are similar to viruses with the distinction being that they are stand-alone programs and can spread using the network. On the other hand trojans are not self-spreading. They are defined as innocent-looking programs which secretly execute malicious functions. Other less dangerous but annoying software categories include spyware, which collects personal information without consent, and adware, which automatically displays advertisements.</p>
-</blockquote>
-
+              <p>[TOC]</p>
+<h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。
+          
       
     </div>
     
@@ -353,6 +305,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/传感器/">传感器</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2018/05/31/6_Network_Security_Reading_Notes/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
