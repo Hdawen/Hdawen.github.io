@@ -42,7 +42,7 @@
 <p>Attacks in the context of network security can be defined as attempts to <strong>compromise the confidentiality, integrity, and availability</strong>, or to <strong>obtain (partial) control of a computer or communication network</strong>.（攻击目的主要分为两种：（1）破坏目的，破坏系统的保密性、完整性和可用性；（2）控制目的，控制一台电脑或者网络）</p>
 <p>安全攻击的类型：</p>
 <p>一般来说主要分为四类：1. 盗取数据; 2. 篡改数据; 3. 拒绝服务攻击; 4. 控制设备</p>
-<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_6_1.png" style="zoom:30%" alt="图1"></div></p>
+<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_6_1.png" style="zoom:10%" alt="图1"></div></p>
 <p>实施攻击的形式：</p>
 <ol>
 <li>Physical and hardware-based methods 对物理硬件如存储设备等发起攻击，盗取或者修改数据。<br><code>encryption of sensitive information</code>,  <code>sensitive hardware</code>,  <code>hardware-based attacks</code>,  <code>exploit physical access to read or patch system memory</code>,  <code>encryption schemes</code>, </li>
