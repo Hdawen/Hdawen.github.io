@@ -15,14 +15,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签和分类">
-<meta property="og:url" content="https://hdawen.github.io/tags/index.html">
+<meta name="description" content="网络安全问题的背景网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。">
+<meta name="keywords" content="网络安全,博弈论,优化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《Network Security A Decision and Game Theoretic Approach》阅读笔记">
+<meta property="og:url" content="https://hdawen.github.io/2018/05/31/5_Network_Security_Reading_Notes/index.html">
 <meta property="og:site_name" content="Devin&#39;s Blog">
+<meta property="og:description" content="网络安全问题的背景网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-01-25T16:41:09.303Z">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/S_6_1.png">
+<meta property="og:updated_time" content="2018-05-31T08:38:39.906Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签和分类">
+<meta name="twitter:title" content="《Network Security A Decision and Game Theoretic Approach》阅读笔记">
+<meta name="twitter:description" content="网络安全问题的背景网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。">
+<meta name="twitter:image" content="http://p365zudbu.bkt.clouddn.com/S_6_1.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -54,7 +60,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>标签和分类 | Devin&#39;s Blog</title>
+<title>《Network Security A Decision and Game Theoretic Approach》阅读笔记 | Devin&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -64,7 +70,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -251,11 +257,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-5_Network_Security_Reading_Notes" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/tags/index.html" class="article-date">
-      <time datetime="2018-01-25T16:36:14.000Z" itemprop="datePublished">2018-01-26</time>
+      <a href="/2018/05/31/5_Network_Security_Reading_Notes/" class="article-date">
+      <time datetime="2018-05-31T08:20:18.229Z" itemprop="datePublished">2018-05-31</time>
 </a>
 
 
@@ -270,7 +276,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      标签和分类
+      《Network Security A Decision and Game Theoretic Approach》阅读笔记
     </h1>
   
 
@@ -278,8 +284,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Study/">Study</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/优化/">优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博弈论/">博弈论</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络安全/">网络安全</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -287,96 +301,115 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。<a id="more"></a></p>
+<blockquote>
+<p>For researchers in the field of cryptography, security is all about cryptographic algorithms and hash functions. Those who are in  information security focus mainly on privacy, watermarking, and digital rights management systems. For researchers with interest in hardware, security is about tamper-resistant architectures and trusted computing.</p>
+</blockquote>
+<p>网络安全研究的问题有很多，<code>Securing information, controlling access to systems, developing protocols, discovering vulnerabilities, and detecting attacks are among the well-known topics of network security.</code></p>
+<p>应对网络安全问题，网络安全专家当然可以做出比较好的决策，但是专家也有自身的局限性，具体来说包含三个方面：</p>
+<ul>
+<li>The first one is scale<br>面对规模和复杂度很大网络系统，凭借人的智力和精力是很难处理的。</li>
+<li>A second issue is the availability of good experts<br>目前非常缺少网络安全专家，因为与网络安全有关的问题非常多，很多时候缺乏经过长期训练、经验丰富的专家。</li>
+<li>A third problem is the time scale<br>计算机设备处理和运转速度非常快，一些网络安全问题经常需要人在分分秒秒中作出决策，人脑很难在短时间内思考出应对方法。</li>
+</ul>
+<p>目前绝大部分查找网络安全问题的方式是通过分析日志文件等方式，这些方式会遗漏很多死角，而且一旦某些日志文件被管理员删除或者信息丢失，分析的结果也会有很大差别，很容易得出错误结论；在决策方面，处理网络安全问题主要还是启发式方法，这也会带来一些问题。与启发式分析相对应的是通过数学模型来分析，例如可以把安全决策问题变成一个资源优化问题，人力资源等可以量化，系统设备可以评估出安全等级，如何对不同安全等级的电脑合理分配资源？建立的优化问题完全可以用计算机来求解，而且处理规模也比单靠人力大很多。</p>
+<p>本书主要讲述了用博弈论方法来研究网络安全问题，作者指出一个安全博弈中包含四个要素：</p>
+<ul>
+<li>the players<br>（博弈的参与者，包含 <code>attacker</code> 和 <code>defender</code>） </li>
+<li>the set of possible actions for each player<br>（策略集合，对 <code>attacker</code> 来说指的是可以采取的破坏系统的手段和方式，对 <code>defender</code>指的是可以采取的保护系统的措施）</li>
+<li>the outcome of each player interaction (action-reaction)<br>（双方博弈的结果）</li>
+<li>information structures in the game<br>（博弈过程中双方对信息的掌控情况决定了博弈是完全信息博弈还是不完全信息博弈）</li>
+</ul>
+<p>从风险管理的角度看待网络安全问题：</p>
+<ul>
+<li>Today, networked systems have become an integral and indispensable part of daily business 网络系统成为生活必不可少的一部分，需求越来越大</li>
+<li>Early IT and security risk management research has been mostly empirical and qualitative in nature. The situation is rapidly changing as the field is enriched by quantitative models and approaches. （早期的风险管理手段是定性分析，现在越来越多的定量方法在这一问题中得到运用）</li>
+</ul>
+<p>控制安全问题的常用手段：</p>
+<p>range from policies and rules to allocation of security resources or updating system configuration.</p>
+<p>为什么不发展风险感知工具，使得在源头遏制风险的产生？</p>
+<p>Stopping potential risks at their source is clearly a good strategy and one may ask why not take such actions for any perceived risk. The answer lies in the hidden and open costs of each risk control action as well as limited <code>aggregate resources</code>（主要是manpower and time有限）.</p>
+<p>传统传染病模型在网络安全中得到应用：</p>
+<blockquote>
+<p>Classical epidemic models have been successfully applied to model the spread of computer malware epidemics. In these models, differential equations describe the rate of change in the number of infected hosts, which is proportional to the multiplication of currently infected and not yet infected host numbers. Such dynamic epidemic models provide a basis for optimization of patching response strategies to a worm epidemic within a quantitative cost-benefit framework.</p>
+<p>A general optimal and robust control framework based on <em>feedback control</em> methods for dynamic malware removal is presented. <em>Optimal control</em> theory allows to explicitly specify the costs of infected hosts and the effort required to patch them. The resulting quadratic cost function is used in conjunction with the dynamic epidemic model differential equations to derive the optimal malware removal strategies.</p>
+</blockquote>
+<h2 id="网络安全概念"><a href="#网络安全概念" class="headerlink" title="网络安全概念"></a>网络安全概念</h2><p>安全攻击的目的：</p>
+<p>Attacks in the context of network security can be defined as attempts to <strong>compromise the confidentiality, integrity, and availability</strong>, or to <strong>obtain (partial) control of a computer or communication network</strong>.（攻击目的主要分为两种：（1）破坏目的，破坏系统的保密性、完整性和可用性；（2）控制目的，控制一台电脑或者网络）</p>
+<p>安全攻击的类型：</p>
+<p>一般来说主要分为四类：1. 盗取数据; 2. 篡改数据; 3. 拒绝服务攻击; 4. 控制设备</p>
+<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_6_1.png" style="zoom:5%" alt="图1"></div></p>
+<p>实施攻击的形式：</p>
+<ol>
+<li>Physical and hardware-based methods 对物理硬件如存储设备等发起攻击，盗取或者修改数据。<br><code>encryption of sensitive information</code>,  <code>sensitive hardware</code>,  <code>hardware-based attacks</code>,  <code>exploit physical access to read or patch system memory</code>,  <code>encryption schemes</code>, </li>
+<li>Software-based methods 利用软件漏洞进行攻击<br><code>exploiting vulnerabilities in software</code>, <code>software flaws or bugs</code>, <code>malicious intent</code></li>
+<li>Communication-based methods 利用技术拦截用户之间的交流信息，监听以及篡改这些交流信息<br><code>The man-in-the-middle attack</code>, <code>the attacker intercepts and manipulates the communication between two or more parties without their knowledge</code>, <code>cryptographic measures</code></li>
+<li>Psychological and social engineering methods 利用欺骗手段让使用者”上钩”，如钓鱼网站，欺骗邮件 <code>phishing</code>, <code>social engineering attacks</code>, <code>contain malware attachments</code>, <code>exploit and use fundamental human weaknesses</code>, <code>assessing risks on the Internet</code></li>
+</ol>
+<p>计算机病毒、蠕虫、木马之间的区别：</p>
+<blockquote>
+<p>A computer virus is a malicious software that hides in an existing program on the system and copies itself without permission or knowledge of the owner. Worms are similar to viruses with the distinction being that they are stand-alone programs and can spread using the network. On the other hand trojans are not self-spreading. They are defined as innocent-looking programs which secretly execute malicious functions. Other less dangerous but annoying software categories include spyware, which collects personal information without consent, and adware, which automatically displays advertisements.</p>
+</blockquote>
 
-
-    <!-- Tag Cloud Page -->
-    <hr>
-<br>
-<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Research/">Research</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Study/">Study</a><span class="category-list-count">4</span></li></ul>
-
-<p class="count"></p>
-
-<div class="tags">
-    <a href="/tags/Markdown/" style="font-size: 16px; color: #808080">Markdown</a> <a href="/tags/优化/" style="font-size: 16px; color: #808080">优化</a> <a href="/tags/传感器/" style="font-size: 16px; color: #808080">传感器</a> <a href="/tags/传播/" style="font-size: 16px; color: #808080">传播</a> <a href="/tags/博弈论/" style="font-size: 16px; color: #808080">博弈论</a> <a href="/tags/复杂网络/" style="font-size: 16px; color: #808080">复杂网络</a> <a href="/tags/安全/" style="font-size: 16px; color: #808080">安全</a> <a href="/tags/控制/" style="font-size: 16px; color: #808080">控制</a> <a href="/tags/数据集/" style="font-size: 16px; color: #808080">数据集</a> <a href="/tags/科研/" style="font-size: 16px; color: #808080">科研</a> <a href="/tags/网络/" style="font-size: 16px; color: #808080">网络</a> <a href="/tags/网络安全/" style="font-size: 16px; color: #808080">网络安全</a>
-</div>
-<style>
-    .category-list li{
-        display: inline-block;
-        margin: 0 1em .5em 0;
-        padding: 4px;
-        border: 1px solid lightgray;
-        font-size: 1.2rem;
-    }
-    .category-list a { color: gray; }
-    .category-list-item:hover a {
-        color: gray;
-        text-decoration: none;
-    }
-    .category-list-count {
-        margin-left: 2px;
-        font-size: .9rem;
-    }
-    .article-entry ul li:before{ display: none; }
-    .article-inner { text-align: center; }
-    .tags {
-        max-width: 42em;
-        margin: 2em auto;
-        margin-top: 0em;
-    }
-    .tags a {
-        margin-right: 1em;
-        line-height: 65px;
-        border-bottom: 1px solid gray;
-        white-space: nowrap;
-        transition: border-bottom .5s;
-    }
-    .tags a:hover {
-        border-bottom: 3px dotted gray;
-        text-decoration: none;
-    }
-    #count > span {
-        margin: auto .2em;
-        font-weight: bold;
-    }
-</style>
-
-<!-- Count tags and categories -->
-<p id="count">
-        已有<span><script>document.write($(".category-list-item").length)</script></span>个分类，
-        共计<span><script>document.write($(".tags > a").length)</script></span>个标签
-</p>
-<script>
-    $('#count').appendTo('.count');
-</script>
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/05/31/5_Network_Security_Reading_Notes/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Devin</a></p>
+        <p><span>发布时间:</span>2018-05-31, 16:20:18</p>
+        <p><span>最后更新:</span>2018-05-31, 16:38:39</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/05/31/5_Network_Security_Reading_Notes/" title="《Network Security A Decision and Game Theoretic Approach》阅读笔记">https://hdawen.github.io/2018/05/31/5_Network_Security_Reading_Notes/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://hdawen.github.io/2018/05/31/5_Network_Security_Reading_Notes/　　作者: Devin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/04/28/4_Control_of_contagion/">
+                    传播的控制方法
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#网络安全问题的背景"><span class="toc-number">1.</span> <span class="toc-text">网络安全问题的背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网络安全概念"><span class="toc-number">2.</span> <span class="toc-text">网络安全概念</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
@@ -395,6 +428,26 @@
 
 
 
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/04/28/4_Control_of_contagion/" title="下一篇: 传播的控制方法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/05/31/5_Network_Security_Reading_Notes/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/28/4_Control_of_contagion/">传播的控制方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/03/3_Complex_networks_dataset/">复杂网络常用数据集</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/28/2_Sensor_Network_fundamention/">传感器网络基础和技术</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/23/1_Markdown_grammar/">Markdown基本语法(转)</a></li></ul>
 
 
 

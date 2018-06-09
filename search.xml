@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[《Network Security A Decision and Game Theoretic Approach》阅读笔记]]></title>
-      <url>/2018/05/31/6_Network_Security_Reading_Notes/</url>
+      <url>/2018/05/31/5_Network_Security_Reading_Notes/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。<a id="more"></a></p>
 <blockquote>
 <p>For researchers in the field of cryptography, security is all about cryptographic algorithms and hash functions. Those who are in  information security focus mainly on privacy, watermarking, and digital rights management systems. For researchers with interest in hardware, security is about tamper-resistant architectures and trusted computing.</p>
@@ -77,7 +77,7 @@
     
     <entry>
       <title><![CDATA[传播的控制方法]]></title>
-      <url>/2018/04/28/5_Control_of_contagion/</url>
+      <url>/2018/04/28/4_Control_of_contagion/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="控制问题的引入"><a href="#控制问题的引入" class="headerlink" title="控制问题的引入"></a>控制问题的引入</h2><p>传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。<a id="more"></a>现实网络具有“小世界”特性，“六度分隔” 理论更是形象地表示了现实网络节点间距离小的特点，如果在这些网络上的传播行为不加以控制，那么其扩散速度是非常快的，对于有害的传播其危害将是极大的。因此，需要对一些传播行为进行控制。</p>
 <p>控制问题有很多种划分方式，如果按照分析方法来划分，大体可以分为<strong>优化控制问题</strong>和<strong>自动控制问题</strong>。目前有关传播控制问题，几乎全部都是采用<strong>优化控制方法</strong>。</p>
 <p>常见的优化控制问题主要分为两类：</p>
@@ -195,7 +195,7 @@
     
     <entry>
       <title><![CDATA[复杂网络常用数据集]]></title>
-      <url>/2018/04/03/4_Complex_networks_dataset/</url>
+      <url>/2018/04/03/3_Complex_networks_dataset/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这篇博文最先写于个人的简书博客：<a href="https://www.jianshu.com/p/9313bc75c94b" target="_blank" rel="noopener">https://www.jianshu.com/p/9313bc75c94b</a></p>
 <p>复杂网络的研究很多都离不开数据集，下面这些是个人在做科研的过程中在互联网上搜集到的一些数据集网站，列举出来也方便同行们去使用。<a id="more"></a></p>
 <p>1、<a href="https://link.jianshu.com?t=http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:data:urls:index" target="_blank" rel="noopener">http://vladowiki.fmf.uni-lj.si/doku.php?id=pajek:data:urls:index</a></p>
@@ -245,7 +245,7 @@
     
     <entry>
       <title><![CDATA[传感器网络基础和技术]]></title>
-      <url>/2018/02/28/3_Sensor_Network_fundamention/</url>
+      <url>/2018/02/28/2_Sensor_Network_fundamention/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近开始关注传感器网络，传感器互联后可以进行信息交换，从而形成一个传感器网络，有关传感器网络的研究问题很多，涉及到很多技术层面的东西。<a id="more"></a></p>
 <p>《Sensor Network Protocols》一书对传感器网络有关的技术作了细致介绍：</p>
 <p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_3_1_Wireless%20Sensor%20Networks.png" style="zoom:100%" alt="图1"></div></p>
@@ -265,96 +265,6 @@
             <tag> 传感器 </tag>
             
             <tag> 网络 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[二元二次方程组的求解——从代数到几何]]></title>
-      <url>/2018/01/26/2_Binary_quadratic_equations/</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>因为研究中遇到一些问题，原始问题需要求解一个非线性系统存在的正平衡点数目，需要判断二元二次方程组是否存在正根，这个问题是初等数学问题，不难，代数方法和几何方法都可以用来解决它，这篇文章将以这个问题为例，谈谈代数方法和几何方法的简单运用。<a id="more"></a></p>
-<p>原始问题求解平衡点个数问题等价于求以下两个二次曲线在第一象限内的交点个数问题：<br>$$<br>\begin{equation}<br>\begin{cases}<br>F_1(I_1,P_1)&amp;=-\beta_2I_1^2-(\beta_2+\gamma_4-\beta_4)I_1P_1-(\beta_1-\beta_3)P_1\\<br>&amp;+\Big(\frac{\beta_2\rho}{\omega}-\beta_1-\delta_1-\gamma_3-\omega\Big)I_1+\frac{\beta_1\rho}{\omega}=0\\<br>F_2(I_2,P_2)&amp;=-\gamma_2P_2^2-(\gamma_2+\beta_4-\gamma_4)I_2P_2-(\gamma_1-\gamma_3)I_2\\<br>&amp;+\Big(\frac{\gamma_2\rho}{\omega}-\gamma_1-\delta_2-\beta_3-\omega\Big)P_2+\frac{\gamma_1\rho}{\omega}=0\\<br>&amp;\beta_1&gt;\beta_3,\beta_2&gt;\beta_4,\gamma_3&gt;\gamma_1,\gamma_4&gt;\gamma_2,I+P\leq\frac{\rho}{\omega}<br>\end{cases}\tag{1}\label{1}<br>\end{equation}<br>$$</p>
-<h2 id="代数方法"><a href="#代数方法" class="headerlink" title="代数方法"></a>代数方法</h2><p>先介绍求解这一问题的一般代数方法。</p>
-<blockquote>
-<p>考虑如下一般二元二次方程组：<br>$$<br>\begin{equation}<br>\begin{cases}<br>a_1x^2+b_1xy+c_1y^2+d_1x+e_1y+f_1=0\\<br>a_2x^2+b_2xy+c_2y^2+d_2x+e_2y+f_2=0\\<br>\end{cases}\tag{2}\label{2}<br>\end{equation}<br>$$</p>
-</blockquote>
-<p>为了判断该方程组根的性态（单调性、实复性等），最直接的方法是先求解出这个方程组的根，然后研究根。这种直接求根的方法就是代数方法，具体求解步骤如下：</p>
-<ul>
-<li>$\eqref{2}$中第一个方程乘以 $c_2$ 减去第二个方程乘以 $c_1$ 消去 $y^2$ 得：$Ax^2+Bxy+Dx+Ey+F=0$ ，充分利用该关系可以得到：$y=\frac{-Ax^2-Dx-F}{Bx+E}$</li>
-<li>将上一步骤中得到的 $x$ 和 $y$ 关系 $y=\frac{-Ax^2-Dx-F}{Bx+E}$ 带入原方程组中任意一个可以消去变量 $y$ 而得到一个一元四次方程：$ax^4+bx^3+cx^2+dx+e=0$。</li>
-<li>一元四次方程可以用Lodovico Ferrari求根公式求解（伽罗华证明了五次及五次以上的一元多项式方程不存在求根公式）</li>
-</ul>
-<blockquote>
-<p>Lodovico Ferrari求根公式：一般的一元四次方程 $ax^4+bx^3+cx^2+dx+e=0(a\neq0)$ ，定义$p=\frac{8ac-3b^2}{8a^2}, q=\frac{8a^2d+b^3-4ac}{8a^3}, r=\frac{16ab^2c-64a^2bd-3b^4+256a^3e}{256a^4}$，如果：</p>
-<p>(1) $q\neq0$，则该方程存在4个根可表示为：<br>$$<br>\begin{equation}<br>\begin{cases}<br>x_1=-\frac{b}{4a}+\frac{\sqrt{2z_0}-\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_2=-\frac{b}{4a}+\frac{\sqrt{2z_0}+\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_3=-\frac{b}{4a}+\frac{-\sqrt{2z_0}-\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>x_4=-\frac{b}{4a}+\frac{-\sqrt{2z_0}+\sqrt{2z_0-4\left(\frac{p}{2}+z_0+\frac{q}{2\sqrt{2z_0}}\right)}}{2}\\<br>\end{cases}\tag{3}\label{3}<br>\end{equation}<br>$$<br>其中， $z_0​$ 是方程 $z^3+pz^2+\frac{p^2-4r}{4}z-\frac{q^2}{8}=0​$ 的正根(利用笛卡尔符号法则， $q\neq0​$ 保证了该方程有一个正根)</p>
-<p>(2) $q=0$，则该方程存在4个根可表示为：<br>$$<br>\begin{equation}<br>\begin{cases}<br>x_1=-\frac{b}{4a}+\sqrt{\frac{-p-\sqrt{p^2-4r}}{2}}\\<br>x_2=-\frac{b}{4a}-\sqrt{\frac{-p-\sqrt{p^2-4r}}{2}}\\<br>x_3=-\frac{b}{4a}+\sqrt{\frac{-p+\sqrt{p^2-4r}}{2}}\\<br>x_4=-\frac{b}{4a}-\sqrt{\frac{-p+\sqrt{p^2-4r}}{2}}\\<br>\end{cases}\tag{4}\label{4}<br>\end{equation}<br>$$</p>
-</blockquote>
-<p>判断一元四次方程根的类型（实根还是复根）可以参考<a href="https://en.wikipedia.org/wiki/Quartic_function#cite_note-12" target="_blank" rel="noopener">维基百科</a>或者文献[1]中的介绍。</p>
-<p>虽然以上代数方法可以给出一元四次方程所有根的表达式 ，可以根据 $\eqref{3}$ 和 $\eqref{4}$ 来判断系统存在正根还是负根。但是由于$\eqref{3}$、$\eqref{4}$ 形式比较复杂，无法直接判断正根数目。总的来说：<code>代数法适合做定量分析，不适合做定性分析</code>。</p>
-<h2 id="几何方法"><a href="#几何方法" class="headerlink" title="几何方法"></a>几何方法</h2><p>顾名思义，几何方法是用来研究几何图形形状和位置的方法。我们很早就接触到几何方法，比如说小学时学习的平面图形，初中学习到的平面几何，高中学习到的解析几何，这些都是初等几何学的内容。后来大学时，一些理学学科还会学习空间解析几何，乃至更高级课程诸如拓扑学和微分流形等，这些都是几何方法的重要组成部分。与代数方法相比，几何方法的优势在于更直观，适合做定性分析，很多问题用代数方法去解决往往需要冗长复杂的代数计算和推导，然而用几何方法可能会一瞬间就解决。有时尽管用几何方法无法解决问题，但也许可以启发思路，引导出解决问题的方法。</p>
-<p>本文研究的问题不需要用到非常复杂的几何方法，只需用到圆锥曲线的一些知识。圆锥曲线是研究二次曲线形状和位置关系的知识体系，二次曲线在平面内可以划分为椭圆曲线、双曲线、抛物线，每种曲线都有自己的几何性质，这些性质很多时候可以帮助解决问题。</p>
-<p>研究二元二次方程组根的性质等价于研究两个二次曲线交点的性质，满足一些判别条件可以知道两个曲线是否相交以及交点的位置情况，这比直接研究方程组的代数根更直观，而且也更简单。下面我们将利用几何方法逐步证明方程组 $\eqref{1}$ 在第一象限内只存在一个实根。</p>
-<h3 id="引理1"><a href="#引理1" class="headerlink" title="引理1"></a>引理1</h3><blockquote>
-<p><strong>引理1  $F_1(I_1,P_1),F_2(I_2,P_2)$ 为双曲线或抛物线。</strong></p>
-</blockquote>
-<p><strong>证明</strong> ：记一般二次曲线方程为：<br>$$<br>\begin{equation}f(x,y)=a_{11}x^2+2a_{12}xy+a_{22}y^2+2a_{13}x+2a_{23}y+a_{33}\tag{5}\label{5}\end{equation}<br>$$<br>以及<br>$$<br>\begin{equation}\Delta=<br>\left|\begin{array}{cccc}<br>a{11} &amp; a{12}\\<br>a{12} &amp; a{22}<br>\end{array}\right|\tag{6}<br>\end{equation}<br>$$<br>如果满足：<br>$$<br>\begin{equation}<br>\begin{split}<br>&amp;\Delta&gt;0，则 \eqref{5} 中曲线表示为椭圆曲线；\\<br>&amp;\Delta=0，则 \eqref{5} 中曲线表示为抛物线；\\<br>&amp;\Delta&lt;0，则 \eqref{5} 中曲线表示为双曲线。\\<br>\end{split}<br>\end{equation}<br>$$<br>$F_1(I_1,P_1) , F_2(I_2,P_2)$ 对应的$\Delta$值分别为：<br>$$<br>\begin{equation}<br>\begin{split}<br>\Delta^1=-\frac{(\beta_2+\gamma_4-\beta_4)^2}{4}\leq0;\\<br>\Delta^2=-\frac{(\gamma_2+\beta_4-\gamma_4)^2}{4}\leq0.<br>\end{split}\tag{7}<br>\end{equation}<br>$$</p>
-<p>引理1得证！</p>
-<p>特别地，如果满足 $\beta_2+\gamma_4-\beta_4=0,\gamma_2+\beta_4-\gamma_4=0$，$F_1(I_1,P_1),F_2(I_2,P_2)$ 都表示为抛物线方程，否则表示为双曲线方程。但是在实际当中，传播参数严格满足这样等式关系的可能性非常小，绝大多数情况下 $F_1(I_1,P_1)$ 和 $F_2(I_2,P_2)$ 代表双曲线方程。</p>
-<h3 id="引理2"><a href="#引理2" class="headerlink" title="引理2"></a>引理2</h3><blockquote>
-<p><strong>引理2  当$F_1(I_1,P_1),F_2(I_2,P_2)$都是双曲线时，则$F_1(I_1,P_1)$存在垂直渐近线$I_1=-\frac{\beta_1-\beta_3}{\beta_2+\gamma_4-\beta_4}$，另一斜渐近线斜率$k_1=\frac{-\beta_2}{\beta_2+\gamma_4-\beta_4}$；$F_2(I_2,P_2)$存在水平渐近线$P_2=-\frac{\gamma_1-\gamma_3}{\gamma_2+\beta_4-\gamma_4}$，另一斜渐近线斜率$k_2=\frac{\gamma_2+\beta_4-\gamma_4}{-\gamma_2}$。</strong></p>
-</blockquote>
-<p><strong>证明</strong> ：对于一般的二次曲线 $\eqref{5}$，设$(x_0,y_0)$为其中心坐标，则必满足以下条件：<br>$$<br>\begin{equation}<br>\begin{cases}<br>a_{11}x_0+a_{12}y_0+a_{13}=0,\\<br>a_{12}x_0+a_{22}y_0+a_{23}=0<br>\end{cases}\tag{8}\label{8}<br>\end{equation}<br>$$<br>记 $(I_0^1,P_0^1) , (I_0^2,P_0^2)$ 分别为 $F_1(I_1,P_1)$ 和 $F_2(I_2,P_2)$ 的中心，利用 $\eqref{8}$ 可以求得：<br>$$<br>\begin{equation}<br>I_0^1=-\frac{\beta_1-\beta_3}{\beta_2+\gamma_4-\beta_4}, ~~P_0^2=-\frac{\gamma_1-\gamma_3}{\gamma_2+\beta_4-\gamma_4}<br>\tag{9}\label{9}<br>\end{equation}<br>$$<br>利用 $\eqref{1}$ 可得：<br>$$<br>\begin{equation}<br>\begin{split}<br>P_1=\frac{-\beta_2I_1^2+(\frac{\beta_2\rho}{\omega}-\beta_1-\delta_1-\gamma_3-\omega)I_1+\frac{\beta_1\rho}{\omega}}{(\beta_2+\gamma_4-\beta_4)I_1+(\beta_1-\beta_3)}\\<br>I_2=\frac{-\gamma_2P_2^2+(\frac{\gamma_2\rho}{\omega}-\gamma_1-\delta_2-\beta_3-\omega)P_2+\frac{\gamma_1\rho}{\omega}}{(\gamma_2+\beta_4-\gamma_4)P_2+(\gamma_1-\gamma_3)}<br>\end{split}\tag{10}\label{10}<br>\end{equation}<br>$$<br>利用 $\eqref{9}$ , $\eqref{10}$ 有：<br>$$<br>\begin{equation}<br>\begin{split}<br>&amp;P_1(I_0^1)=\lim_{I_1\rightarrow I_0^1}P_1(I_1)=\infty\\<br>&amp;I_2(P_0^2)=\lim_{P_2\rightarrow P_0^2}I_2(P_2)=\infty<br>\end{split}\tag{11}\label{11}<br>\end{equation}<br>$$<br>所以 $F_1(I_1,P_1)$ 存在垂直渐近线 $I_1=-\frac{\beta_1-\beta_3}{\beta_2+\gamma_4-\beta_4}$，$F_2(I_2,P_2)$存在水平渐近线 $P_2=-\frac{\gamma_1-\gamma_3}{\gamma_2+\beta_4-\gamma_4}$ 。利用 $\eqref{10}$ 可得：<br>$$<br>\begin{equation}<br>\begin{split}<br>&amp;\frac{P_1}{I_1}\Big|_{I_1\rightarrow \infty}=\frac{-\beta_2}{\beta_2+\gamma_4-\beta_4}\\<br>&amp;\frac{P_2}{I_2}\Big|_{I_2\rightarrow \infty}=\frac{\gamma_2+\beta_4-\gamma_4}{-\gamma_2}<br>\end{split}<br>\end{equation}<br>$$<br>所以 $F_1(I_1,P_1)$ 的斜渐近线斜率为 $k_1=\frac{-\beta_2}{\beta_2+\gamma_4-\beta_4}$；$F_2(I_2,P_2)$的斜渐近线斜率为 $k_2=\frac{\gamma_2+\beta_4-\gamma_4}{-\gamma_2}$</p>
-<p>引理2得证！</p>
-<h3 id="定理1"><a href="#定理1" class="headerlink" title="定理1"></a>定理1</h3><blockquote>
-<p><strong>定理1  当 $F_1(I_1,P_1)$ , $F_2(I_2,P_2)$ 都是双曲线时，原模型只存在一个平衡点。</strong></p>
-</blockquote>
-<p><strong>证明</strong> ：模型 $\eqref{1}$ 参数满足条件：$\beta_1&gt;\beta_3,\beta_2&gt;\beta_4,\gamma_3&gt;\gamma_1,\gamma_4&gt;\gamma_2$，利用此条件我们知道 $F_1(I_1,P_1)$ 的垂直渐近线 $I_1=-\frac{\beta_1-\beta_3}{\beta_2+\gamma_4-\beta_4}&lt;0$，因为渐近线将双曲线一分为二，所以双曲线 $F_1(I_1,P_1)$ 在垂直渐近线左端分支一定不在第一象限内，也即 $\eqref{1}$ 在第一象限内的解等价于 $F_1(I_1,P_1)$ 的右端分支与 $F_2(I_1,P_1)$ 在第一象限内的交点。下面分两种情况讨论：</p>
-<p>（1）如果 $\gamma_2+\beta_4-\gamma_4&lt;0$，如图1所示</p>
-<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_2_1.png" style="zoom:100%" alt="图1"></div></p>
-<p>此时，双曲线 $F_2(I_2,P_2)$ 的水平渐近线 $P_2=-\frac{\gamma_1-\gamma_3}{\gamma_2+\beta_4-\gamma_4}&lt;0$，也即 $F_2(I_1,P_1)$ 的下分支必定不在第一象限内，根据引理2中渐近线特点可知 $F_1(I_1,P_1)$ 的右分支和 $F_2(I_2,P_2)$ 的上分支在第一象限内只有一个交点。</p>
-<p>（2）如果 $\gamma_2+\beta_4-\gamma_4&gt;0$，如图2所示</p>
-<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_2_2.png" style="zoom:100%" alt="图2"></div></p>
-<p>此时，双曲线 $F_2(I_2,P_2)$ 的水平渐近线 $P_2=-\frac{\gamma_1-\gamma_3}{\gamma_2+\beta_4-\gamma_4}&gt;0$，$F_2(I_2,P_2)$ 的下分支与 $F_1(I_1,P_1)$ 的右分支可能相交，若不相交则 $F_1(I_1,P_1)$ 和 $F_2(I_2,P_2)$ 在第一象限内只有一个交点。若相交，则记交点坐标为 $A(I_A,P_A)$，下面我们将证明A不在第一象限内。</p>
-<p>因为 $F_2(I_2,P_2)$ 存在水平渐近线，且斜渐近线斜率 $k_2=\frac{\gamma_2+\beta_4-\gamma_4}{-\gamma_2}&lt;0$，所以 $F_2(I_2,P_2)$ 的下分支曲线单调递减。不妨考虑直线 $I_2=0$ 与双曲线 $F_2(I_2,P_2)$ 下分支的交点坐标 $B(0,P_B)$，将 $I_2=0$ 带入 $F_2(I_2,P_2)$ 中得：<br>$$<br>-\gamma_2P_2^2+\Big(\frac{\gamma_2\rho}{\omega}-\gamma_1-\delta_2-\beta_3-\omega\Big)P_2+\frac{\gamma_1\rho}{\omega}=0<br>$$<br>根据韦达定理知： $I_2=0$ 与 $F_2(I_2,P_2)$ 上下两个分支的两个交点纵坐标异号，也即对于下分支交点纵坐标有$P_B&lt;0$。</p>
-<p>若 $A$ 在 $B$ 的左边，也即 $I_A&lt;0$， 此时 $A$ 一定不在第一象限内；</p>
-<p>若 $A$ 在 $B$ 的右边，也即 $I_A&gt;0=I_B$，根据单调性有 $P_A&lt;P_B&lt;0$，所以此时 $A$ 也一定不在第一象限内。</p>
-<p>综上所述：双曲线$F_1(I_1,P_1)$和双曲线$F_2(I_2,P_2)$在第一象限内有且只有一个交点，对应着原模型只存在一个平衡点。</p>
-<h3 id="定理2"><a href="#定理2" class="headerlink" title="定理2"></a>定理2</h3><blockquote>
-<p><strong>定理2  当 $F_1(I_1,P_1)$ , $F_2(I_2,P_2)$ 有一个是抛物线时，原模型只存在一个平衡点。</strong></p>
-</blockquote>
-<p><strong>证明</strong>：当$F_1(I_1,P_1)$表示抛物线时，也即满足：$\beta_2+\gamma_4-\beta_4=0$，此时抛物线$F_1(I_1,P_1)$开口向下，并且与纵轴交于点$\left(0,\frac{\rho\beta_1}{\omega(\beta_1-\beta_3)}\right)$。因为：<br>$$<br>\begin{equation}<br>\begin{cases}<br>\beta_2+\gamma_4-\beta_4=0\\<br>\gamma_2+\beta_4-\gamma_4=0<br>\end{cases}\tag{12}\label{12}<br>\Rightarrow \beta_2=\gamma_2=0<br>\end{equation}<br>$$<br>而这里讨论的所有参数都大于0（$\beta_2&gt;0,\gamma_2&gt;0$），也即$\eqref{12}$不会满足，这表明$F_1(I_1,P_1)$ 和$F_2(I_2,P_2)$不能同时都是抛物线，所以对$F_2(I_2,P_2)$分以下两种情况讨论：</p>
-<p>(1)$F_2(I_2,P_2)$是双曲线，且$\gamma_2+\beta_4-\gamma_4&lt;0$。</p>
-<p>满足该条件的$F_2(I_2,P_2)$的某一轨迹情形如图1所示，根据定理1的证明(1)部分可知：双曲线$F_2(I_2,P_2)$仅有上分支部分在第一象限内，它与抛物线$F_1(I_1,P_1)$ 最多只有2个交点。假设存在2 个交点如图3所示，此时交点$F_1(I_{O_1},P_{O_1})$的纵坐标 $P_{O_1}&gt;\frac{\rho\beta_1}{\omega(\beta_1-\beta_3)}&gt;\frac{\rho}{\omega}$。</p>
-<p>这与平衡点满足的条件 :<br>$$<br>\begin{equation}<br>       I+P\leq\frac{\rho}{\omega}\tag{13}\label{13}<br>\end{equation}<br>$$<br>相矛盾，所以抛物线 $F_1(I_1,P_1)$ 与双曲线 $F_2(I_2,P_2)$ 在第一象限内有且只有一个交点，其他情形类似可以证明得到同样的结论，也即原系统只存在一个有意义的平衡点。</p>
-<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_2_3.png" style="zoom:10%" alt="图3"></div></p>
-<p>(2)$F_2(I_2,P_2)$是双曲线，且$\gamma_2+\beta_4-\gamma_4&gt;0$。</p>
-<p>满足该条件的$F_2(I_2,P_2)$的某一轨迹情形如图2所示，类似于定理1中(2)部分的证明：可以得到抛物线$F_1(I_1,P_1)$与双曲线$F_2(I_2,P_2)$下分支交点一定不在第一象限内，所以这里只分析抛物线$F_1(I_1,P_1)$与双曲线$F_2(I_2,P_2)$的上分支在第一象限内交点情况。</p>
-<p>由于最多只有2个交点，假设存在2个交点如图4所示，此时交点$F_3(I_{O_3},P_{O_3})$的纵坐标 $P_{O_3}&gt;\frac{\rho\beta_1}{\omega(\beta_1-\beta_3)}&gt;\frac{\rho}{\omega}$，这与平衡点满足的条件$\eqref{13}$相矛盾，所以抛物线$F_1(I_1,P_1)$与双曲线 $F_2(I_2,P_2)$ 在第一象限内有且只有一个交点，其他情形类似可以证明得到同样的结论，也即原系统只存在一个有意义的平衡点。</p>
-<p><div align="center"><img src="http://p365zudbu.bkt.clouddn.com/S_2_4.png" style="zoom:10%" alt="图4"></div></p>
-<p>以上我们证明了：$F_1(I_1,P_1)$表示抛物线且$F_2(I_2,P_2)$表示双曲线时，原始系统存在且只存在1个有意义的平衡点。类似以上证明方法，我们同样可以证明得到：$F_2(I_2,P_2)$表示抛物线且$F_1(I_1,P_1)$表示双曲线时，原始系统存在且只存在1个有意义的平衡点。也即定理2得证！</p>
-<p>根据定理1和定理2,我们可以得到以下结论：</p>
-<h3 id="定理3"><a href="#定理3" class="headerlink" title="定理3"></a>定理3</h3><blockquote>
-<p><strong>定理3  原始系统$\eqref{1}$有且只有一个有意义的平衡点。</strong></p>
-</blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>每个问题只要能被解决就代表着一定存在多种解决方法，每种方法有自己的优势，同时也往往存在不足。很多时候一个问题既可以用代数方法，也可以用几何方法来解决，但是解决的难易程度不同，但总的来说：遇到定量分析的问题往往用代数方法，遇到定性分析的问题往往用几何方法，不过也没有绝对界限。要充分发挥每种方法的优势，同时也要避免不足。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] Rees E L. Graphical Discussion of the Roots of a Quartic Equation[J]. American Mathematical Monthly, 1922, 29(2):51-55.</p>
-]]></content>
-      
-        <categories>
-            
-            <category> Study </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 数学 </tag>
-            
-            <tag> 代数 </tag>
-            
-            <tag> 几何 </tag>
             
         </tags>
         
