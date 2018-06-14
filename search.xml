@@ -46,7 +46,7 @@
 <p>Attacks in the context of network security can be defined as attempts to <strong>compromise the confidentiality, integrity, and availability</strong>, or to <strong>obtain (partial) control of a computer or communication network</strong>.  （攻击目的主要分为两种：（1）破坏目的，破坏系统的保密性、完整性和可用性；（2）控制目的，控制一台电脑或者网络）</p>
 <p>网络攻击的类型：</p>
 <p>一般来说主要分为四类：1. 盗取数据; 2. 篡改数据; 3. 拒绝服务攻击; 4. 控制设备</p>
-<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_1.png" style="zoom:50%" alt="图1"></div>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_1.png" style="zoom:20%" alt="图1"></div>
 
 <hr>
 <p>实施攻击的形式：</p>
@@ -114,13 +114,13 @@
 <p>Risk management in this specific area is, consequently, a young and vibrant field with substantial research challenges and opportunities.</p>
 </blockquote>
 <p>四类风险：恶意和自然，系统和个体</p>
-<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_2.png" style="zoom:50%" alt="图2"></div>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_2.png" style="zoom:20%" alt="图2"></div>
 
 <p>基本的风险管理过程可以分为以下三步：</p>
 <ol>
 <li>risk assessment involving identification of vulnerabilities and assessment of their potential effects;（风险建模和评估过程）</li>
 <li>risk analysis and decision-making, which includes creating a risk-management plan as well as deciding on what are the feasible counter-measures given organizational priorities and constraints; （风险分析和决策过程）</li>
-<li>execution of measures that may involve dynamic allocation of existing resources, organizational changes, and future investments.（风险响应过程）<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_3.png" style="zoom:50%" alt="图3"></div>
+<li>execution of measures that may involve dynamic allocation of existing resources, organizational changes, and future investments.（风险响应过程）<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_3.png" style="zoom:20%" alt="图3"></div>
 
 </li>
 </ol>
