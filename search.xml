@@ -5,8 +5,7 @@
     <entry>
       <title><![CDATA[《Network Security A Decision and Game Theoretic Approach》阅读笔记]]></title>
       <url>/2018/06/14/5_Network_Security_Reading_Notes/</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>[TOC]</p>
-<h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。<a id="more"></a></p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。<a id="more"></a></p>
 <blockquote>
 <p>For researchers in the field of cryptography, security is all about cryptographic algorithms and hash functions. Those who are in  information security focus mainly on privacy, watermarking, and digital rights management systems. For researchers with interest in hardware, security is about tamper-resistant architectures and trusted computing.</p>
 </blockquote>
