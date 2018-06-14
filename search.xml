@@ -3,6 +3,151 @@
   
     
     <entry>
+      <title><![CDATA[《Network Security A Decision and Game Theoretic Approach》阅读笔记]]></title>
+      <url>/2018/06/14/5_Network_Security_Reading_Notes/</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>[TOC]</p>
+<h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。</p>
+<blockquote>
+<p>For researchers in the field of cryptography, security is all about cryptographic algorithms and hash functions. Those who are in  information security focus mainly on privacy, watermarking, and digital rights management systems. For researchers with interest in hardware, security is about tamper-resistant architectures and trusted computing.</p>
+</blockquote>
+<p>网络安全研究的问题有很多，<code>Securing information, controlling access to systems, developing protocols, discovering vulnerabilities, and detecting attacks are among the well-known topics of network security.</code></p>
+<p>应对网络安全问题，网络安全专家当然可以做出比较好的决策，但是专家也有自身的局限性，具体来说包含三个方面：</p>
+<ul>
+<li>The first one is scale<br>面对规模和复杂度很大网络系统，凭借人的智力和精力是很难处理的。</li>
+<li>A second issue is the availability of good experts<br>目前非常缺少网络安全专家，因为与网络安全有关的问题非常多，很多时候缺乏经过长期训练、经验丰富的专家。</li>
+<li>A third problem is the time scale<br>计算机设备处理和运转速度非常快，一些网络安全问题经常需要人在分分秒秒中作出决策，人脑很难在短时间内思考出应对方法。</li>
+</ul>
+<p>目前绝大部分查找网络安全问题的方式是通过分析日志文件等方式，这些方式会遗漏很多死角，而且一旦某些日志文件被管理员删除或者信息丢失，分析的结果也会有很大差别，很容易得出错误结论；在决策方面，处理网络安全问题主要还是启发式方法，这也会带来一些问题。与启发式分析相对应的是通过数学模型来分析，例如可以把安全决策问题变成一个资源优化问题，人力资源等可以量化，系统设备可以评估出安全等级，如何对不同安全等级的电脑合理分配资源？建立的优化问题完全可以用计算机来求解，而且处理规模也比单靠人力大很多。</p>
+<hr>
+<p>本书主要讲述了用博弈论方法来研究网络安全问题，作者指出一个安全博弈中包含四个要素：</p>
+<ul>
+<li>the players<br>（博弈的参与者，包含 <code>attacker</code> 和 <code>defender</code>） </li>
+<li>the set of possible actions for each player<br>（策略集合，对 <code>attacker</code> 来说指的是可以采取的破坏系统的手段和方式，对 <code>defender</code>指的是可以采取的保护系统的措施）</li>
+<li>the outcome of each player interaction (action-reaction)<br>（双方博弈的结果）</li>
+<li>information structures in the game<br>（博弈过程中双方对信息的掌控情况决定了博弈是完全信息博弈还是不完全信息博弈）</li>
+</ul>
+<hr>
+<p>从风险管理的角度看待网络安全问题：</p>
+<ul>
+<li>Today, networked systems have become an integral and indispensable part of daily business 网络系统成为生活必不可少的一部分，需求越来越大</li>
+<li>Early IT and security risk management research has been mostly empirical and qualitative in nature. The situation is rapidly changing as the field is enriched by quantitative models and approaches. （早期的风险管理手段是定性分析，现在越来越多的定量方法在这一问题中得到运用）</li>
+</ul>
+<hr>
+<p>控制安全问题的常用手段：<br>range from policies and rules to allocation of security resources or updating system configuration.</p>
+<p>为什么不发展风险感知工具，使得在源头遏制风险的产生？</p>
+<p>Stopping potential risks at their source is clearly a good strategy and one may ask why not take such actions for any perceived risk. The answer lies in the hidden and open costs of each risk control action as well as limited <code>aggregate resources</code>（主要是manpower and time有限）.</p>
+<hr>
+<p>传统传染病模型在网络安全中得到应用：</p>
+<blockquote>
+<p>Classical epidemic models have been successfully applied to model the spread of computer malware epidemics. In these models, differential equations describe the rate of change in the number of infected hosts, which is proportional to the multiplication of currently infected and not yet infected host numbers. Such dynamic epidemic models provide a basis for optimization of patching response strategies to a worm epidemic within a quantitative cost-benefit framework.</p>
+<p>A general optimal and robust control framework based on <em>feedback control</em> methods for dynamic malware removal is presented. <em>Optimal control</em> theory allows to explicitly specify the costs of infected hosts and the effort required to patch them. The resulting quadratic cost function is used in conjunction with the dynamic epidemic model differential equations to derive the optimal malware removal strategies.</p>
+</blockquote>
+<hr>
+<h2 id="网络安全概念"><a href="#网络安全概念" class="headerlink" title="网络安全概念"></a>网络安全概念</h2><p>网络攻击的目的：</p>
+<p>Attacks in the context of network security can be defined as attempts to <strong>compromise the confidentiality, integrity, and availability</strong>, or to <strong>obtain (partial) control of a computer or communication network</strong>.  （攻击目的主要分为两种：（1）破坏目的，破坏系统的保密性、完整性和可用性；（2）控制目的，控制一台电脑或者网络）</p>
+<p>网络攻击的类型：</p>
+<p>一般来说主要分为四类：1. 盗取数据; 2. 篡改数据; 3. 拒绝服务攻击; 4. 控制设备</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_1.png" style="zoom:50%" alt="图1"></div>
+
+<hr>
+<p>实施攻击的形式：</p>
+<ol>
+<li>Physical and hardware-based methods 对物理硬件如存储设备等发起攻击，盗取或者修改数据。<br><code>encryption of sensitive information</code>,  <code>confidential information</code>， <code>sensitive hardware</code>,  <code>hardware-based attacks</code>,  <code>exploit physical access to read or patch system memory</code>,  <code>encryption schemes</code></li>
+<li>Software-based methods 利用软件漏洞进行攻击<br><code>exploiting vulnerabilities in software</code>, <code>software flaws or bugs</code>, <code>malicious intent</code></li>
+<li>Communication-based methods 利用技术拦截用户之间的交流信息，监听以及篡改这些交流信息<br><code>The man-in-the-middle attack</code>, <code>the attacker intercepts and manipulates the communication between two or more parties without their knowledge</code>, <code>cryptographic measures</code></li>
+<li>Psychological and social engineering methods 利用欺骗手段让使用者”上钩”，如钓鱼网站，欺骗邮件 <code>phishing</code>, <code>social engineering attacks</code>, <code>contain malware attachments</code>, <code>exploit and use fundamental human weaknesses</code>, <code>assessing risks on the Internet</code></li>
+</ol>
+<hr>
+<p>计算机病毒、蠕虫、木马之间的区别：</p>
+<blockquote>
+<p>A computer virus is a malicious software that hides in an existing program on the system and copies itself without permission or knowledge of the owner. Worms are similar to viruses with the distinction being that they are stand-alone programs and can spread using the network. On the other hand trojans are not self-spreading. They are defined as innocent-looking programs which secretly execute malicious functions. Other less dangerous but annoying software categories include spyware, which collects personal information without consent, and adware, which automatically displays advertisements.<br>（更专业的介绍见：<a href="https://www.cisco.com/c/en/us/about/security-center/virus-differences.html" target="_blank" rel="noopener">What Is the Difference: Viruses, Worms, Trojans, and Bots?</a>）</p>
+</blockquote>
+<hr>
+<p>阻止网络攻击的手段：</p>
+<ol>
+<li>Firewalls：inspect network traffic passing through them and filter suspicious packets, usually based on a rule-set analyzing their properties.</li>
+<li>Antivirus software: software scans storage medium and memory for signs of malware in regular intervals and removes them.</li>
+<li>Intrusion detection and prevention systems: They consist of sensors which observe security events, a console to communicate with system admins, and a decision engine to generate alerts or take responsive actions.</li>
+</ol>
+<hr>
+<p>密码学是一把双刃剑，一方面防守者可以利用密码学对信息进行加密阻止信息被窃取；另一方面攻击者可以利用密码学对流量进行加密，导致入侵检测系统和杀毒软件失效（因为无法对加密流量进行分析）: While cryptography provides a foundation for network security, it can also be a doubleedged sword. Attackers can use it to their own benefit and encrypt malware as well as attack traffic. Since current firewalls and IDS systems cannot detect malware in encrypted traffic, use of cryptographic methods by attackers may render many existing defense mechanisms useless.</p>
+<h2 id="网络安全博弈"><a href="#网络安全博弈" class="headerlink" title="网络安全博弈"></a>网络安全博弈</h2><p>博弈论与最优化理论在解决网络安全问题中的区别：</p>
+<blockquote>
+<p>A game theoretic framework for defensive decision making has a distinct advantage over optimization as it explicitly captures the effects of the attacker behavior in the model, in addition to the ones of the defensive actions. Plain optimization formulations, on the other hand, focus only on optimization of defensive resources without taking attackers into account. (总的来说，优化方法往往只关注防守方，比如说最小化防守方的损失，而博弈论方法在解决网络安全问题时不仅仅考虑防守方的策略，同时兼顾攻击方的策略，这是博弈论方法比优化方法优秀的地方)<br><code>zero-sum game</code>, <code>nonzero-sum game</code></p>
+</blockquote>
+<p>网络安全博弈下的纳什均衡：<br>At NE, a player cannot improve his outcome by altering his decision unilaterally while others play the NE strategy. In a security game, the NE solution provides insights to expected attacker behavior by mapping attacker preferences to an attack strategy under a given set of circumstances. Likewise, the NE strategy of the defender can be used as a guideline on how to allocate limited defense resources when facing an attacker. （达到纳什均衡解时，一方不能单方面的改变自己的策略来获得更多收益）</p>
+<p>在博弈论问题中，都会假设参与者是理性的：<strong>Rationality of players is an important underlying assumption of the class of security games.</strong></p>
+<p>入侵检测系统（IDS）一般包括三个环节：信息源，分析，响应。这三个环节都可能用到博弈论来分析，但是一般还是在响应中用到博弈论居多。</p>
+<p>网络攻击者主要是 <code>selfish and malicious nodes</code>, 其中自私节点的目的是自己的收益最大化：<code>While the selfish nodes aim to transmit to a common receiver and maximize their throughput</code>; 而恶意节点的目的是破坏系统的正常运行：<code>the malicious nodes try to disrupt communication by simultaneous transmissions and jamming</code>.</p>
+<h2 id="随机博弈"><a href="#随机博弈" class="headerlink" title="随机博弈"></a>随机博弈</h2><p>随机博弈和静态博弈的主要区别：<br>随机博弈每一阶段的收益由参与者所处的状态和决策共同决定，而且决策完成后根据Markov转移概率进入新的状态；静态博弈每次所作决策的收益与参与者所处状态无关，可以简单看作重复博弈。</p>
+<p>在随机博弈中，大部分模型都是构建成零和博弈来分析问题。在非零和的随机博弈模型中，因为可能存在多个纳什均衡解，导致了博弈均衡解可能不收敛，这是这类问题的最大挑战。</p>
+<hr>
+<p>Markov Game Model：</p>
+<ul>
+<li>攻击者和防御者表示为：$P^A$ 和 $P^D$</li>
+<li>攻击者和防御者的策略集合为：$A^A: =\{a_1,\dots,a_{N_A}\}$, $A^D: =\{d_1,\dots,d_{N_D}\}$；参与者的状态空间为:$S=\{s_1,s_2,\dots,s_{N_s}\}$.</li>
+<li>状态转移参数由映射 $M$ 决定：$M: S\times A^A\times A^D\rightarrow S$</li>
+</ul>
+<p>用 $p^S: =[p_1,\dots,p_N]$表示状态空间 $S$ 的分布，其中 $0\geq p^S\leq 1$ 且 $\sum_ip_i^S=1$，那么映射 $M$ 可以表示一个 $N_S\times N_S$ 维的Markov概率转移矩阵，并且有：$p^S(t+1)=Mp^S(t)$</p>
+<hr>
+<p>有关零和随机博弈的解：<br>（1）零和随机博弈的最优解就是平稳状态解，一般存在且唯一<br>（2）可以用动态规划方法来求这个最优解</p>
+<hr>
+<p>因为在随机博弈中，攻击者的行为往往很难预知，尤其对于随机攻击而言，这个时候会用到恶意软件过滤器（Malware filters）：</p>
+<blockquote>
+<p>Malware filters are network security measures that are implemented on or next to the network elements, instead of hosts, in order to enforce certain network-wide security policies.</p>
+</blockquote>
+<p>因为能量、延迟等原因，恶意软件过滤器不能时刻都处于激活状态：</p>
+<blockquote>
+<p>Malware filters cannot be fully deployed or activated on all links all the time due to restrictions on capacity, delay, and energy.</p>
+</blockquote>
+<hr>
+<p>在最坏的情况下，攻击者可以利用一些手段如分布式拒绝服务攻击获得系统的拓扑结构以及路由状态，因此在这种情况下，攻击者被看作是理性和智慧的，他能够根据防御情况来改变攻击策略：</p>
+<blockquote>
+<p>In the worst case scenario, the attackers attempting to gain unauthorized access to a target system residing in the network or compromise its accessibility through distributed denial of service (DDoS) attacks are expected to have complete knowledge of the internal configuration of the network such as routing states or detector locations. Thus, the attackers should be seen as rational and intelligent players who respond to defensive actions by choosing different targets or routes to inject the malware. </p>
+</blockquote>
+<p>可以用 Network Security Simulator (NeSSi) 来做带有过滤的网络安全模拟。</p>
+<h2 id="网络安全风险管理"><a href="#网络安全风险管理" class="headerlink" title="网络安全风险管理"></a>网络安全风险管理</h2><p>风险管理框架下的网络安全分析步骤（写作）：</p>
+<blockquote>
+<p>Security risk assessment and response are posed as dynamic resource allocation problems. First, a quantitative risk management framework based on probabilistic evolution<br>of risk and Markov decision processes is presented. Second, a noncooperative game model is analyzed for long-term security investments of interdependent organizations. In addition, incentive mechanisms are investigated to achieve organization-wide objectives. Finally, a cooperative game is studied to develop a better understanding of coalition formation and operation between divisions of large organizations.</p>
+</blockquote>
+<p>网络安全领域的风险管理：</p>
+<blockquote>
+<p>Risk management in this specific area is, consequently, a young and vibrant field with substantial research challenges and opportunities.</p>
+</blockquote>
+<p>四类风险：恶意和自然，系统和个体</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_2.png" style="zoom:50%" alt="图2"></div>
+
+<p>基本的风险管理过程可以分为以下三步：</p>
+<ol>
+<li>risk assessment involving identification of vulnerabilities and assessment of their potential effects;（风险建模和评估过程）</li>
+<li>risk analysis and decision-making, which includes creating a risk-management plan as well as deciding on what are the feasible counter-measures given organizational priorities and constraints; （风险分析和决策过程）</li>
+<li>execution of measures that may involve dynamic allocation of existing resources, organizational changes, and future investments.（风险响应过程）<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/networks_security_3.png" style="zoom:50%" alt="图3"></div>
+
+</li>
+</ol>
+<p>建立风险分析模型的一个方式是：A Probabilistic Risk Framework（概率风险框架）。利用风险扩散机制，两个相互关联的组织可以构建成二部图，风险在二部图上来回扩散，可以证明迭代矩阵是Markov转移概率，行和为1，风险最终将收敛到一个稳定水平。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Study </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 网络 </tag>
+            
+            <tag> 博弈论 </tag>
+            
+            <tag> 优化 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[传播的控制方法]]></title>
       <url>/2018/04/28/4_Control_of_contagion/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="控制问题的引入"><a href="#控制问题的引入" class="headerlink" title="控制问题的引入"></a>控制问题的引入</h2><p>传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。<a id="more"></a>现实网络具有“小世界”特性，“六度分隔” 理论更是形象地表示了现实网络节点间距离小的特点，如果在这些网络上的传播行为不加以控制，那么其扩散速度是非常快的，对于有害的传播其危害将是极大的。因此，需要对一些传播行为进行控制。</p>
