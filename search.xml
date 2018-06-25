@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[《Network Security A Decision and Game Theoretic Approach》阅读笔记]]></title>
+      <title><![CDATA[常见不安全的网络系统]]></title>
       <url>/2018/06/25/6_unsafe_networked_system/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="几种不安全的网络系统的类型-1"><a href="#几种不安全的网络系统的类型-1" class="headerlink" title="几种不安全的网络系统的类型[1]"></a>几种不安全的网络系统的类型[1]<a id="more"></a></h2><p>（1）<strong>Individual malicious peers</strong>：有些系统比如大部分WSN因为计算能力有限，电量有限、存储空间较小，造价不能太高等特点使得在实际中很多情况下无法应用一些异常检测技术和信任管理方法来查找和评估恶意节点。这种情况下恶意节点孤立地表现出恶意行为。这是一类比较简单同时也是非常常见的系统。</p>
 <div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_1.png" style="zoom:60%" alt="图1"></div>
@@ -46,11 +46,7 @@
         
         <tags>
             
-            <tag> 网络 </tag>
-            
-            <tag> 博弈论 </tag>
-            
-            <tag> 优化 </tag>
+            <tag> 网络安全 </tag>
             
         </tags>
         
