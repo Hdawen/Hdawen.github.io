@@ -4,6 +4,60 @@
     
     <entry>
       <title><![CDATA[《Network Security A Decision and Game Theoretic Approach》阅读笔记]]></title>
+      <url>/2018/06/25/6_unsafe_networked_system/</url>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="几种不安全的网络系统的类型-1"><a href="#几种不安全的网络系统的类型-1" class="headerlink" title="几种不安全的网络系统的类型[1]"></a>几种不安全的网络系统的类型[1]<a id="more"></a></h2><p>（1）<strong>Individual malicious peers</strong>：有些系统比如大部分WSN因为计算能力有限，电量有限、存储空间较小，造价不能太高等特点使得在实际中很多情况下无法应用一些异常检测技术和信任管理方法来查找和评估恶意节点。这种情况下恶意节点孤立地表现出恶意行为。这是一类比较简单同时也是非常常见的系统。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_1.png" style="zoom:60%" alt="图1"></div>
+
+<p>（2）<strong>Malicious collectives</strong>：虽然一些系统可以利用信任管理方法可以给网络中的节点进行评估，但是这类系统上的恶意节点一方面表现出恶意行为，另一方面则采用结盟方式提高同盟者的信任度来逃脱被隔离。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_2.png" style="zoom:60%" alt="图2"></div>
+
+<p>（3）<strong>Malicious collectives with camouflage</strong>：虽然一些系统可以利用信任管理方法可以给网络中的节点进行评估，但是系统中存在一些高级恶意节点，这些节点往往具有伪装能力，所有的行为中仅仅 p% 的比例是恶意的，并且恶意节点之间相互结盟。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_3.png" style="zoom:60%" alt="图3"></div>
+
+
+<p>（4）<strong>Malicious spies</strong>：虽然一些系统可以利用信任管理方法可以给网络中的节点进行评估，但是这类系统上的恶意节点分两类：一类只表现出恶意，另一类虽然是恶意节点但是却只表现正常行为。所有恶意节点之间采用结盟方式提高同盟者的信任度来逃脱被隔离。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_4.png" style="zoom:60%" alt="图4"></div>
+
+<p>（5）<strong>Sybil attack</strong>：虽然一些系统可以利用信任管理方法可以给网络中的节点进行评估，但是这类系统上的恶意节点每次在实施一些攻击后能够修改自己身份，以一个新的身份进入系统实施新的攻击。<br>解决方法： One of the most common solutions proposed in the literature for this kind of threat consists of associating a cost to the generation of new identities in the community. 通过惩罚修改身份的行为来避免这类恶意节点实施新的攻击。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_5.png" style="zoom:60%" alt="图5"></div>
+
+<p>（6）<strong>Man in the middle attack</strong>：一些系统中恶意节点通过截获或者作为通信中间人的身份篡改正常节点的通信的信息。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_6.png" style="zoom:60%" alt="图6"></div>
+
+
+<p>（7）<strong>Driving down the reputation of a reliable peer</strong>：一些系统中恶意节点给正常节点较低的信任度，然而给同盟的恶意节点较高信任度。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_7.png" style="zoom:60%" alt="图7"></div>
+
+<p>（8）<strong>Partially malicious collectives</strong>：一些系统中恶意节点给一部分正常节点较高的信任度，给另一部分正常节点较低信任度，给所有同盟的恶意节点较高信任度。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_8.png" style="zoom:60%" alt="图8"></div>
+
+<p>（9）<strong>Malicious pre-trusted peers</strong>：一些以前是可信的节点在被攻陷后表现出恶意行为，给同盟恶意节点较高信任度，给正常节点较低信任度。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_9.png" style="zoom:60%" alt="图9"></div>
+
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] Mármol F G, Pérez G M. Security threats scenarios in trust and reputation models for distributed systems[J]. Computers &amp; Security, 2009, 28(7):545-556.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Study </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 网络 </tag>
+            
+            <tag> 博弈论 </tag>
+            
+            <tag> 优化 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[《Network Security A Decision and Game Theoretic Approach》阅读笔记]]></title>
       <url>/2018/06/14/5_Network_Security_Reading_Notes/</url>
       <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。<a id="more"></a></p>
 <blockquote>
@@ -158,9 +212,9 @@
 </ul>
 <p>第一类问题要求得到控制的同时花费的成本最小，第二类问题不一定能实现完全控制但要求控制的效果是最好的。举病毒传播的例子来说，第一类问题要求病毒最终完全消失的同时消耗的成本最小，第二类问题要求给定一定的资源如何使病毒含量降至最低。</p>
 <h2 id="传统控制方法"><a href="#传统控制方法" class="headerlink" title="传统控制方法"></a>传统控制方法</h2><h3 id="随机免疫"><a href="#随机免疫" class="headerlink" title="随机免疫"></a>随机免疫</h3><p>传统免疫方法主要是一些统计物理方法，其中代表有： 随机免疫、目标免疫、熟人免疫。随机免疫在上个世纪90年代就被提出来[1]；目标免疫[2]和熟人免疫[3]是随着网络科学方法的兴起，在本世纪初被提出来。</p>
-<p>随机免疫[1,2]方法是指完全随机地选取网络中的一部分节点进行免疫。定义免疫节点密度为 $g$ ，从平均场的角度看，随机免疫相当于把传播率从 $\lambda$ 缩减为 $\lambda(1-g)$ 。对于均匀网络，随机免疫的免疫密度临界值 $g_c$ 为[2]：<br>\begin{equation}<br>g_c=1-\frac{\lambda_c}{\lambda}<br>\end{equation}<br>对于无标度网络，随机免疫的免疫密度临界值 $g_c$ 为：<br>\begin{equation}<br>g_c=1-\frac{\langle k \rangle}{\lambda\langle k^2 \rangle}<br>\end{equation}<br>当 $\langle k^2 \rangle\rightarrow\infty$ 时，免疫密度临界值 $g_c$ 趋于1，这表明对于大规模的无标度网络采取随机免疫策略，需要对网络中几乎所有的节点都实施免疫才能保证最终消灭病毒传染。这种情况下要给所有节点实施免疫比较困难，因此免疫效率是很低的！</p>
+<p>随机免疫[1,2]方法是指完全随机地选取网络中的一部分节点进行免疫。定义免疫节点密度为 $g$ ，从平均场的角度看，随机免疫相当于把传播率从 $\lambda$ 缩减为 $\lambda(1-g)$ 。对于均匀网络，随机免疫的免疫密度临界值 $g_c$ 为[2]：<br>$$<br>g_c=1-\frac{\lambda_c}{\lambda}<br>$$<br>对于无标度网络，随机免疫的免疫密度临界值 $g_c$ 为：<br>$$<br>g_c=1-\frac{\langle k \rangle}{\lambda\langle k^2 \rangle}<br>$$<br>当 $\langle k^2 \rangle\rightarrow\infty$ 时，免疫密度临界值 $g_c$ 趋于1，这表明对于大规模的无标度网络采取随机免疫策略，需要对网络中几乎所有的节点都实施免疫才能保证最终消灭病毒传染。这种情况下要给所有节点实施免疫比较困难，因此免疫效率是很低的！</p>
 <h3 id="目标免疫"><a href="#目标免疫" class="headerlink" title="目标免疫"></a>目标免疫</h3><p>目标免疫是希望通过有选择地对极少量关键节点进行免疫以获得尽可能好的免疫效果。例如，根据无标度网络的度分布的非均匀特性，可以选取度大的节点进行免疫，一旦这些节点被免疫，传播可能的途径将会大大减少。对于BA无标度网络，目标免疫对应的免疫密度临界值为[2]:</p>
-<p>\begin{equation}<br>g_c\sim e^{-\frac{2}{m\lambda}}<br>\end{equation}</p>
+<p>$$<br>g_c\sim e^{-\frac{2}{m\lambda}}<br>$$</p>
 <p>上式表明，即使传播率 $\lambda$ 在很大的范围内取不同的值，都可以得到很小的免疫密度临界值。因此，在无标度网络中，目标免疫效率一般比随机免疫要高。</p>
 <h3 id="熟人免疫"><a href="#熟人免疫" class="headerlink" title="熟人免疫"></a>熟人免疫</h3><p>目标免疫需要了解网络的全局信息以找到控制病毒传播的hub节点。然而对于庞大复杂并且不断发展变化的人类社会和Internet来说，这是难以做到的。熟人免疫[3]的基本思想是：从 N 个节点中随机选出比例为 $p$ 的节点，再从每一个被选出的节点中随机选择一个邻居节点进行免疫。这种策略只需要知道被随机选择出来的节点以及与它们直接相连的邻居节点，从而巧妙回避了目标免疫中需要知道全局信息的问题。</p>
 <p>由于在无标度网络中，度大的节点意味着有许多节点与之相连；若随机选择一个节点，再选择其邻居节点时，度大的节点比度小的节点被选中的概率大很多，因此熟人免疫比随机免疫策略效果好很多。</p>
@@ -169,13 +223,13 @@
 </code></pre><h2 id="优化控制方法"><a href="#优化控制方法" class="headerlink" title="优化控制方法"></a>优化控制方法</h2><h3 id="传播模型"><a href="#传播模型" class="headerlink" title="传播模型"></a>传播模型</h3><p>  在前一节的小结中，我们指出来传统的控制方法存在的局限性。为了解决这些问题，基于优化控制方法做了一些尝试。首先，优化控制方法考虑了传播的动力学特性，将传播的动力学方程纳入分析当中；其次，优化控制方法在每个节点具体应该分配多少资源的处理上更加精细和科学。</p>
 <p>在介绍优化控制方法之前，先介绍传播模型。Van Mieghem等在文献[4]中首次提出了基于节点级建模的SIS模型，模型如下：<br>\begin{equation}<br>\begin{split}<br>&amp;\frac{dp_i(t)}{dt}=\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)-\beta_ip_i(t)\sum^n_{j=1}a_{ij}p_j(t),\\<br>&amp;i=1,2,3,\cdots,n<br>\end{split}\tag{1}\label{1}<br>\end{equation}<br>其中 $\{a_{ij}\}$ 表示邻接矩阵, $\delta_i$ 表示节点 $i$ 的恢复率, $p_i(t)$ 表示节点 $i$ 在时刻 $t$ 被感染的概率。</p>
 <p>方程$\eqref{1}$写成矩阵形式表示如下：<br>\begin{equation}<br>\frac{dp(t)}{dt}=(BA-D)p(t)-P(t)BAp(t)<br>\tag{2}\label{eq3_0_2}<br>\end{equation}<br>其中 $p(t)=(p_1(t), p_2(t), \cdots, p_n(t))^T$, $A=\{a_{ij}\}$,  $D=diag(\delta_i)$, $P(t)=diag(p_i(t))$。</p>
-<h3 id="凸规划方法"><a href="#凸规划方法" class="headerlink" title="凸规划方法"></a>凸规划方法</h3><p>由于原问题方程为非线性微分方程组，涉及到非凸规划问题，为了求解方便，一般的思想是通过放缩找到原非线性方程的一个线性上界：<br>\begin{equation}<br>\begin{split}<br>\frac{dp_i(t)}{dt}&amp;=\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)-\beta_ip_i(t)\sum^n_{j=1}a_{ij}p_j(t)\\<br>&amp;\leq\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)\\<br>&amp;i=1,2,3,\cdots,n<br>\end{split}<br>\end{equation}<br>得到一个放缩后的线性微分方程组：<br>\begin{equation}<br>\frac{d\widehat{p}_i(t)}{dt}=\beta_i\sum^n_{j=1}a_{ij}\widehat{p}_j(t)-\delta_i\widehat{p}_i(t),~~~i=1,2,3,\cdots,n<br>\label{eq7}<br>\end{equation}<br>矩阵形式表述为：<br>\begin{equation}<br>d{\hat{\rm p}}=(BA-D){\hat{\rm p}}<br>\end{equation}<br>只要上界线性系统能被控制，也即：矩阵 $(BA-D)$ 的所有特征值实部都小于0，那么原始非线性系统也肯定能得到控制。</p>
+<h3 id="凸规划方法"><a href="#凸规划方法" class="headerlink" title="凸规划方法"></a>凸规划方法</h3><p>由于原问题方程为非线性微分方程组，涉及到非凸规划问题，为了求解方便，一般的思想是通过放缩找到原非线性方程的一个线性上界：<br>$$<br>\begin{split}<br>\frac{dp_i(t)}{dt}&amp;=\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)-\beta_ip_i(t)\sum^n_{j=1}a_{ij}p_j(t)\\<br>&amp;\leq\beta_i\sum^n_{j=1}a_{ij}p_j(t)-\delta_ip_i(t)\\<br>&amp;i=1,2,3,\cdots,n<br>\end{split}<br>$$<br>得到一个放缩后的线性微分方程组：<br>$$<br>\frac{d\widehat{p}_i(t)}{dt}=\beta_i\sum^n_{j=1}a_{ij}\widehat{p}_j(t)-\delta_i\widehat{p}_i(t),~~~i=1,2,3,\cdots,n<br>$$<br>矩阵形式表述为：<br>$$<br>d{\hat{\rm p}}=(BA-D){\hat{\rm p}}<br>$$<br>只要上界线性系统能被控制，也即：矩阵 $(BA-D)$ 的所有特征值实部都小于0，那么原始非线性系统也肯定能得到控制。</p>
 <p>记 $\lambda_1$ 为矩阵 $(BA-D)$ 的最大特征值，所以原问题可以约化为以下规划问题</p>
-<p>\begin{equation}<br>\begin{split}<br>&amp;{\rm minimize}\sum^n_{i=1}\beta_i\\<br>s.t.&amp;\begin{cases}<br>&amp;\lambda_1(BA-D)\leq-\varepsilon\\<br>&amp;\underline{\beta}_i\leq\beta_i\leq\overline{\beta}_i,~~i=1,\dots,n<br>\end{cases}<br>\end{split}\tag{2}\label{2}<br>\end{equation}</p>
+<p>\begin{equation}<br>\begin{split}<br>&amp;{\rm minimize}\sum^n_{i=1}\beta_i\\<br>s.t.&amp;\begin{cases}<br>&amp;\lambda_1(BA-D)\leq-\varepsilon\\<br>&amp;\underline{\beta}_i\leq\beta_i\leq\overline{\beta}_i,~~i=1,\dots,n<br>\end{cases}<br>\end{split}\tag{3}\label{2}<br>\end{equation}</p>
 <p>其中 $\varepsilon$ 为任意小的正数，$\beta_i$为可控制量。</p>
 <p>问题\eqref{2}不能直接来求解，但是利用文献[5]中介绍的几何规划方法可以证明\eqref{2}是凸规划问题。</p>
-<p>具体求解思路：根据非负连通矩阵是不可约矩阵，所以特征值中实部最大的那个特征值是实数，并且等于矩阵的谱半径。再利用Perron-Frobenius定理，记矩阵$M$最大特征值为$\lambda=\rho(M)$，那么对任意向量$\textbf{u}$都满足$M\textbf{u}\leq\lambda M$，通过计算问题\eqref{2}最终等价于以下几何规划问题：<br>\begin{equation}<br>\begin{split}<br>&amp;{\rm minimize}~~~\lambda\\<br>s.t.&amp;\begin{cases}<br>&amp;\frac{\sum^n_{j=1} M_{ij}(x)u_j}{\lambda u_i}\leq1,i=1,2,\dots,m,\\<br>&amp;f_i(x)\leq1, i=1,2,\dots,m.<br>\end{cases}<br>\end{split}<br>\label{eq1.3}<br>\end{equation}<br>相关研究可以参考文献[6-21]</p>
-<h3 id="最优控制"><a href="#最优控制" class="headerlink" title="最优控制"></a>最优控制</h3><p>对于一个最优控制问题<br>\begin{equation}<br>Minimize_{\rm u(\cdot)\in\mathcal{U}}J({\rm u}(\cdot))=\int^T_0L({\rm x}(t),{\rm u}(t))dt\tag{3}\label{3}<br>\end{equation}<br>约束条件：<br>\begin{equation}<br>\label{eq3_2_2}<br>\frac{d{\rm x}(t)}{dt}={\rm f}({\rm x}(t),{\rm u}(t)), \quad 0\leq t\leq T<br>\end{equation}<br>其中 $x(0)\in\Omega$，$\Omega$ 是系统\eqref{3}的正不变集。利用庞德里亚金极值原理可以证明，问题\eqref{3}存在最优控制解如果以下条件同时成立：</p>
+<p>具体求解思路：根据非负连通矩阵是不可约矩阵，所以特征值中实部最大的那个特征值是实数，并且等于矩阵的谱半径。再利用Perron-Frobenius定理，记矩阵$M$最大特征值为$\lambda=\rho(M)$，那么对任意向量$\textbf{u}$都满足$M\textbf{u}\leq\lambda M$，通过计算问题\eqref{2}最终等价于以下几何规划问题：<br>$$<br>\begin{split}<br>&amp;{\rm minimize}~~~\lambda\\<br>s.t.&amp;\begin{cases}<br>&amp;\frac{\sum^n_{j=1} M_{ij}(x)u_j}{\lambda u_i}\leq1,i=1,2,\dots,m,\\<br>&amp;f_i(x)\leq1, i=1,2,\dots,m.<br>\end{cases}<br>\end{split}<br>$$<br>相关研究可以参考文献[6-21]</p>
+<h3 id="最优控制"><a href="#最优控制" class="headerlink" title="最优控制"></a>最优控制</h3><p>对于一个最优控制问题<br>\begin{equation}<br>Minimize_{\rm u(\cdot)\in\mathcal{U}}J({\rm u}(\cdot))=\int^T_0L({\rm x}(t),{\rm u}(t))dt\tag{4}\label{3}<br>\end{equation}<br>约束条件：<br>$$<br>\frac{d{\rm x}(t)}{dt}={\rm f}({\rm x}(t),{\rm u}(t)), \quad 0\leq t\leq T<br>$$<br>其中 $x(0)\in\Omega$，$\Omega$ 是系统\eqref{3}的正不变集。利用庞德里亚金极值原理可以证明，问题\eqref{3}存在最优控制解如果以下条件同时成立：</p>
 <blockquote>
 <p>(1)、存在 ${\rm u}\in\mathcal{U}$ 使得系统\eqref{3}可解；<br>(2)、$\mathcal{U}$ 是凸集；<br>(3)、$\mathcal{U}$ 是闭集；<br>(4)、$\rm f(x,u)$ 有界，且被 $\rm x$ 的一个线性函数所控制；<br>(5)、$L({\rm x},{\rm u})$ 是 $\mathcal{U}$ 上的凸函数；<br>(6)、存在常数 $\rho&gt;1, c_1&gt;0$ 和 $c_2$ 使得 $L({\rm x},{\rm u})\geq c_1|{\rm u}|_2^\rho+c_2$ 成立</p>
 </blockquote>
@@ -216,26 +270,26 @@
 </table>
 <p>因为闭环控制系统比开环控制系统有更好的性能，所以在实际当中闭环控制系统应用更广泛，下一节将介绍两种闭环控制系统。</p>
 <h3 id="Event-triggered控制"><a href="#Event-triggered控制" class="headerlink" title="Event-triggered控制"></a>Event-triggered控制</h3><p><strong><code>Event-triggered控制是一种被动控制方法。它是利用传感器收集系统    的状态信息，当系统的状态偏离某一阈值时触发控制行为。</code></strong></p>
-<p>下面以线性系统为例介绍Event-triggered控制。考虑以下线性系统：<br>\begin{equation}<br>\frac{dx_p}{dt}=A_px_p+B_pu, \quad x_p\in\mathbb{R}^{n_p}, u\in\mathbb{R}^{n_u}\tag{4}\label{4}<br>\end{equation}<br>假定控制变量 $u$ 服从以下线性反馈控制规律：<br>\begin{equation}<br>u=Kx_p\tag{5}\label{5}<br>\end{equation}<br>那么将 \eqref{5} 带入 \eqref{4} 中可得以下理想的闭环系统：<br>\begin{equation}<br>\frac{dx_p}{dt}=A_px_p+B_pKx_p\tag{6}\label{6}<br>\end{equation}<br>为了使系统 \eqref{6} 是渐近稳定的需要矩阵 $A_p+B_pK$ 的所有特征值实部为负数，现在的问题是如何在一个数字平台上实施反馈控制 \eqref{5}。有两种做法，一种做法是周期性地重新计算 \eqref{5}, 并在周期性的更新之间保持执行器的值为常数;另一种做法是不去周期性地重新计算 \eqref{5}，而是只在性能不满足要求时才去重新计算 \eqref{5}。Event-triggered控制采用第二种做法。</p>
-<p>决定性能的一种方法是使用一个Lyapunov函数，这里我们给定 $V(x_p)=x_p^TPx_p$，其中 $P$ 正定。对 $V(x_p)$ 求导可得：<br>\begin{equation}<br>\frac{dV(x_p(t))}{dt}=\frac{\partial V}{\partial x_p}(A_p+B_pK)x_p=x^T_pQx_p\tag{7}\label{7}<br>\end{equation}<br>其中 $Q$ 负定能保证系统渐近稳定。<br>可见 $V$ 是单调递减的，并且 $V$ 函数递减的速率可以由 $Q$ 决定。如果在实际控制中，我们只能忍受 $V$ 函数的一个比较小速率的递减，也即控制条件表述为：<br>\begin{equation}<br>\frac{dV(x_p(t))}{dt}\leq\sigma x^T_pQx_p\tag{8}\label{8}<br>\end{equation}<br>其中$\sigma\in[0,1]$为给定的临界常数。</p>
-<p>我们只需要在控制条件 $\eqref{8}$ 快要被破坏时重新计算 \eqref{5} 即可达到控制的目的， 也即：<br>\begin{equation}<br>\frac{dV(x_p(t))}{dt}=\sigma x^T_pQx_p<br>\end{equation}<br>为了方便起见，假定在两次间隔更新 $\eqref{5}$，保持执行器的值为常数，也即只有在控制条件被破坏时才考虑调整执行器：$u(t)=u(t_k), \quad  \forall\in[t_k,t_{k+1}], k\in\mathbb{N}$.</p>
-<p>记误差 $e$ 表示为：<br>\begin{equation}<br>e(t)=x_p(t_k)-x_p(t) \quad \forall t\in[t_k,t_{k+1}], k\in\mathbb{N}.<br>\end{equation}<br>这里用误差 $e$ 来表示闭环系统在时间 $[t_k,t_{k+1}]$ 内的演化情况<br>\begin{equation}<br>\begin{split}<br>\frac{dx_p(t)}{dt}&amp;=A_px_p(t)+B_pKx_p(t_k)\\<br>&amp;=A_px_p(t)+B_pKx_p(t)+B_PK(x_p(t_k)-x_P(t))\\<br>&amp;=A_px_p(t)+B_pKx_p(t)+B_pKe(t)<br>\end{split}\tag{9}\label{9}<br>\end{equation}<br>将\eqref{9}带入\eqref{8}中得<br>\begin{equation}<br>\begin{split}<br>\frac{dV(x_p(t))}{dt}&amp;=\frac{\partial V}{\partial x_p}(A_p+B_pK)x_p(t)+\frac{\partial V}{\partial x_p}B_pKe(t)\\<br>&amp;=x^T_p(t)Qx_p(t)+2x^T_p(t)PB_pKe(t)\leq\sigma x^T_pQx_p<br>\end{split}<br>\end{equation}<br>也即有：<br>\begin{equation}<br>\begin{bmatrix}<br>x^T_p(t) &amp; e^T(t)\\<br>\end{bmatrix}<br>\begin{bmatrix}<br>(1-\sigma)Q &amp; PB_pK \\<br>K^TB^T_pP &amp; 0\\<br>\end{bmatrix}<br>\begin{bmatrix}<br>x_p(t)\ e(t)<br>\end{bmatrix}\leq0<br>\end{equation}</p>
-<p>记<br>\begin{equation}<br>\Phi=<br>\begin{bmatrix}<br>(1-\sigma)Q &amp; PB_pK \\<br>K^TB_p^TP &amp; 0<br>\end{bmatrix},\quad z(t_k)=<br>\begin{bmatrix}<br>x_p(t_k)\\<br>e(t_k)<br>\end{bmatrix}<br>\end{equation}<br>那么我们就得到控制器二次触发的条件：<br>\begin{equation}<br>z^T(t_k)\Phi z(t_k)=0<br>\end{equation}<br>每次触发控制后，我们可以通过选择适合的 $\Phi$ 使得 $z^T(t_k)\Phi z(t_k)&lt;0$ 达到控制的目的。</p>
-<p>进一步，我们可以得到触发控制的时间集合为<br>\begin{equation}<br>t_0=0, \quad t_{k+1}={\rm inf}\{t\in\mathbb{R}|t&gt;t_k \land z^T(t_k)\Phi z(t_k)=0\}<br>\end{equation}</p>
+<p>下面以线性系统为例介绍Event-triggered控制。考虑以下线性系统：<br>\begin{equation}<br>\frac{dx_p}{dt}=A_px_p+B_pu, \quad x_p\in\mathbb{R}^{n_p}, u\in\mathbb{R}^{n_u}\tag{5}\label{4}<br>\end{equation}<br>假定控制变量 $u$ 服从以下线性反馈控制规律：<br>\begin{equation}<br>u=Kx_p\tag{6}\label{5}<br>\end{equation}<br>那么将 \eqref{5} 带入 \eqref{4} 中可得以下理想的闭环系统：<br>\begin{equation}<br>\frac{dx_p}{dt}=A_px_p+B_pKx_p\tag{7}\label{6}<br>\end{equation}<br>为了使系统 \eqref{6} 是渐近稳定的需要矩阵 $A_p+B_pK$ 的所有特征值实部为负数，现在的问题是如何在一个数字平台上实施反馈控制 \eqref{5}。有两种做法，一种做法是周期性地重新计算 \eqref{5}, 并在周期性的更新之间保持执行器的值为常数;另一种做法是不去周期性地重新计算 \eqref{5}，而是只在性能不满足要求时才去重新计算 \eqref{5}。Event-triggered控制采用第二种做法。</p>
+<p>决定性能的一种方法是使用一个Lyapunov函数，Lyapunov函数值的大小体现了系统变化速率情况，一般工业控制中不希望机器的生产效率波动很大，所以可以对Lyapunov函数的大小进行限制来达到这一要求。这里我们给定 $V(x_p)=x_p^TPx_p$，其中 $P$ 正定。对 $V(x_p)$ 求导可得：<br>\begin{equation}<br>\frac{dV(x_p(t))}{dt}=\frac{\partial V}{\partial x_p}(A_p+B_pK)x_p=x^T_pQx_p\tag{8}\label{7}<br>\end{equation}<br>其中 $Q$ 负定能保证系统渐近稳定。<br>可见 $V$ 是单调递减的，并且 $V$ 函数递减的速率可以由 $Q$ 决定。如果在实际控制中，我们只能忍受 $V$ 函数的一个比较小速率的递减，也即控制条件表述为：<br>\begin{equation}<br>\frac{dV(x_p(t))}{dt}\leq\sigma x^T_pQx_p\tag{9}\label{8}<br>\end{equation}<br>其中$\sigma\in[0,1]$为给定的临界常数。</p>
+<p>我们只需要在控制条件 $\eqref{8}$ 快要被破坏时重新计算 \eqref{5} 即可达到控制的目的， 也即：<br>$$<br>\frac{dV(x_p(t))}{dt}=\sigma x^T_pQx_p<br>$$<br>为了方便起见，假定在两次间隔更新 $\eqref{5}$，保持执行器的值为常数，也即只有在控制条件被破坏时才考虑调整执行器：$u(t)=u(t_k), \quad  \forall\in[t_k,t_{k+1}], k\in\mathbb{N}$.</p>
+<p>记误差 $e$ 表示为：<br>$$<br>e(t)=x_p(t_k)-x_p(t) \quad \forall t\in[t_k,t_{k+1}], k\in\mathbb{N}.<br>$$<br>这里用误差 $e$ 来表示闭环系统在时间 $[t_k,t_{k+1}]$ 内的演化情况<br>\begin{equation}<br>\begin{split}<br>\frac{dx_p(t)}{dt}&amp;=A_px_p(t)+B_pKx_p(t_k)\\<br>&amp;=A_px_p(t)+B_pKx_p(t)+B_PK(x_p(t_k)-x_P(t))\\<br>&amp;=A_px_p(t)+B_pKx_p(t)+B_pKe(t)<br>\end{split}\tag{10}\label{9}<br>\end{equation}<br>将\eqref{9}带入\eqref{8}中得<br>$$<br>\begin{split}<br>\frac{dV(x_p(t))}{dt}&amp;=\frac{\partial V}{\partial x_p}(A_p+B_pK)x_p(t)+\frac{\partial V}{\partial x_p}B_pKe(t)\\<br>&amp;=x^T_p(t)Qx_p(t)+2x^T_p(t)PB_pKe(t)\leq\sigma x^T_pQx_p<br>\end{split}<br>$$<br>也即有：<br>$$<br>\begin{bmatrix}<br>x^T_p(t) &amp; e^T(t)\\<br>\end{bmatrix}<br>\begin{bmatrix}<br>(1-\sigma)Q &amp; PB_pK \\<br>K^TB^T_pP &amp; 0\\<br>\end{bmatrix}<br>\begin{bmatrix}<br>x_p(t)\ e(t)<br>\end{bmatrix}\leq0<br>$$</p>
+<p>记<br>$$<br>\Phi=<br>\begin{bmatrix}<br>(1-\sigma)Q &amp; PB_pK \\<br>K^TB_p^TP &amp; 0<br>\end{bmatrix},\quad z(t_k)=<br>\begin{bmatrix}<br>x_p(t_k)\\<br>e(t_k)<br>\end{bmatrix}<br>$$<br>那么我们就得到控制器二次触发的条件：<br>$$<br>z^T(t_k)\Phi z(t_k)=0<br>$$<br>每次触发控制后，我们可以通过选择适合的 $\Phi$ 使得 $z^T(t_k)\Phi z(t_k)&lt;0$ 达到控制的目的。</p>
+<p>进一步，我们可以得到触发控制的时间集合为<br>$$<br>t_0=0, \quad t_{k+1}={\rm inf}\{t\in\mathbb{R}|t&gt;t_k \land z^T(t_k)\Phi z(t_k)=0\}<br>$$</p>
 <pre><code>系统的全部状态信息必须可以获取得到（通过传感器直接测量或者间接计算得到），否则无法判断触发条件；在没有触发一个控制事件前，控制器保持不变；和最优控制不一样，Event-triggered控制的控制器不需要实时更新，而是通过被动触发；减少大量计算，更高效灵活。
 </code></pre><h3 id="Self-triggered控制"><a href="#Self-triggered控制" class="headerlink" title="Self-triggered控制"></a>Self-triggered控制</h3><p><strong><code>不同于Event-triggered控制，Self-triggered控制是一种积极控制方法。这种控制方法需要预先估计下一次触发控制的时间。</code></strong></p>
-<p>下面以ISS Self-triggered控制方法为例来作介绍。仍然考虑以下线性系统：<br>\begin{equation}<br>\label{4_2_1}<br>\frac{dx_p}{dt}=A_px_p+B_pu<br>\end{equation}<br>假设满足线性反馈控制规律 $u=Kx_p$ ，那么闭环系统可以表示为：<br>\begin{equation}<br>\frac{dx_p}{dt}x_p=(A_p+B_pK)x_p\tag{10}\label{10}<br>\end{equation}</p>
+<p>下面以ISS Self-triggered控制方法为例来作介绍。仍然考虑以下线性系统：<br>$$<br>\frac{dx_p}{dt}=A_px_p+B_pu<br>$$<br>假设满足线性反馈控制规律 $u=Kx_p$ ，那么闭环系统可以表示为：<br>\begin{equation}<br>\frac{dx_p}{dt}x_p=(A_p+B_pK)x_p\tag{11}\label{10}<br>\end{equation}</p>
 <blockquote>
-<p>定义：如果存在$\lambda,\kappa,\gamma\in\mathbb{R}^+$, 使得对于任意的 $\omega\in\mathcal{L}_{\infty}$以及任意的 $x(0)=x_0\in\mathbb{R}^{n_x}$ , 对所有 $t\in\mathbb{R}_0^+$ 都满足：<br>\begin{equation}<br>|x(t)|\leq\kappa|x_0|e^{-\lambda t}\tag{11}\label{11}<br>\end{equation}<br>那么系统\eqref{10}就被称为指数 input-to-state 稳定(EISS)</p>
+<p>定义：如果存在$\lambda,\kappa,\gamma\in\mathbb{R}^+$, 使得对于任意的 $\omega\in\mathcal{L}_{\infty}$以及任意的 $x(0)=x_0\in\mathbb{R}^{n_x}$ , 对所有 $t\in\mathbb{R}_0^+$ 都满足：<br>$$<br>|x(t)|\leq\kappa|x_0|e^{-\lambda t}<br>$$<br>那么系统\eqref{10}就被称为指数 input-to-state 稳定(EISS)</p>
 </blockquote>
 <p>下面考虑系统\eqref{10}在满足EISS稳定下的控制问题。</p>
 <blockquote>
-<p>定义映射 $\Gamma: \mathbb{R}^{n_x}\rightarrow\mathbb{R}^+$，$\Gamma$建立起不同触发时间之间的关系，也即：<br>\begin{equation}<br>t_{k+1}=t_k+\Gamma(x(t_k))<br>\end{equation}<br>用$\tau_k=t_{k+1}-t_k$ 表示内部执行时间，可知 $\tau_k=\Gamma(x(t_k))$。<br>一旦映射 $\Gamma$ 给定了，我们就可以根据当前状态来预估下次触发控制的时间，下面介绍构造映射 $\Gamma$ 的方法。</p>
+<p>定义映射 $\Gamma: \mathbb{R}^{n_x}\rightarrow\mathbb{R}^+$，$\Gamma$建立起不同触发时间之间的关系，也即：<br>$$<br>t_{k+1}=t_k+\Gamma(x(t_k))<br>$$<br>用$\tau_k=t_{k+1}-t_k$ 表示内部执行时间，可知 $\tau_k=\Gamma(x(t_k))$。<br>一旦映射 $\Gamma$ 给定了，我们就可以根据当前状态来预估下次触发控制的时间，下面介绍构造映射 $\Gamma$ 的方法。</p>
 </blockquote>
-<p>同样，这里用Lyapunov函数来表示控制的性能，这里不妨给定 $V(x)=(x^TPx)^{\frac{1}{2}}$，对于一个理想的闭环系统如果要求控制条件：<br>\begin{equation}<br>V(x(t))\leq V(x_0)e^{-\lambda_0t}, \quad \forall t\in\mathbb{R}^+, \forall x_0\in\mathbb{R}^{n_x}<br>\end{equation}<br>在实际估计时，我们加强上面的不等式条件：<br>\begin{equation}<br>V(x(t))\leq V(x_0)e^{-\lambda\tau}, \quad \forall \tau\in[0,t_{k+1}-t_k], \forall x0\in\mathbb{R}^{n_x}, \lambda\in[0,\lambda_0]\tag{12}\label{12}<br>\end{equation}<br>如果用$h_c: \mathbb{R}^{n_x}\times\mathbb{R}^+_0\rightarrow\mathbb{R}$表示映射关系：$h_c(x(t_k),t)=V(x)-V(x(t_k))e^{-\lambda\tau}$</p>
-<p>那么\eqref{12}可以表示为 $h_c(x(t_k),t)\leq0$，由于无法知道系统在$\tau\in[t_k.t_{k+1}]$时间里的所有状态信息$x(\tau)$，这里退而求其次采用离散采样的方法获取系统在某些时刻的状态信息，这里采用对 $[t_k.t_{k+1}]$ 时间段进行切片，间隔为 $\Delta\in\mathbb{R}^+$。假设每个分割时间点的状态信息可以获取，对于 $n\in[0,\frac{t_{k+1}-t_k}{\Delta}]$ ，通过判断是否满足：<br>\begin{equation}<br>h_d(x(t_k),n):=h_c(x(t_k),n\Delta)\leq0<br>\end{equation}<br>具体来说我们用 $N_{\rm min}:=[\tau_{\rm min}/\Delta], N_{\rm max}:=[\tau_{\rm max}/\Delta]$ ，这里的 $\tau_{\rm min}$ 和 $\tau_{\rm max}$ 为预设参数，现在我们给出构造 $\Gamma$ 的方法：</p>
+<p>同样，这里用Lyapunov函数来表示控制的性能，这里不妨给定 $V(x)=(x^TPx)^{\frac{1}{2}}$，对于一个理想的闭环系统如果要求控制条件：<br>$$<br>V(x(t))\leq V(x_0)e^{-\lambda_0t}, \quad \forall t\in\mathbb{R}^+, \forall x_0\in\mathbb{R}^{n_x}<br>$$<br>在实际估计时，我们加强上面的不等式条件：<br>\begin{equation}<br>V(x(t))\leq V(x_0)e^{-\lambda\tau}, \quad \forall \tau\in[0,t_{k+1}-t_k], \forall x0\in\mathbb{R}^{n_x}, \lambda\in[0,\lambda_0]\tag{12}\label{12}<br>\end{equation}<br>如果用$h_c: \mathbb{R}^{n_x}\times\mathbb{R}^+_0\rightarrow\mathbb{R}$表示映射关系：$h_c(x(t_k),t)=V(x)-V(x(t_k))e^{-\lambda\tau}$</p>
+<p>那么\eqref{12}可以表示为 $h_c(x(t_k),t)\leq0$，由于无法知道系统在$\tau\in[t_k.t_{k+1}]$时间里的所有状态信息$x(\tau)$，这里退而求其次采用离散采样的方法获取系统在某些时刻的状态信息，这里采用对 $[t_k.t_{k+1}]$ 时间段进行切片，间隔为 $\Delta\in\mathbb{R}^+$。假设每个分割时间点的状态信息可以获取，对于 $n\in[0,\frac{t_{k+1}-t_k}{\Delta}]$ ，通过判断是否满足：<br>$$<br>h_d(x(t_k),n):=h_c(x(t_k),n\Delta)\leq0<br>$$<br>具体来说我们用 $N_{\rm min}:=[\tau_{\rm min}/\Delta], N_{\rm max}:=[\tau_{\rm max}/\Delta]$ ，这里的 $\tau_{\rm min}$ 和 $\tau_{\rm max}$ 为预设参数，现在我们给出构造 $\Gamma$ 的方法：</p>
 <blockquote>
-<p>定义：映射 $\Gamma_d: \mathbb{R}^n\rightarrow\mathbb{R}^+$ 定义为：<br>\begin{equation}<br>\Gamma_d(x):=\max\{\tau_{\rm min}, n(x)\Delta\}<br>\end{equation}<br>其中<br>\begin{equation}<br>n(x):=\max\limits_{n\in\mathbb{N}}\{n\leq N_{\rm max}|h_d(x,s)\leq0, s=0,\dots,n\}<br>\end{equation}</p>
+<p>定义：映射 $\Gamma_d: \mathbb{R}^n\rightarrow\mathbb{R}^+$ 定义为：<br>$$<br>\Gamma_d(x):=\max\{\tau_{\rm min}, n(x)\Delta\}<br>$$<br>其中<br>$$<br>n(x):=\max\limits_{n\in\mathbb{N}}\{n\leq N_{\rm max}|h_d(x,s)\leq0, s=0,\dots,n\}<br>$$</p>
 </blockquote>
 <p>利用 $\Gamma_d$ 我们可以得到每次具体实施控制的时间。</p>
 <pre><code>和Event-triggered相比，不需要知道系统所有时刻的状态信息，只需要知道某些时间点的状态信息；

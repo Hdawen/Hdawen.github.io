@@ -15,13 +15,28 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Devin&#39;s Blog">
-<meta property="og:url" content="https://hdawen.github.io/categories/Study/index.html">
+<meta name="description" content="几种不安全的网络系统的类型[1]">
+<meta name="keywords" content="网络,博弈论,优化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《Network Security A Decision and Game Theoretic Approach》阅读笔记">
+<meta property="og:url" content="https://hdawen.github.io/2018/06/25/6_unsafe_networked_system/index.html">
 <meta property="og:site_name" content="Devin&#39;s Blog">
+<meta property="og:description" content="几种不安全的网络系统的类型[1]">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_1.png">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_2.png">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_3.png">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_4.png">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_5.png">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_6.png">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_7.png">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_8.png">
+<meta property="og:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_9.png">
+<meta property="og:updated_time" content="2018-06-25T09:46:19.643Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Devin&#39;s Blog">
+<meta name="twitter:title" content="《Network Security A Decision and Game Theoretic Approach》阅读笔记">
+<meta name="twitter:description" content="几种不安全的网络系统的类型[1]">
+<meta name="twitter:image" content="http://p365zudbu.bkt.clouddn.com/threats_system_1.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -53,7 +68,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Category: Study | Devin&#39;s Blog</title>
+<title>《Network Security A Decision and Game Theoretic Approach》阅读笔记 | Devin&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -63,10 +78,10 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
-        isCategory: true,
+        isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
         search: true
@@ -250,208 +265,185 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-6_unsafe_networked_system" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/06/25/6_unsafe_networked_system/" class="archive-article-date">
-      <time datetime="2018-06-25T09:45:26.366Z" itemprop="datePublished">06-25</time>
+    <div class="article-meta">
+      <a href="/2018/06/25/6_unsafe_networked_system/" class="article-date">
+      <time datetime="2018-06-25T09:45:26.366Z" itemprop="datePublished">2018-06-25</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/25/6_unsafe_networked_system/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      《Network Security A Decision and Game Theoretic Approach》阅读笔记
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/Study/">Study</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/优化/">优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博弈论/">博弈论</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="几种不安全的网络系统的类型-1"><a href="#几种不安全的网络系统的类型-1" class="headerlink" title="几种不安全的网络系统的类型[1]"></a>几种不安全的网络系统的类型[1]<a id="more"></a></h2><p>（1）<strong>Individual malicious peers</strong>：有些系统比如大部分WSN因为计算能力有限，电量有限、存储空间较小，造价不能太高等特点使得在实际中很多情况下无法应用一些异常检测技术和信任管理方法来查找和评估恶意节点。这种情况下恶意节点孤立地表现出恶意行为。这是一类比较简单同时也是非常常见的系统。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_1.png" style="zoom:60%" alt="图1"></div>
+
+<p>（2）<strong>Malicious collectives</strong>：虽然一些系统可以利用信任管理方法可以给网络中的节点进行评估，但是这类系统上的恶意节点一方面表现出恶意行为，另一方面则采用结盟方式提高同盟者的信任度来逃脱被隔离。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_2.png" style="zoom:60%" alt="图2"></div>
+
+<p>（3）<strong>Malicious collectives with camouflage</strong>：虽然一些系统可以利用信任管理方法可以给网络中的节点进行评估，但是系统中存在一些高级恶意节点，这些节点往往具有伪装能力，所有的行为中仅仅 p% 的比例是恶意的，并且恶意节点之间相互结盟。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_3.png" style="zoom:60%" alt="图3"></div>
+
+
+<p>（4）<strong>Malicious spies</strong>：虽然一些系统可以利用信任管理方法可以给网络中的节点进行评估，但是这类系统上的恶意节点分两类：一类只表现出恶意，另一类虽然是恶意节点但是却只表现正常行为。所有恶意节点之间采用结盟方式提高同盟者的信任度来逃脱被隔离。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_4.png" style="zoom:60%" alt="图4"></div>
+
+<p>（5）<strong>Sybil attack</strong>：虽然一些系统可以利用信任管理方法可以给网络中的节点进行评估，但是这类系统上的恶意节点每次在实施一些攻击后能够修改自己身份，以一个新的身份进入系统实施新的攻击。<br>解决方法： One of the most common solutions proposed in the literature for this kind of threat consists of associating a cost to the generation of new identities in the community. 通过惩罚修改身份的行为来避免这类恶意节点实施新的攻击。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_5.png" style="zoom:60%" alt="图5"></div>
+
+<p>（6）<strong>Man in the middle attack</strong>：一些系统中恶意节点通过截获或者作为通信中间人的身份篡改正常节点的通信的信息。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_6.png" style="zoom:60%" alt="图6"></div>
+
+
+<p>（7）<strong>Driving down the reputation of a reliable peer</strong>：一些系统中恶意节点给正常节点较低的信任度，然而给同盟的恶意节点较高信任度。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_7.png" style="zoom:60%" alt="图7"></div>
+
+<p>（8）<strong>Partially malicious collectives</strong>：一些系统中恶意节点给一部分正常节点较高的信任度，给另一部分正常节点较低信任度，给所有同盟的恶意节点较高信任度。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_8.png" style="zoom:60%" alt="图8"></div>
+
+<p>（9）<strong>Malicious pre-trusted peers</strong>：一些以前是可信的节点在被攻陷后表现出恶意行为，给同盟恶意节点较高信任度，给正常节点较低信任度。</p>
+<div align="center"><img src="http://p365zudbu.bkt.clouddn.com/threats_system_9.png" style="zoom:60%" alt="图9"></div>
+
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] Mármol F G, Pérez G M. Security threats scenarios in trust and reputation models for distributed systems[J]. Computers &amp; Security, 2009, 28(7):545-556.</p>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/06/25/6_unsafe_networked_system/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Devin</a></p>
+        <p><span>发布时间:</span>2018-06-25, 17:45:26</p>
+        <p><span>最后更新:</span>2018-06-25, 17:46:19</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/06/25/6_unsafe_networked_system/" title="《Network Security A Decision and Game Theoretic Approach》阅读笔记">https://hdawen.github.io/2018/06/25/6_unsafe_networked_system/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://hdawen.github.io/2018/06/25/6_unsafe_networked_system/　　作者: Devin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/06/14/5_Network_Security_Reading_Notes/">
+                    《Network Security A Decision and Game Theoretic Approach》阅读笔记
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#几种不安全的网络系统的类型-1"><span class="toc-number">1.</span> <span class="toc-text">几种不安全的网络系统的类型[1]</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-number">2.</span> <span class="toc-text">参考文献</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
     
+<div class="share">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/06/14/5_Network_Security_Reading_Notes/" class="archive-article-date">
-      <time datetime="2018-06-14T08:02:51.934Z" itemprop="datePublished">06-14</time>
-</a>
+
+    
+        <div class="addthis_sharing_toolbox"></div>
+    
+</div>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/14/5_Network_Security_Reading_Notes/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/06/14/5_Network_Security_Reading_Notes/" title="下一篇: 《Network Security A Decision and Game Theoretic Approach》阅读笔记">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
 
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/优化/">优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博弈论/">博弈论</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/04/28/4_Control_of_contagion/" class="archive-article-date">
-      <time datetime="2018-04-28T12:28:28.095Z" itemprop="datePublished">04-28</time>
-</a>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/06/25/6_unsafe_networked_system/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/14/5_Network_Security_Reading_Notes/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/28/4_Control_of_contagion/">传播的控制方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/03/3_Complex_networks_dataset/">复杂网络常用数据集</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/28/2_Sensor_Network_fundamention/">传感器网络基础和技术</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/23/1_Markdown_grammar/">Markdown基本语法(转)</a></li></ul>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/28/4_Control_of_contagion/">传播的控制方法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/传播/">传播</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安全/">安全</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/控制/">控制</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/02/28/2_Sensor_Network_fundamention/" class="archive-article-date">
-      <time datetime="2018-02-28T08:42:49.055Z" itemprop="datePublished">02-28</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/28/2_Sensor_Network_fundamention/">传感器网络基础和技术</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/传感器/">传感器</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/01/23/1_Markdown_grammar/" class="archive-article-date">
-      <time datetime="2018-01-23T05:09:04.000Z" itemprop="datePublished">01-23</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/23/1_Markdown_grammar/">Markdown基本语法(转)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
