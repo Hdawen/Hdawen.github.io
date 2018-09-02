@@ -118,8 +118,7 @@
 <p>在家电中嵌入传感器结点，通过无线网络与互联网连接在一起，利用远程监控系统可实现对家电的远程遥控，无线传感器网络使住户可以在任何可以上网的地方通过浏览器监控家中的水表、电表、煤气表、电器热水器、空调、电饭煲等，安防系统煤气泄露报警系统、外人侵入预警系统等。</p>
 <div align="center"><img src="http://wx3.sinaimg.cn/mw690/c516f69bgy1fuv8ny9kkpj20fz0a73zf.jpg" style="zoom:101%" alt="图12"></div>
 
-<p>##无线传感器网络的特点</p>
-<h3 id="无线传感器网络基本特点"><a href="#无线传感器网络基本特点" class="headerlink" title="无线传感器网络基本特点"></a>无线传感器网络基本特点</h3><p>无线传感器网络具有以下特点</p>
+<h2 id="无线传感器网络的特点"><a href="#无线传感器网络的特点" class="headerlink" title="无线传感器网络的特点"></a>无线传感器网络的特点</h2><h3 id="无线传感器网络基本特点"><a href="#无线传感器网络基本特点" class="headerlink" title="无线传感器网络基本特点"></a>无线传感器网络基本特点</h3><p>无线传感器网络具有以下特点</p>
 <ol>
 <li>自组织方式组网：组网不依赖任何固定的网络设施，传感器节点通过分布式网络协议形成自组织网络，能够自动调整来适应节点的移动、加入和退出。因为传感器的维护成本很高，所以需要具备自我管理能力 (self-managed, including self-organizing, self-healing, self-optimizing, self-protecting, self-sustaining, self-diagnostic) 。</li>
 <li>无中心结构：网络中所有传感器节点地位对等，并构成一个对等式网络。节点可以随时加入和离开网络，网络中部分节点发生故障不影响整个网络的运行。</li>
