@@ -14,17 +14,32 @@
 <meta name="author" content="Devin" />
 
 
-    
-    
 
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Devin&#39;s Blog">
-<meta property="og:url" content="https://hdawen.github.io/index.html">
+<meta name="description" content="背景因为超大规模集成电路 (VLSI) 以及微机电系统科技 (MEMS technology) 等硬件基础以及radio frequency (RF) 技术的进步，使得传感器的发展越来越快 传感器具有的优势：  可以放置在任何环境：任何时间都可以工作，并且不需要太多的人力来进行管理。 具有更好的容错能力：局部出现故障仍然能较好的完成工作。 获取的数据更精确：通过多个传感器获取的信息更加可靠准确。">
+<meta name="keywords" content="WSN,无线传感器网络">
+<meta property="og:type" content="article">
+<meta property="og:title" content="无线传感器和无线传感器网络">
+<meta property="og:url" content="https://hdawen.github.io/2018/09/02/8_Wireless_sensor_and_networks/index.html">
 <meta property="og:site_name" content="Devin&#39;s Blog">
+<meta property="og:description" content="背景因为超大规模集成电路 (VLSI) 以及微机电系统科技 (MEMS technology) 等硬件基础以及radio frequency (RF) 技术的进步，使得传感器的发展越来越快 传感器具有的优势：  可以放置在任何环境：任何时间都可以工作，并且不需要太多的人力来进行管理。 具有更好的容错能力：局部出现故障仍然能较好的完成工作。 获取的数据更精确：通过多个传感器获取的信息更加可靠准确。">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/c516f69bgy1fuv8nrj1t8j20p00godio.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/c516f69bgy1fuv8nti4ibj21fx0evgon.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/c516f69bgy1fuv8nu1sssj215r0id78a.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/c516f69bgy1fuv8nugsanj21fn0hcac8.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/c516f69bgy1fuv8nux3rhj20m80esgmg.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/c516f69bgy1fuv8nve5zej20gw0al3yy.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/c516f69bgy1fuv8nvu8slj20go0ciq41.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/c516f69bgy1fuv8nwdqk1j20fy09qdgc.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/c516f69bgy1fuv8nwuz8aj20fe08twfp.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/c516f69bgy1fuv8nxctxaj21rz0vl77u.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/c516f69bgy1fuv8nxus4nj20wn0jz0xa.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/c516f69bgy1fuv8ny9kkpj20fz0a73zf.jpg">
+<meta property="og:updated_time" content="2018-09-02T08:06:13.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Devin&#39;s Blog">
+<meta name="twitter:title" content="无线传感器和无线传感器网络">
+<meta name="twitter:description" content="背景因为超大规模集成电路 (VLSI) 以及微机电系统科技 (MEMS technology) 等硬件基础以及radio frequency (RF) 技术的进步，使得传感器的发展越来越快 传感器具有的优势：  可以放置在任何环境：任何时间都可以工作，并且不需要太多的人力来进行管理。 具有更好的容错能力：局部出现故障仍然能较好的完成工作。 获取的数据更精确：通过多个传感器获取的信息更加可靠准确。">
+<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/c516f69bgy1fuv8nrj1t8j20p00godio.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -52,13 +67,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Devin&#39;s Blog</title>
+<title>无线传感器和无线传感器网络 | Devin&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,8 +80,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -255,9 +268,7 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-8_Wireless_sensor_and_networks" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-8_Wireless_sensor_and_networks" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2018/09/02/8_Wireless_sensor_and_networks/" class="article-date">
@@ -275,12 +286,27 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/02/8_Wireless_sensor_and_networks/">无线传感器和无线传感器网络</a>
+    <h1 class="article-title" itemprop="name">
+      无线传感器和无线传感器网络
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Study/">Study</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WSN/">WSN</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/无线传感器网络/">无线传感器网络</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -455,504 +481,73 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WSN/">WSN</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/无线传感器网络/">无线传感器网络</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-7_Wireless_sensor_network" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/07/23/7_Wireless_sensor_network/" class="article-date">
-      <time datetime="2018-07-23T06:46:27.153Z" itemprop="datePublished">2018-07-23</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/23/7_Wireless_sensor_network/">传感器网络</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="传感器基础知识"><a href="#传感器基础知识" class="headerlink" title="传感器基础知识"></a>传感器基础知识</h2><p>因为超大规模集成电路 (VLSI) 以及微机电系统科技 (MEMS technology) 等硬件基础以及radio frequency (RF) 技术的进步，使得传感器的发展越来越快。
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WSN/">WSN</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/优化/">优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络安全/">网络安全</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/07/23/7_Wireless_sensor_network/#more">more >></a>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/09/02/8_Wireless_sensor_and_networks/">无线传感器和无线传感器网络</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Devin</a></p>
+        <p><span>发布时间:</span>2018-09-02, 16:06:40</p>
+        <p><span>最后更新:</span>2018-09-02, 16:06:13</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/09/02/8_Wireless_sensor_and_networks/" title="无线传感器和无线传感器网络">https://hdawen.github.io/2018/09/02/8_Wireless_sensor_and_networks/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://hdawen.github.io/2018/09/02/8_Wireless_sensor_and_networks/　　作者: Devin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-6_unsafe_networked_system" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/06/25/6_unsafe_networked_system/" class="article-date">
-      <time datetime="2018-06-25T09:45:26.366Z" itemprop="datePublished">2018-06-25</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/25/6_unsafe_networked_system/">常见不安全的网络系统</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="几种不安全的网络系统的类型-1"><a href="#几种不安全的网络系统的类型-1" class="headerlink" title="几种不安全的网络系统的类型[1]"></a>几种不安全的网络系统的类型[1]
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络安全/">网络安全</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/06/25/6_unsafe_networked_system/#more">more >></a>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
-      
-      <div class="clearfix"></div>
     </div>
-    
-  </div>
-  
-</article>
 
 
 
-
-
-
-
-
-
-  
-    <article id="post-5_Network_Security_Reading_Notes" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/06/14/5_Network_Security_Reading_Notes/" class="article-date">
-      <time datetime="2018-06-14T08:02:51.934Z" itemprop="datePublished">2018-06-14</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/14/5_Network_Security_Reading_Notes/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="网络安全问题的背景"><a href="#网络安全问题的背景" class="headerlink" title="网络安全问题的背景"></a>网络安全问题的背景</h2><p>网络安全研究的内容包括很多方面，作者形象比喻为盲人摸象，不同领域的网络安全专家对网络安全的认识是不同的。
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/优化/">优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博弈论/">博弈论</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/06/14/5_Network_Security_Reading_Notes/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-4_Control_of_contagion" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/04/28/4_Control_of_contagion/" class="article-date">
-      <time datetime="2018-04-28T12:28:28.095Z" itemprop="datePublished">2018-04-28</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/28/4_Control_of_contagion/">传播的控制方法</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="控制问题的引入"><a href="#控制问题的引入" class="headerlink" title="控制问题的引入"></a>控制问题的引入</h2><p>传播现象在现实当中很常见，代表主要有人类传染病的传播、计算机病毒的传播、谣言的传播等。
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/传播/">传播</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安全/">安全</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/控制/">控制</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/04/28/4_Control_of_contagion/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-3_Complex_networks_dataset" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/04/03/3_Complex_networks_dataset/" class="article-date">
-      <time datetime="2018-04-03T14:06:04.641Z" itemprop="datePublished">2018-04-03</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/07/23/7_Wireless_sensor_network/">
+                    传感器网络
+                </a>
+            </div>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/03/3_Complex_networks_dataset/">复杂网络常用数据集</a>
-    </h1>
-  
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>这篇博文最先写于个人的简书博客：<a href="https://www.jianshu.com/p/9313bc75c94b" target="_blank" rel="noopener">https://www.jianshu.com/p/9313bc75c94b</a></p>
-<p>复杂网络的研究很多都离不开数据集，下面这些是个人在做科研的过程中在互联网上搜集到的一些数据集网站，列举出来也方便同行们去使用。
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Research/">Research</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/复杂网络/">复杂网络</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据集/">数据集</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/科研/">科研</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/04/03/3_Complex_networks_dataset/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
-
-
-
-
-
-
-
-
-  
-    <article id="post-2_Sensor_Network_fundamention" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/02/28/2_Sensor_Network_fundamention/" class="article-date">
-      <time datetime="2018-02-28T08:42:49.055Z" itemprop="datePublished">2018-02-28</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/28/2_Sensor_Network_fundamention/">传感器网络基础和技术</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>最近开始关注传感器网络，传感器互联后可以进行信息交换，从而形成一个传感器网络，有关传感器网络的研究问题很多，涉及到很多技术层面的东西。
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/传感器/">传感器</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/02/28/2_Sensor_Network_fundamention/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-1_Markdown_grammar" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/01/23/1_Markdown_grammar/" class="article-date">
-      <time datetime="2018-01-23T05:09:04.000Z" itemprop="datePublished">2018-01-23</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#背景"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li></ol>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/23/1_Markdown_grammar/">Markdown基本语法(转)</a>
-    </h1>
-  
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
 
-      </header>
-      
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
     
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
-<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。
-          
-      
-    </div>
+<div class="share">
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Study/">Study</a>
-    </div>
 
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/01/23/1_Markdown_grammar/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
     
-  </div>
-  
-</article>
+        <div class="addthis_sharing_toolbox"></div>
+    
+</div>
 
 
 
@@ -960,10 +555,33 @@
 
 
 
+    
 
 
-  
-  
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/07/23/7_Wireless_sensor_network/" title="下一篇: 传感器网络">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/02/8_Wireless_sensor_and_networks/">无线传感器和无线传感器网络</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/23/7_Wireless_sensor_network/">传感器网络</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/25/6_unsafe_networked_system/">常见不安全的网络系统</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/14/5_Network_Security_Reading_Notes/">《Network Security A Decision and Game Theoretic Approach》阅读笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/28/4_Control_of_contagion/">传播的控制方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/03/3_Complex_networks_dataset/">复杂网络常用数据集</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/28/2_Sensor_Network_fundamention/">传感器网络基础和技术</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/23/1_Markdown_grammar/">Markdown基本语法(转)</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
