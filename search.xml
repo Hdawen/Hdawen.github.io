@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[无线传感器和无线传感器网络]]></title>
       <url>/2018/09/02/8_Wireless_sensor_and_networks/</url>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>因为超大规模集成电路 (VLSI) 以及微机电系统科技 (MEMS technology) 等硬件基础以及radio frequency (RF) 技术的进步，使得传感器的发展越来越快</p>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>因为超大规模集成电路 (VLSI) 以及微机电系统科技 (MEMS technology) 等硬件基础以及radio frequency (RF) 技术的进步，使得传感器的发展越来越快。<a id="more"></a></p>
 <p>传感器具有的优势：</p>
 <ol>
 <li>可以放置在任何环境：任何时间都可以工作，并且不需要太多的人力来进行管理。</li>
@@ -331,11 +331,11 @@
         
         <tags>
             
+            <tag> 优化 </tag>
+            
             <tag> 网络安全 </tag>
             
             <tag> WSN </tag>
-            
-            <tag> 优化 </tag>
             
         </tags>
         
@@ -527,9 +527,9 @@
             
             <tag> 网络 </tag>
             
-            <tag> 优化 </tag>
-            
             <tag> 博弈论 </tag>
+            
+            <tag> 优化 </tag>
             
         </tags>
         
