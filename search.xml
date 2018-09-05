@@ -14,7 +14,7 @@
 <li>成本低以及容易部署。</li>
 </ol>
 <p>根据8月份国外媒体最新的报道，目前全球传感器大约有2.6万余种类型。随着人工智能技术的发展，传感器应用也正在不断普及，同时高端传感器的需求也持续提升。2018 年，《麻省理工科技评论》全球十大突破性技术榜单中将”传感城市”(Sensing city)列入其中，这揭示了今后几年传感器技术的发展潮流。</p>
-<div align="center"><img src="http://wx3.sinaimg.cn/large/c516f69bgy1fuv8nrj1t8j20p00godio.jpg" style="zoom:64%" alt="图1"></div>
+<div align="center"><img src="http://wx3.sinaimg.cn/large/c516f69bgy1fuv8nrj1t8j20p00godio.jpg" style="zoom:40%" alt="图1"></div>
 
 <h2 id="无线传感器网络的组成和结构"><a href="#无线传感器网络的组成和结构" class="headerlink" title="无线传感器网络的组成和结构"></a>无线传感器网络的组成和结构</h2><h3 id="常见传感器的分类"><a href="#常见传感器的分类" class="headerlink" title="常见传感器的分类"></a>常见传感器的分类</h3><p>传感器在现实生活中随处可见，如各种可穿戴设备、无线通信设备、智能控制设备等，很多常用的电子器件一般包含多种传感器，比如一些高端手机已经集成了超过15种传感器，而且这一数字还会增加，一辆普通家用轿车上大约会安装几十到近百只传感器，豪华轿车传感器的数量可多达200余只，种类达几十种。</p>
 <p>按功能可以将传感器划分为：电传感器、磁传感器、位移传感器、压力传感器、振动传感器、速度传感器、加速度传感器、流量传感器、流速传感器、温度传感器、光传感器、射线传感器、分析传感器、仿生传感器、气体传感器、离子传感器等．</p>
@@ -27,7 +27,7 @@
 <li>无线通信模块：(传统有线传感器和无线传感器的最本质区别)无线通信模块的基本功能是将处理器输出的数据通过无线信道以及传输网络传送给其他节点。</li>
 <li>能量供应模块：为其他三个模块的工作提供能量。</li>
 </ol>
-<div align="center"><img src="http://wx3.sinaimg.cn/large/c516f69bgy1fuv8nti4ibj21fx0evgon.jpg" style="zoom:45%" alt="图2"></div>
+<div align="center"><img src="http://wx3.sinaimg.cn/large/c516f69bgy1fuv8nti4ibj21fx0evgon.jpg" style="zoom:30%" alt="图2"></div>
 
 <h3 id="无线传感器网络的组成"><a href="#无线传感器网络的组成" class="headerlink" title="无线传感器网络的组成"></a>无线传感器网络的组成</h3><p>多个功能节点之间通过无线通信形成一个连接的网络，这个网络我们称为无线传感器网络。</p>
 <p>无线传感器网络中主要包含两类节点：</p>
@@ -35,7 +35,7 @@
 <li>传感器节点：具有感知和通信功能的节点，在传感器网络中负责监控目标区域并获取数据，以及完成与其他传感器节点的通信，能够对数据进行简单的处理。</li>
 <li>Sink节点：又称为基站节点，负责汇总由传感器节点发送过来的数据，并作进一步数据融合以及其他操作，最终把处理好的数据上传至互联网。</li>
 </ol>
-<div align="center"><img src="http://wx1.sinaimg.cn/large/c516f69bgy1fuv8nu1sssj215r0id78a.jpg" style="zoom:50%" alt="图3"></div>
+<div align="center"><img src="http://wx1.sinaimg.cn/large/c516f69bgy1fuv8nu1sssj215r0id78a.jpg" style="zoom:30%" alt="图3"></div>
 
 <table>
 <thead>
@@ -89,7 +89,7 @@
 <h2 id="无线传感器网络的应用领域"><a href="#无线传感器网络的应用领域" class="headerlink" title="无线传感器网络的应用领域"></a>无线传感器网络的应用领域</h2><p>无线传感器在生产和生活中处处可见，总结起来主要在以下八大领域应用广泛[3]：</p>
 <p><strong>1、军事领域的应用</strong></p>
 <p>在军事领域，由于WSN具有密集型、随机分布的特点，使其非常适合应用于恶劣的战场环境。利用WSN能够实现监测敌军区域内的兵力和装备、实时监视战场状况、定位目标、监测核攻击或者生物化学攻击等。</p>
-<div align="center"><img src="http://wx1.sinaimg.cn/large/c516f69bgy1fuv8nux3rhj20m80esgmg.jpg" style="zoom:72%" alt="图5"></div>
+<div align="center"><img src="http://wx1.sinaimg.cn/large/c516f69bgy1fuv8nux3rhj20m80esgmg.jpg" style="zoom:60%" alt="图5"></div>
 
 <p><strong>2、辅助农业生产</strong></p>
 <p>WSN特别适用于以下方面的生产和科学研究。例如，大棚种植室内及土壤的温度、湿度、光照监测、珍贵经济作物生长规律分析、葡萄优质育种和生产等，可为农村发展与农民增收带来极大的帮助。采用WSN建设农业环境自动监测系统，用一套网络设备完成风、光、水、电、热和农药等的数据采集和环境控制，可有效提高农业集约化生产程度，提高农业生产种植的科学性。</p>
@@ -105,19 +105,19 @@
 
 <p><strong>5、工业领域的应用</strong></p>
 <p>在工业安全方面，传感器网络技术可用于危险的工作环境，例如在煤矿、石油钻井、核电厂和组装线布置传感器节点，可以随时监测工作环境的安全状况，为工作人员的安全提供保证。另外，传感器节点还可以代替部分工作人员到危险的环境中执行任务，不仅降低了危险程度，还提高了对险情的反应精度和速度。</p>
-<div align="center"><img src="http://wx1.sinaimg.cn/large/c516f69bgy1fuv8nwuz8aj20fe08twfp.jpg" style="zoom:104%" alt="图9"></div>
+<div align="center"><img src="http://wx1.sinaimg.cn/large/c516f69bgy1fuv8nwuz8aj20fe08twfp.jpg" style="zoom:106%" alt="图9"></div>
 
 <p><strong>6、在智能交通中保障安全畅通</strong></p>
 <p>智能交通系统主要包括交通信息的采集、交通信息的传输、交通控制和诱导等几个方面。无线传感器网络可以为智能交通系统的信息采集和传输提供一种有效手段，用来监测道路各个方向的车流量、车速等信息。并运用计算方法计算出最佳方案，同时输出控制信号给执行子系统，以引导和控制车辆的通行，从而达到预设的目标。</p>
-<div align="center"><img src="http://wx4.sinaimg.cn/large/c516f69bgy1fuv8nxctxaj21rz0vl77u.jpg" style="zoom:25%" alt="图10"></div>
+<div align="center"><img src="http://wx4.sinaimg.cn/large/c516f69bgy1fuv8nxctxaj21rz0vl77u.jpg" style="zoom:10%" alt="图10"></div>
 
 <p><strong>7、在医疗系统和健康护理中的应用</strong></p>
 <p>无线传感网技术通过连续监测提供丰富的背景资料并做预警响应，不仅有望解决这一问题还可大大提高医疗的质量和效率。无线传感网集合了微电子技术、嵌入式计算技术、现代网络及无线通信和分布式信息处理等技术，能够通过各类集成化的微型传感器协同完成对各种环境或监测对象的信息的实时监测、感知和采集。</p>
-<div align="center"><img src="http://wx4.sinaimg.cn/large/c516f69bgy1fuv8nxus4nj20wn0jz0xa.jpg" style="zoom:50%" alt="图11"></div>
+<div align="center"><img src="http://wx4.sinaimg.cn/large/c516f69bgy1fuv8nxus4nj20wn0jz0xa.jpg" style="zoom:25%" alt="图11"></div>
 
 <p><strong>8、在智能家居中应用</strong></p>
 <p>在家电中嵌入传感器结点，通过无线网络与互联网连接在一起，利用远程监控系统可实现对家电的远程遥控，无线传感器网络使住户可以在任何可以上网的地方通过浏览器监控家中的水表、电表、煤气表、电器热水器、空调、电饭煲等，安防系统煤气泄露报警系统、外人侵入预警系统等。</p>
-<div align="center"><img src="http://wx3.sinaimg.cn/large/c516f69bgy1fuv8ny9kkpj20fz0a73zf.jpg" style="zoom:102%" alt="图12"></div>
+<div align="center"><img src="http://wx3.sinaimg.cn/large/c516f69bgy1fuv8ny9kkpj20fz0a73zf.jpg" style="zoom:110%" alt="图12"></div>
 
 <h2 id="无线传感器网络的特点"><a href="#无线传感器网络的特点" class="headerlink" title="无线传感器网络的特点"></a>无线传感器网络的特点</h2><h3 id="无线传感器网络基本特点"><a href="#无线传感器网络基本特点" class="headerlink" title="无线传感器网络基本特点"></a>无线传感器网络基本特点</h3><p>无线传感器网络具有以下特点</p>
 <ol>
@@ -414,11 +414,11 @@
         
         <tags>
             
+            <tag> WSN </tag>
+            
             <tag> 优化 </tag>
             
             <tag> 网络安全 </tag>
-            
-            <tag> WSN </tag>
             
         </tags>
         
@@ -610,9 +610,9 @@
             
             <tag> 网络 </tag>
             
-            <tag> 博弈论 </tag>
-            
             <tag> 优化 </tag>
+            
+            <tag> 博弈论 </tag>
             
         </tags>
         
@@ -805,9 +805,9 @@
         
         <tags>
             
-            <tag> 网络 </tag>
-            
             <tag> 传感器 </tag>
+            
+            <tag> 网络 </tag>
             
         </tags>
         
